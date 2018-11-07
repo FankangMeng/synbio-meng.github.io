@@ -1,15 +1,22 @@
 
 <head>
 
-    <meta charset="utf-8">
+        <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>网络生物学与机器学习（上）：什么是机器学习Fankang Meng </title>
+    <title>网络生物学与机器学习（上）：什么是机器学习</title>
+
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="../assets/built/screen.css?v=cbc3160cf5">
+    <link rel="shortcut icon" href="../favicon.png">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/libraries.css?v=9a51de674b">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css?v=9a51de674b">
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+    
     <link rel="shortcut icon" href="../favicon.png" type="image/png">
     <link rel="canonical" href="index.html">
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -81,7 +88,7 @@
 }
     </script>
 
-    <script src="../public/ghost-sdk.js?v=cbc3160cf5"></script>
+    <script src="../public/ghost-sdk.js?v=9a51de674b"></script>
 <script>
 ghost.init({
 	clientId: "ghost-frontend",
@@ -90,268 +97,495 @@ ghost.init({
 </script>
     <meta name="generator" content="Ghost 2.4">
     <link rel="alternate" type="application/rss+xml" title="REGENESIS" href="../rss/index.html">
+    <!--  加载highlight.js样式 -->
+<link href="http://cdn.bootcss.com/highlight.js/9.9.0/styles/tomorrow-night-eighties.min.css" rel="stylesheet">
+<!--  加载google字体 -->
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Poppins:300,600">
+<!--  设置字体 -->
+<style>
+body,p,code,h1, h2, h3, h4, h5, h6,.hljs {
+    font-family: 'Poppins', monospace;
+}
+.hljs {
+    font-size: 1.2em
+}
+</style>
 
 </head>
-<body class="post-template tag-synthetic-biology tag-machine-learning tag-artificial-intelligence">
+<body class="post-template tag-synthetic-biology tag-machine-learning tag-artificial-intelligence nav-closed">
 
-    <div class="site-wrapper">
-
-        
-
-<header class="site-header outer">
-    <div class="inner">
-        <nav class="site-nav">
-    <div class="site-nav-left">
-                <a class="site-nav-logo" href="../"><img src="../content/images/2018/11/avatar-1.png" alt="REGENESIS"></a>
-            <ul class="nav" role="menu">
-    <li class="nav-home" role="menuitem"><a href="../">Home</a></li>
-    <li class="nav-synthetic-biology" role="menuitem"><a href="../tag/synthetic-biology/">Synthetic Biology</a></li>
-    <li class="nav-ucas-life" role="menuitem"><a href="http://localhost:2368/ucas-life/">UCAS Life</a></li>
-    <li class="nav-igem" role="menuitem"><a href="http://localhost:2368/igem/">iGEM</a></li>
-    <li class="nav-author" role="menuitem"><a href="../author/mengfankang/">Author</a></li>
-</ul>
-
-    </div>
-    <div class="site-nav-right">
-        <div class="social-links">
-                <a class="social-link social-link-fb" href="https://www.facebook.com/profile.php?id=100005569278801" title="Facebook" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"></path></svg>
-</a>
-                <a class="social-link social-link-tw" href="https://twitter.com/FankangMeng" title="Twitter" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"></path></svg>
-</a>
-        </div>
-            <a class="subscribe-button" href="index.html#subscribe">Subscribe</a>
-    </div>
-</nav>
-    </div>
-</header>
-
-<div style="position:absolute;left:-10000px;"> 
-    <img src="index.html" width="400" height="400" style="width:400px;height:400px;"> </div>   
-
-<main id="site-main" class="site-main outer">
-    <div class="inner">
-
-        <article class="post-full post tag-synthetic-biology tag-machine-learning tag-artificial-intelligence ">
-
-            <header class="post-full-header">
-                <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="2018-11-07">7 November 2018</time>
-                        <span class="date-divider">/</span> <a href="../tag/synthetic-biology/">Synthetic Biology</a>
-                </section>
-                <h1 class="post-full-title">网络生物学与机器学习（上）：什么是机器学习</h1>
-            </header>
-
-            <figure class="post-full-image" style="background-image: url(../content/images/2018/11/v2-26fe4c9e520b0743cb5dc8f9578a7685_r.jpg)">
-            </figure>
-
-            <section class="post-full-content">
-                <div class="post-content">
-                    <p><strong>机器学习，一种旨在从多维数据集构建可预测模型的数据分析技术，正在成为现代生物学研究不可或缺的一部分。</strong>通过对大型数据集进行学习并对生成可预测的模型，机器学习可用于研究复杂的细胞系统，如生物网络。这篇文章为生命科学领域的研究人员提供了机器学习入门的一些知识，包括深度学习的介绍。同时这篇文章还从四个方面，包括疾病生物学，药物发现，微生物组研究和合成生物学，讨论了机器学习与网络生物学交叉研究的机遇和挑战.<strong>本文为第一部分，主要介绍机器学习的入门知识，并会涉及到深度学习的介绍。在下周的推送中，我们将探讨机器学习对于疾病生物学，药物发现，微生物组研究和合成生物学等领域的影响。</strong></p><blockquote><strong>作者：Camacho, D. M., Collins, K. M., Powers, R. K., Costello, J. C., &amp; Collins, J. J翻译：孟凡康（部分内容有删改）全文约6000字，阅读时间约为15分钟</strong></blockquote><hr><p>在过去的十年中，通过对分子变量如基因，蛋白质和代谢物丰度，微生物组成和群体遗传变异等进行量化，生物学领域产生了大量高度复杂的数据集，且数据集的数量正在急剧增加。跨研究学科的研究中经常会产生PB量级的数据。例如，<em>Cancer Genome Atlas</em>从30,000多个不同癌症类型的患者身上采集的数据，总计已经超过2.5 PB。类似项目，如<em>Human Microbiome Project</em>, <em>ENCODE Project Consortium</em>, 以及<em>100,000 Genomes Project</em> 等等也正在产生大量数据。<strong>这些数据集提供了深入了解生物系统和复杂疾病所需的原材料，但如何进一步探索这些数据的价值只能通过更高层次的分析过程来实现。</strong>上面说到的项目时刻在向我们表明：处理大型异构复杂数据集的工具和技术正在变得无比重要。而<strong>机器学习，旨在帮助我们解决这一复杂问题，为我们提供下一代的分析技术，使人们能够从新的角度出发，对生命系统提出新的假设。</strong>机器学习是计算机科学中的一门学科。通过编程，机器（即计算机）可以从数据中学习模式（Pattern）。学习本身则基于一套数学规则和统计假设。通常来说，<strong>机器学习的目标是根据给定数据集的特征之间的统计关联开发出预测模型，然后使用此模型来预测给定输入值的输出值（或者范围），例如二元响应，分类标签或连续值。</strong>简而言之，对于感兴趣的问题（比如新基因组中基因的识别和注释），机器学习算法将学习现有注释基因组的关键属性，例如转录起始位点的构成和特定基因组区域的特性如GC含量和密码子偏好，然后利用这些知识生成一个模型，用于在给定基因组序列的基础上辨别和注释基因。对于新测序的基因组，该算法将应用从训练数据中学到的知识，对基因组某一位置的功能进行预测。机器学习的应用在生物学中变得无处不在，不仅近包括基因组注释，而且还包括对蛋白质结合的预测，癌症关键转录驱动因子的鉴定，复杂微生物群落中代谢功能的预测，和转录调控网络的表征等等。<strong>简而言之，任何可以用来学习相应的模式并应用于新数据集的任务都属于机器学习的范畴。机器学习方法一个关键的优势是可以用来筛选大量的数据以探索可能会被忽略的模式。在生物和生物医学研究的大数据时代，机器学习在发现复杂生物系统的可预测模式方面起着关键的作用。</strong>因为涉及生物学研究，所以在这篇文章中我们尽量深入的描述机器学习的相关背景知识，并探讨机器学习和网络生物学交叉的机遇，这是一个处理生物网络和大型多维数据集的研究领域。网络生物学涉及研究生物分子的复杂相互作用，该领域在生物系统建模中扮演着重要角色，辅之以跨多个多元组学程序生成的高度复杂的数据集。网络生物学涉及大规模内生生物网络（系统生物学背景）的重建和分析，以及小规模合成基因网络（合成生物学背景）的设计和构建。<strong>下面，我们将会介绍机器学习的基本概念，一般工作流程和主要的类别。</strong>这里提供了一些关于在生物研究中设计和实施机器学习方法时应该考虑的原则。文章中还包括了关于深度学习的简短讨论，这是一种越来越多的应用于医学和生物学中的下一代机器学习方法。</p><h2 id="-"><strong>机器学习基础知识</strong></h2><p><strong>机器学习方法旨在基于底层算法和给定数据集生成预测模型。机器学习算法的输入数据通常由一组样本中的“特征(features)”和“标签(labels)”组成。</strong>特征是所有样本的测量结果，无论是原始的还是经过数学变换的结果；而标签是机器学习模型旨在预测的结果—也就是模型的输出。机器学习算法也可以处理缺乏标签的数据集。如图1所示，<strong>一般的机器学习工作流程首先是处理输入数据; 第二，学习或训练基础模型（一组数学公式和统计假设，定义学习规则）; 第三，使用机器学习模型对新数据进行预测。</strong></p><figure class="kg-card kg-image-card"><img src="https://pic1.zhimg.com/v2-d3f305a5f4f976479672107df9db46b7_b.jpg" class="kg-image"><figcaption>图1. 机器学习通过构建模型来解释和分析数据集。数据包括在许多样本上测量的特征，包括基因，蛋白质，代谢物和网络边缘的量化。 基于预测任务、数据的基础属性以及数据是否被标记来选择机器学习方法。 如果数据未标记，则需要无监督的方法，例如PCA或分层聚类。 如果数据被标记，则可以应用监督方法，</figcaption></figure><p>学习过程的目的是找到最佳的一组模型参数，将输入数据中的特征转换为标签的准确预测的过程。通过一系列先后步骤找到相应的参数，其中包括参数估计，模型性能评估，错误识别和纠正，然后重复该过程。这个过程称为<strong>训练</strong>，并将不断进行，同时通过最小化模型进行误差评估，直到模型性能无法改善为止。一旦确定了最佳参数，就可以使用该模型来使用新数据进行预测。在生物学应用中，特征可以包括一种或多种类型的数据，例如基因表达谱，基因组序列，蛋白质-蛋白质相互作用，代谢物浓度或拷贝数改的变化。特征可以是连续的（例如，基因表达的数值），分类的（例如，基因功能注释）或二元的（例如基因开启或关闭）。标签，和特征一样，可以是连续的（例如生长速率），分类的（例如疾病所处的阶段）或二元的（例如致病的或非致病的）。由于标签可以是连续的或离散的，因此许多机器学习方法可以分为回归或分类任务，其中回归任务涉及连续输出变量的预测，并且分类任务涉及离散输出变量的预测。<strong>如上所述，训练机器学习模型的目标是用它来基于新数据进行预测。</strong>如果模型对训练数据以及独立数据集（例如测试数据）的预测是准确的，则可以认为该模型已经正确的进行了学习。然而，有时候给定的机器学习模型可以高精度地预测训练数据，而不能对测试数据做出准确的预测，这称为<strong>过度拟合</strong>，当模型的参数与训练数据特别匹配时，会发生这种情况，即机器学习模型不能提供在这些数据范围之外的预测能力。也有可能存在一种机器学习模型不能准确预测训练数据，这则是<strong>欠拟合</strong>的情况。<strong>过度拟合和欠适合是机器学习模型性能不佳的主要因素。前者可能出现在机器学习模型太复杂（太多可调参数）的情况下（相对于训练数据集中的样本数），而后者则发生在模型太简单时。可以通过增加训练数据集的大小和/或降低学习模型的复杂性来解决过度拟合问题，同时也可以通过增加模型的复杂性来弥补不足，避免欠拟合问题。除了训练数据的数量，输入数据的质量也是整个机器学习过程的关键</strong>。 “Garbage in, garbage out”的计算机科学谚语在机器学习中体现的非常明显。任何机器学习算法的性能均取决于用于训练模型的数据。输入数据正确的格式化，去杂化和标准化构成了学习过程关键的第一步。在有些情境下，输入数据集可能存在许多缺失值，因此不完整。处理缺失数据的方法包括直接推断缺失值（例如插补）或简单地删除缺失特征。此外，<strong>并非给定生物数据集中的每个输入要素都将为预测输出标签提供数据信息</strong>。事实上，包含不相关的特征可能会导致过度拟合，从而降低机器学习模型的性能。<strong>称为特征选择（Feature selection）的过程通常用于识别信息特征</strong>。特征选择技术的一个例子是将所有输入特征与标签相关联，并仅保留符合预定义阈值的特征。</p><h2 id="--1"><strong>机器学习方法的类别</strong></h2><p><strong>有两大类机器学习方法—即无监督学习（Unsupervised learning）和监督学习（Supervised learning）。</strong>当输入数据上的标签未知时，使用非监督方法，这些方法只能从输入数据的特征中学习相应的模式。常用的无监督方法包括<strong>主成分分析（Principle components analysis, PCA）和层次聚类（Hierarchical clustering）</strong>。无监督方法的目标是根据相似特征对数据的子集进行分组或聚类，并确定数据中存在多少个组或簇。虽然该方法可以用于识别群集或直接减少数据维度，但不会生成独立的预测模型。在实践中，当有新数据可用时，有两种选择：（1）新数据可以映射到聚类或降维空间或（2）可以再次用所有数据进行聚类或减少维度。使用这两种方法中的任何一种，都可以确定新数据与原始数据的吻合程度。<strong>无监督技术在某些情况下是有利的。</strong>例如，在样本标签丢失或不正确的情况下，由于聚类过程纯粹是在输入数据上执行，所以无监督方法仍然可以识别模式。另外，无监督方法非常适合高维输入数据的可视化。例如，通过绘制PCA的前两个主成分，人们可以在包含有数百或数千个特征的信息二维图上判断样本之间的相对距离（相似性度量）。另一方面，<strong>监督方法适用于输入数据数据包含有标签的情况。</strong>在这种情况下，标签用于训练机器学习模型，最终给出模式。受监督的方法通常与机器学习的应用相关联，因为训练的模型是预测性的; 因此，当新的输入数据变得可用时，可以直接使用训练模型进行预测。值得注意的是，无监督方法的输出可以用作监督方法的输入。例如，在层次聚类中发现的聚类可用作受监督方法的输入特征。此外，监督模型可以使用PCA的输出作为输入，并直接在缩减的特征空间而不是整套输入特征上进行训练。<strong>属于监督学习范围的两个值得注意的机器学习子类是半监督学习（Semi-supervised learners）和集成学习（Ensemble learners）</strong>。在标签不完整的情况下可以使用半监督方法，例如，仅标记少量训练数据。这在生物数据中经常发生，例如，对于一组感兴趣的基因，只有一小部分存在功能注释。利用半监督学习，标记数据被用于推断未标记数据的标签，和/或利用未标记数据获得关于训练数据集结构的信息。半监督学习的目的是超越通过忽略标签和进行无监督学习，或忽视未标记数据和进行监督学习来实现的模型的表现。另一方面，集成学习将多个独立的机器学习模型组合成一个单一的预测模型，以获得更好的预测性能。这些方法基于所有机器学习方法偏向于识别方法特异性模式的事实。因此，<strong>与单一的学习方法相比，组合多个学习策略可以产生更好的预测。</strong></p><h2 id="--2"><strong>机器学习在生物中的应用</strong></h2><p>在选择机器学习算法应用于生物学问题时，需要考虑几个因素，特别是考虑到生物数据的可变性以及用于收集数据的不同平台和方法时。<strong>由于技术和生物本身的差异，在一个数据集上训练的机器学习模型可能无法很好地推广到其他数据集。任何新的数据集应该与用于训练模型的数据的一般属性相匹配。新数据也应该使用与训练数据相同的流程进行处理。如果新数据与训练数据存在显著不同，机器学习模型的预测很可能是虚假的。</strong>与分子生物学技术非常相似，机器学习方法也是要根据特定情形才能决定的。机器学习和分子生物学实验都需要仔细的实验设计才能正确检验假设。尽管机器学习的目标是开发可以广泛应用的预测模型，但模型根据不同预测条件可能会做出不同的假设，并且其性能可能会在不同条件下发生变化。所有方法的选择都需要作出权衡; 这个概念在计算机科学中是被广泛认可的，称为“<strong>No free lunch theorem</strong>”。机器学习的性能可能受多种因素的影响，包括特征选择，用户定义的参数以及方法本身。直接证据表明这些因素是生物应用中影响机器学习性能的主要因素。这些证据可以在<em><strong>Reverse Engineering Assessment and Methodology（DREAM）Challenge</strong></em>中找到。<em>DREAM Challenge</em>旨在寻找网络生物学和医学中大数据研究问题的解决方案。以前的挑战项目包括基因组规模调控网络的推断以及使用多元数据集对药物敏感性和协同作用的预测。<strong>许多生物网络推断方法可以被定义为无监督学习，其中输入数据用于在给定一组实验数据集的情况下预测生物分子（特征，feature）之间的相互作用（边缘，edges）。第二类生物网络推理算法使用监督学习方法对新样本进行预测。此类方法在表征药物作用机制或疾病状态驱动因素方面取得了重大的成功。</strong></p><figure class="kg-card kg-image-card"><img src="https://pic2.zhimg.com/v2-d10ebd2ffd5e9b4b67d0f62d2e60e619_b.jpg" class="kg-image"><figcaption>图2. DREAM Challenge. 链接：http://dreamchallenges.org/</figcaption></figure><p>每个<em>DREAM Challenge</em>向网络生物学研究界提出一个具体问题和解决它的必要数据。这些问题需要利用计算模型（通常是机器学习方法）来解决，但对应用的模型类型没有限制。每个挑战都包含一个隐藏的评估数据集，用于评估每种方法的性能，从而提供独立的，无偏见的评估来评估不同的方法。<strong>随着几十个挑战已经完成，我们可以大致总结出三条“经验法则”，为机器学习方法在网络生物学中应用提供借鉴：</strong>     （1）<strong>“简单”通常更好（Simple is often better）</strong>：不管挑战如何，几乎可以肯定的是，一个简单的机器学习方法将成为表现最佳的模型。这些模型通常包括基于线性回归的模型（例如弹性网络），这些模型在一系列机器学习任务中表现良好，因此具有出色的起点。     （2）<strong>先验知识提高性能（Prior knowledge improves performance）</strong>：领域特定知识的应用几乎总是有助于任何预测模型。例如，使用磷酸蛋白质组学数据来对乳腺癌中的信号传导网络反向工程。信号网络中元件和相互作用的先验知识增强了机器学习预测信号相互作用的能力。     （3）<strong>集成模型产生的结果更加稳健（Ensemble models produce robust results）</strong>：在开始我们讨论过，集成模型整合来自多个独立预测方法的预测。集成模型在各种挑战中一直是最佳的模型选择，并且往往鲁棒性更高。在不同的<em>DREAM Challenge</em>中，可以看出，没有任何一种机器学习方法或一类方法总是表现最佳。因此，没有“<strong>magic bullet</strong>”方法可以最优地解决网络生物学中的所有机器学习任务。</p><h2 id="--3"><strong>深度学习：下一代机器学习</strong></h2><p>新一代测序技术对于可分析核苷酸序列的通量和速度等方面都有了显著的提升。在这里，我们使用术语“下一代”来描述正在开发中的用于处理许多领域（包括生物学和医学）中爆炸性数据的机器学习方法。我们将重点放在深度学习上，这是一种下一代机器学习方法，越来越多地被应用于应对这些数据的复杂性和数量的相关问题上。<strong>深度学习方法通常利用神经网络。最简单的神经网络架构有三层：输入层，中间或隐藏层，以及输出或预测层</strong>。输入层中的神经元将原始数据作为输入，并将信息传递给隐藏层，隐藏层使用数学函数将原始数据转换为“Representation”，帮助机器进而学习数据中的模式。输出层根据隐藏层所执行的转换重新回到分类或回归问题。此过程的目标是训练神经网络，使其学习恰当的“Representation”以准确地预测新的输入数据集的输出值。<strong>深度神经网络是一个包含多个隐藏层的神经网络；隐藏层的数量越多，神经网络越深。隐藏层被连续地连接，这样每个隐藏层可以将先前隐藏层产生的“Representation”作为输入来学习数据结构的特性。</strong>研究人员可以根据学习模型的目的定义隐藏层的数量和大小。例如，<strong>递归神经网络</strong>（recurrent neural network, RNN）将一维序列数据作为输入，例如句子中的单词或DNA序列中的碱基。 RNN具有“薄”隐藏层，通常由以线性架构连接的单个神经元组成。另一方面，<strong>卷积神经网络</strong>（convolutional neural network, CNN）处理具有两维或更多维度的数据，例如二维图像或高维多组学数据集。 CNN通常具有复杂的隐藏层，每一层隐藏层同时又具有多种神经元。<strong>深度学习的一个重要方面是这些层的行为，即他们如何转换数据可以通过机器学习而不是由研究人员定义。</strong>深层神经网络通过迭代地调整其内部参数实现预测误差的最小化，这种过程一般通过<strong>反向传播（backpropagation）</strong>实现。通过反向传播，模型输出与目标输出之间差异的误差信号被计算并通过系统反馈。然后调整神经网络每层中的参数（或权重），从而使每个神经元的误差以及整个网络的误差最小化。这个过程可以重复多次，直到模型的输出（预测）和目标输出之间的差异降低到可接受的水平。深度学习方法可以识别复杂数据集中的新模式，这些模式可能会被其他技术忽略。这是一种特别强大的生物应用工具，可以从复杂的数据集中提取最具预测性的特征。<strong>深度学习范式的一个主要缺点是训练深度神经网络需要大量的数据集</strong>，主要因为需要在深度神经网络中训练许多隐藏层，但是<strong>这些大量的数据集在许多生物学研究中往往无法实现</strong>。此外，<strong>深度学习中涉及的复杂架构和训练过程在很大程度上妨碍了人们理解深度神经网络如何进行计算和预测的过程，因为人们只能控制输入数据和模型中的一些参数（例如隐藏层的数量和大小），这可能会限制预测模型的可解释性，从而限制其用于获得对潜在生物学机制的相关研究中。</strong> 在周的推送中，我们具体讨论机器学习将如何应用于疾病生物学，药物发现，微生物组研究和合成生物学等领域，以及机器学习对于这些领域未来的影响。参考资料：Camacho, Diogo M., et al. "Next-Generation Machine Learning for Biological Networks." <em>Cell</em> (2018).</p><p><strong>END</strong></p>
-                </div>
-            </section>
-
-            <section class="subscribe-form">
-                <h3 class="subscribe-form-title">Subscribe to REGENESIS</h3>
-                <p>Get the latest posts delivered right to your inbox</p>
-                <form method="post" action="http://localhost:2368/subscribe/" id="" class="">
-    <input class="confirm" type="hidden" name="confirm"><input class="location" type="hidden" name="location"><input class="referrer" type="hidden" name="referrer">
-
-    <div class="form-group">
-        <input class="subscribe-email" type="email" name="email" placeholder="youremail@example.com">
-    </div>
-    <button id="" class="" type="submit"><span>Subscribe</span></button>
+    <div class="main-container">
     
-<script>
-    (function(g,h,o,s,t){
-        var buster = function(b,m) {
-            h[o]('input.'+b).forEach(function (i) {
-                i.value=i.value || m;
-            });
-        };
-        buster('location', g.location.href);
-        buster('referrer', h.referrer);
-    })(window,document,'querySelectorAll','value');
-</script>
-
-</form>
-
-
-            </section>
-
-            <footer class="post-full-footer">
-
-
-                    
-<section class="author-card">
-        <img class="author-profile-image" src="../content/images/2018/11/IMG_1269.JPG" alt="Fankang Meng">
-    <section class="author-card-content">
-        <h4 class="author-card-name"><a href="../author/mengfankang/">Fankang Meng</a></h4>
-            <p>Read <a href="../author/mengfankang/">more posts</a> by this author.</p>
-    </section>
-</section>
-<div class="post-full-footer-right">
-    <a class="author-card-button" href="../author/mengfankang/">Read More</a>
-</div>
-
-
-            </footer>
-
-
-        </article>
-
+        <header>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 ml-auto">
+                <div class="blog-logo">
+                    <a href="../" title="REGENESIS">
+                         <img src="../content/images/2018/11/avatar-1.png" alt="REGENESIS">  
+                    </a>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="inner">
+                    <div class="navigation">
+                        <a href="index.html#" class="navigation-trigger">
+                            <svg width="19" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="#path0_fill" transform="translate(.344 .195)"></use><defs><path id="path0_fill" d="M1.044 2.128h15.912c.577 0 1.044-.476 1.044-1.064C18 .477 17.533 0 16.956 0H1.044C.467 0 0 .477 0 1.064c0 .588.467 1.064 1.044 1.064zm15.912 4.387H1.044C.467 6.515 0 6.993 0 7.58c0 .589.467 1.064 1.044 1.064h15.912c.577 0 1.044-.475 1.044-1.064 0-.586-.467-1.064-1.044-1.064zm0 6.515H1.044C.467 13.03 0 13.508 0 14.094c0 .589.467 1.064 1.044 1.064h15.912c.577 0 1.044-.476 1.044-1.064 0-.586-.467-1.064-1.044-1.064z"></path></defs></svg>
+                        </a>
+                        <div class="navigation-popover">
+                            <a href="index.html#" class="close"></a>
+                            <nav class="nav">
+    <ul>
+            <li class="nav-home"><a href="../" title="Home">Home</a></li>
+            <li class="nav-article"><a href="../tag/synthetic-biology/" title="Article">Article</a></li>
+            <li class="nav-life"><a href="http://localhost:2368/tag/ucas-life/" title="Life">Life</a></li>
+            <li class="nav-igem"><a href="../tag/igem/" title="iGEM">iGEM</a></li>
+            <li class="nav-spacex"><a href="http://localhost:2368/tag/spacex-elonmusk/" title="SpaceX">SpaceX</a></li>
+            <li class="nav-learning"><a href="../tag/learning-everything/" title="Learning">Learning</a></li>
+            <li class="nav-author"><a href="../author/mengfankang/" title="Author">Author</a></li>
+    </ul>
+</nav>
+                        </div>
+                    </div>
+                    <div class="triggers">
+                            <div class="search">
+                                <a href="index.html#" class="search-trigger"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 56.966 56.966"><path d="M55.146 51.887L41.588 37.786A22.926 22.926 0 0 0 46.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 0 0 .083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z" fill="#fff"></path></svg></a>
+                                <div class="search-popover">
+                                    <a href="index.html#" class="close"></a>
+                                    <form>
+                                        <input id="search-field" placeholder="Search" autocomplete="off">
+                                    </form>
+                                    <div id="results" data-other="Other"></div>      
+                                </div>
+                            </div>
+                            <div class="bookmark-content">
+                                <a href="index.html#" class="bookmark"><span class="counter hidden"></span><i class="far fa-bookmark"></i><i class="fas fa-bookmark"></i></a>
+                                <div class="bookmark-popover">
+                                    <a href="index.html#" class="close"></a>
+                                    <h3>Bookmarks</h3>
+                                    <div class="bookmark-container">
+                                        <p class="no-bookmarks">You haven't yet saved any bookmarks. To bookmark a post, just click <i class="far fa-bookmark"></i>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="social-content">
+                            <a href="index.html#" class="social-trigger"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path d="M397.19 0c-50.33 0-91.278 40.947-91.278 91.278 0 50.33 40.947 91.278 91.278 91.278s91.279-40.947 91.279-91.278C488.468 40.947 447.521 0 397.19 0zm0 141.191c-27.523 0-49.913-22.391-49.913-49.913s22.391-49.913 49.913-49.913c27.523 0 49.914 22.391 49.914 49.913s-22.391 49.913-49.914 49.913zM114.809 164.722c-50.33 0-91.278 40.947-91.278 91.278s40.947 91.278 91.278 91.278S206.087 306.33 206.087 256s-40.947-91.278-91.278-91.278zm0 141.191c-27.522 0-49.913-22.391-49.913-49.913s22.391-49.913 49.913-49.913 49.913 22.391 49.913 49.913c0 27.523-22.391 49.913-49.913 49.913zM397.19 329.445c-50.33 0-91.278 40.947-91.278 91.278S346.859 512 397.19 512s91.279-40.947 91.279-91.278c-.001-50.33-40.948-91.277-91.279-91.277zm0 141.191c-27.523 0-49.913-22.39-49.913-49.913 0-27.523 22.391-49.913 49.913-49.913 27.523 0 49.914 22.39 49.914 49.913 0 27.522-22.391 49.913-49.914 49.913z" fill="#fff"></path><path d="M346.891 367.32l-160.722-93.656c-9.869-5.751-22.532-2.412-28.282 7.457-5.752 9.87-2.413 22.532 7.457 28.283l160.721 93.656a20.591 20.591 0 0 0 10.393 2.816c7.118 0 14.047-3.68 17.89-10.272 5.751-9.87 2.412-22.532-7.457-28.284zM354.105 116.386c-5.757-9.865-18.422-13.194-28.287-7.438l-160.487 93.656c-9.865 5.758-13.195 18.422-7.438 28.288 3.845 6.588 10.768 10.261 17.882 10.261 3.539 0 7.128-.91 10.405-2.823l160.486-93.656c9.867-5.758 13.197-18.423 7.439-28.288z" fill="#fff"></path></svg></a>
+                            <div class="social-popover" data-twitter="@FankangMeng">
+                                <a href="index.html#" class="close"></a>
+                                <h3>Connect with us</h3>
+                                <div class="social-container">
+                                    <ul class="social-icons">
+                                            <li><a href="https://www.facebook.com/profile.php?id=100005569278801" class="facebook" title="profile.php?id=100005569278801" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                            <li><a href="https://twitter.com/FankangMeng" class="twitter" title="@FankangMeng" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://www.youtube.com/" class="youtube" title="Youtube" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://www.instagram.com/" class="instagram" title="Instagram" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                                        <li><a href="http://localhost:2368/rss" title="RSS Feed" target="_blank"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</main>
+</header>        
+        
+    <div class="intro">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <div class="bg" style="background-image: url(../content/images/2018/11/v2-26fe4c9e520b0743cb5dc8f9578a7685_r.jpg);"></div>
+                    <div class="inner">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-9">
+                                        <ul class="tags">
+                                            <li>
+                                                <a href="../tag/synthetic-biology/" title="Synthetic Biology" class="tag tag-5be14c1c96b4716bc3475e2f synthetic-biology">Synthetic Biology</a>
+                                            </li>  
+                                            <li>
+                                                <a href="../tag/machine-learning/" title="Machine Learning" class="tag tag-5be25e69bec9610c2278d323 machine-learning">Machine Learning</a>
+                                            </li>  
+                                            <li>
+                                                <a href="../tag/artificial-intelligence/" title="Artificial Intelligence" class="tag tag-5be25e69bec9610c2278d324 artificial-intelligence">Artificial Intelligence</a>
+                                            </li>  
+                                        </ul>
+                                    <h1 class="post-title">网络生物学与机器学习（上）：什么是机器学习</h1>
+                                    <ul class="post-meta">
+                                        <li><time class="post-date" datetime="2018-11-07"><i class="fas fa-calendar-alt"></i> 07 Nov 2018</time></li>
+                                        <li><div class="post-author"><i class="fas fa-user"></i> <a href="../author/mengfankang/">Fankang Meng</a></div></li>
+                                        <li><div class="post-reading-time"><i class="fas fa-clock"></i> 22 min read</div></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </div>
+            <a href="index.html#" class="go"><i class="fas fa-angle-down"></i></a>
+        </div>
+    </div>
+    <main id="content" class="container content-inner" role="main" data-id="5be25e21bec9610c2278d31f">
+        <article class="post tag-synthetic-biology tag-machine-learning tag-artificial-intelligence row">
+            <section class="content-holder col-lg-8 col-sm-10 ml-auto mr-auto">
 
-<aside class="read-next outer">
-    <div class="inner">
-        <div class="read-next-feed">
-                <article class="read-next-card" style="background-image: url(../content/images/2018/11/0-4.jpeg)">
-                    <header class="read-next-card-header">
-                        <small class="read-next-card-header-sitetitle">— REGENESIS —</small>
-                        <h3 class="read-next-card-header-title"><a href="../tag/synthetic-biology/">Synthetic Biology</a></h3>
-                    </header>
-                    <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"></path></svg>
-</div>
-                    <div class="read-next-card-content">
+                <div class="post-content">
+                    <div class="editor-content" data-clipboard="Copy link to clipboard."><p><strong>机器学习，一种旨在从多维数据集构建可预测模型的数据分析技术，正在成为现代生物学研究不可或缺的一部分。</strong>通过对大型数据集进行学习并对生成可预测的模型，机器学习可用于研究复杂的细胞系统，如生物网络。这篇文章为生命科学领域的研究人员提供了机器学习入门的一些知识，包括深度学习的介绍。同时这篇文章还从四个方面，包括疾病生物学，药物发现，微生物组研究和合成生物学，讨论了机器学习与网络生物学交叉研究的机遇和挑战.<strong>本文为第一部分，主要介绍机器学习的入门知识，并会涉及到深度学习的介绍。在下周的推送中，我们将探讨机器学习对于疾病生物学，药物发现，微生物组研究和合成生物学等领域的影响。</strong></p><blockquote><strong>作者：Camacho, D. M., Collins, K. M., Powers, R. K., Costello, J. C., &amp; Collins, J. J翻译：孟凡康（部分内容有删改）全文约6000字，阅读时间约为15分钟</strong></blockquote><hr><p>在过去的十年中，通过对分子变量如基因，蛋白质和代谢物丰度，微生物组成和群体遗传变异等进行量化，生物学领域产生了大量高度复杂的数据集，且数据集的数量正在急剧增加。跨研究学科的研究中经常会产生PB量级的数据。例如，<em>Cancer Genome Atlas</em>从30,000多个不同癌症类型的患者身上采集的数据，总计已经超过2.5 PB。类似项目，如<em>Human Microbiome Project</em>, <em>ENCODE Project Consortium</em>, 以及<em>100,000 Genomes Project</em> 等等也正在产生大量数据。<strong>这些数据集提供了深入了解生物系统和复杂疾病所需的原材料，但如何进一步探索这些数据的价值只能通过更高层次的分析过程来实现。</strong>上面说到的项目时刻在向我们表明：处理大型异构复杂数据集的工具和技术正在变得无比重要。而<strong>机器学习，旨在帮助我们解决这一复杂问题，为我们提供下一代的分析技术，使人们能够从新的角度出发，对生命系统提出新的假设。</strong>机器学习是计算机科学中的一门学科。通过编程，机器（即计算机）可以从数据中学习模式（Pattern）。学习本身则基于一套数学规则和统计假设。通常来说，<strong>机器学习的目标是根据给定数据集的特征之间的统计关联开发出预测模型，然后使用此模型来预测给定输入值的输出值（或者范围），例如二元响应，分类标签或连续值。</strong>简而言之，对于感兴趣的问题（比如新基因组中基因的识别和注释），机器学习算法将学习现有注释基因组的关键属性，例如转录起始位点的构成和特定基因组区域的特性如GC含量和密码子偏好，然后利用这些知识生成一个模型，用于在给定基因组序列的基础上辨别和注释基因。对于新测序的基因组，该算法将应用从训练数据中学到的知识，对基因组某一位置的功能进行预测。机器学习的应用在生物学中变得无处不在，不仅近包括基因组注释，而且还包括对蛋白质结合的预测，癌症关键转录驱动因子的鉴定，复杂微生物群落中代谢功能的预测，和转录调控网络的表征等等。<strong>简而言之，任何可以用来学习相应的模式并应用于新数据集的任务都属于机器学习的范畴。机器学习方法一个关键的优势是可以用来筛选大量的数据以探索可能会被忽略的模式。在生物和生物医学研究的大数据时代，机器学习在发现复杂生物系统的可预测模式方面起着关键的作用。</strong>因为涉及生物学研究，所以在这篇文章中我们尽量深入的描述机器学习的相关背景知识，并探讨机器学习和网络生物学交叉的机遇，这是一个处理生物网络和大型多维数据集的研究领域。网络生物学涉及研究生物分子的复杂相互作用，该领域在生物系统建模中扮演着重要角色，辅之以跨多个多元组学程序生成的高度复杂的数据集。网络生物学涉及大规模内生生物网络（系统生物学背景）的重建和分析，以及小规模合成基因网络（合成生物学背景）的设计和构建。<strong>下面，我们将会介绍机器学习的基本概念，一般工作流程和主要的类别。</strong>这里提供了一些关于在生物研究中设计和实施机器学习方法时应该考虑的原则。文章中还包括了关于深度学习的简短讨论，这是一种越来越多的应用于医学和生物学中的下一代机器学习方法。</p><h2 id="-"><strong>机器学习基础知识</strong></h2><p><strong>机器学习方法旨在基于底层算法和给定数据集生成预测模型。机器学习算法的输入数据通常由一组样本中的“特征(features)”和“标签(labels)”组成。</strong>特征是所有样本的测量结果，无论是原始的还是经过数学变换的结果；而标签是机器学习模型旨在预测的结果—也就是模型的输出。机器学习算法也可以处理缺乏标签的数据集。如图1所示，<strong>一般的机器学习工作流程首先是处理输入数据; 第二，学习或训练基础模型（一组数学公式和统计假设，定义学习规则）; 第三，使用机器学习模型对新数据进行预测。</strong></p><figure class="kg-card kg-image-card"><img src="https://pic1.zhimg.com/v2-d3f305a5f4f976479672107df9db46b7_b.jpg" class="kg-image"><figcaption>图1. 机器学习通过构建模型来解释和分析数据集。数据包括在许多样本上测量的特征，包括基因，蛋白质，代谢物和网络边缘的量化。 基于预测任务、数据的基础属性以及数据是否被标记来选择机器学习方法。 如果数据未标记，则需要无监督的方法，例如PCA或分层聚类。 如果数据被标记，则可以应用监督方法，</figcaption></figure><p>学习过程的目的是找到最佳的一组模型参数，将输入数据中的特征转换为标签的准确预测的过程。通过一系列先后步骤找到相应的参数，其中包括参数估计，模型性能评估，错误识别和纠正，然后重复该过程。这个过程称为<strong>训练</strong>，并将不断进行，同时通过最小化模型进行误差评估，直到模型性能无法改善为止。一旦确定了最佳参数，就可以使用该模型来使用新数据进行预测。在生物学应用中，特征可以包括一种或多种类型的数据，例如基因表达谱，基因组序列，蛋白质-蛋白质相互作用，代谢物浓度或拷贝数改的变化。特征可以是连续的（例如，基因表达的数值），分类的（例如，基因功能注释）或二元的（例如基因开启或关闭）。标签，和特征一样，可以是连续的（例如生长速率），分类的（例如疾病所处的阶段）或二元的（例如致病的或非致病的）。由于标签可以是连续的或离散的，因此许多机器学习方法可以分为回归或分类任务，其中回归任务涉及连续输出变量的预测，并且分类任务涉及离散输出变量的预测。<strong>如上所述，训练机器学习模型的目标是用它来基于新数据进行预测。</strong>如果模型对训练数据以及独立数据集（例如测试数据）的预测是准确的，则可以认为该模型已经正确的进行了学习。然而，有时候给定的机器学习模型可以高精度地预测训练数据，而不能对测试数据做出准确的预测，这称为<strong>过度拟合</strong>，当模型的参数与训练数据特别匹配时，会发生这种情况，即机器学习模型不能提供在这些数据范围之外的预测能力。也有可能存在一种机器学习模型不能准确预测训练数据，这则是<strong>欠拟合</strong>的情况。<strong>过度拟合和欠适合是机器学习模型性能不佳的主要因素。前者可能出现在机器学习模型太复杂（太多可调参数）的情况下（相对于训练数据集中的样本数），而后者则发生在模型太简单时。可以通过增加训练数据集的大小和/或降低学习模型的复杂性来解决过度拟合问题，同时也可以通过增加模型的复杂性来弥补不足，避免欠拟合问题。除了训练数据的数量，输入数据的质量也是整个机器学习过程的关键</strong>。 “Garbage in, garbage out”的计算机科学谚语在机器学习中体现的非常明显。任何机器学习算法的性能均取决于用于训练模型的数据。输入数据正确的格式化，去杂化和标准化构成了学习过程关键的第一步。在有些情境下，输入数据集可能存在许多缺失值，因此不完整。处理缺失数据的方法包括直接推断缺失值（例如插补）或简单地删除缺失特征。此外，<strong>并非给定生物数据集中的每个输入要素都将为预测输出标签提供数据信息</strong>。事实上，包含不相关的特征可能会导致过度拟合，从而降低机器学习模型的性能。<strong>称为特征选择（Feature selection）的过程通常用于识别信息特征</strong>。特征选择技术的一个例子是将所有输入特征与标签相关联，并仅保留符合预定义阈值的特征。</p><h2 id="--1"><strong>机器学习方法的类别</strong></h2><p><strong>有两大类机器学习方法—即无监督学习（Unsupervised learning）和监督学习（Supervised learning）。</strong>当输入数据上的标签未知时，使用非监督方法，这些方法只能从输入数据的特征中学习相应的模式。常用的无监督方法包括<strong>主成分分析（Principle components analysis, PCA）和层次聚类（Hierarchical clustering）</strong>。无监督方法的目标是根据相似特征对数据的子集进行分组或聚类，并确定数据中存在多少个组或簇。虽然该方法可以用于识别群集或直接减少数据维度，但不会生成独立的预测模型。在实践中，当有新数据可用时，有两种选择：（1）新数据可以映射到聚类或降维空间或（2）可以再次用所有数据进行聚类或减少维度。使用这两种方法中的任何一种，都可以确定新数据与原始数据的吻合程度。<strong>无监督技术在某些情况下是有利的。</strong>例如，在样本标签丢失或不正确的情况下，由于聚类过程纯粹是在输入数据上执行，所以无监督方法仍然可以识别模式。另外，无监督方法非常适合高维输入数据的可视化。例如，通过绘制PCA的前两个主成分，人们可以在包含有数百或数千个特征的信息二维图上判断样本之间的相对距离（相似性度量）。另一方面，<strong>监督方法适用于输入数据数据包含有标签的情况。</strong>在这种情况下，标签用于训练机器学习模型，最终给出模式。受监督的方法通常与机器学习的应用相关联，因为训练的模型是预测性的; 因此，当新的输入数据变得可用时，可以直接使用训练模型进行预测。值得注意的是，无监督方法的输出可以用作监督方法的输入。例如，在层次聚类中发现的聚类可用作受监督方法的输入特征。此外，监督模型可以使用PCA的输出作为输入，并直接在缩减的特征空间而不是整套输入特征上进行训练。<strong>属于监督学习范围的两个值得注意的机器学习子类是半监督学习（Semi-supervised learners）和集成学习（Ensemble learners）</strong>。在标签不完整的情况下可以使用半监督方法，例如，仅标记少量训练数据。这在生物数据中经常发生，例如，对于一组感兴趣的基因，只有一小部分存在功能注释。利用半监督学习，标记数据被用于推断未标记数据的标签，和/或利用未标记数据获得关于训练数据集结构的信息。半监督学习的目的是超越通过忽略标签和进行无监督学习，或忽视未标记数据和进行监督学习来实现的模型的表现。另一方面，集成学习将多个独立的机器学习模型组合成一个单一的预测模型，以获得更好的预测性能。这些方法基于所有机器学习方法偏向于识别方法特异性模式的事实。因此，<strong>与单一的学习方法相比，组合多个学习策略可以产生更好的预测。</strong></p><h2 id="--2"><strong>机器学习在生物中的应用</strong></h2><p>在选择机器学习算法应用于生物学问题时，需要考虑几个因素，特别是考虑到生物数据的可变性以及用于收集数据的不同平台和方法时。<strong>由于技术和生物本身的差异，在一个数据集上训练的机器学习模型可能无法很好地推广到其他数据集。任何新的数据集应该与用于训练模型的数据的一般属性相匹配。新数据也应该使用与训练数据相同的流程进行处理。如果新数据与训练数据存在显著不同，机器学习模型的预测很可能是虚假的。</strong>与分子生物学技术非常相似，机器学习方法也是要根据特定情形才能决定的。机器学习和分子生物学实验都需要仔细的实验设计才能正确检验假设。尽管机器学习的目标是开发可以广泛应用的预测模型，但模型根据不同预测条件可能会做出不同的假设，并且其性能可能会在不同条件下发生变化。所有方法的选择都需要作出权衡; 这个概念在计算机科学中是被广泛认可的，称为“<strong>No free lunch theorem</strong>”。机器学习的性能可能受多种因素的影响，包括特征选择，用户定义的参数以及方法本身。直接证据表明这些因素是生物应用中影响机器学习性能的主要因素。这些证据可以在<em><strong>Reverse Engineering Assessment and Methodology（DREAM）Challenge</strong></em>中找到。<em>DREAM Challenge</em>旨在寻找网络生物学和医学中大数据研究问题的解决方案。以前的挑战项目包括基因组规模调控网络的推断以及使用多元数据集对药物敏感性和协同作用的预测。<strong>许多生物网络推断方法可以被定义为无监督学习，其中输入数据用于在给定一组实验数据集的情况下预测生物分子（特征，feature）之间的相互作用（边缘，edges）。第二类生物网络推理算法使用监督学习方法对新样本进行预测。此类方法在表征药物作用机制或疾病状态驱动因素方面取得了重大的成功。</strong></p><figure class="kg-card kg-image-card"><img src="https://pic2.zhimg.com/v2-d10ebd2ffd5e9b4b67d0f62d2e60e619_b.jpg" class="kg-image"><figcaption>图2. DREAM Challenge. 链接：http://dreamchallenges.org/</figcaption></figure><p>每个<em>DREAM Challenge</em>向网络生物学研究界提出一个具体问题和解决它的必要数据。这些问题需要利用计算模型（通常是机器学习方法）来解决，但对应用的模型类型没有限制。每个挑战都包含一个隐藏的评估数据集，用于评估每种方法的性能，从而提供独立的，无偏见的评估来评估不同的方法。<strong>随着几十个挑战已经完成，我们可以大致总结出三条“经验法则”，为机器学习方法在网络生物学中应用提供借鉴：</strong>     （1）<strong>“简单”通常更好（Simple is often better）</strong>：不管挑战如何，几乎可以肯定的是，一个简单的机器学习方法将成为表现最佳的模型。这些模型通常包括基于线性回归的模型（例如弹性网络），这些模型在一系列机器学习任务中表现良好，因此具有出色的起点。     （2）<strong>先验知识提高性能（Prior knowledge improves performance）</strong>：领域特定知识的应用几乎总是有助于任何预测模型。例如，使用磷酸蛋白质组学数据来对乳腺癌中的信号传导网络反向工程。信号网络中元件和相互作用的先验知识增强了机器学习预测信号相互作用的能力。     （3）<strong>集成模型产生的结果更加稳健（Ensemble models produce robust results）</strong>：在开始我们讨论过，集成模型整合来自多个独立预测方法的预测。集成模型在各种挑战中一直是最佳的模型选择，并且往往鲁棒性更高。在不同的<em>DREAM Challenge</em>中，可以看出，没有任何一种机器学习方法或一类方法总是表现最佳。因此，没有“<strong>magic bullet</strong>”方法可以最优地解决网络生物学中的所有机器学习任务。</p><h2 id="--3"><strong>深度学习：下一代机器学习</strong></h2><p>新一代测序技术对于可分析核苷酸序列的通量和速度等方面都有了显著的提升。在这里，我们使用术语“下一代”来描述正在开发中的用于处理许多领域（包括生物学和医学）中爆炸性数据的机器学习方法。我们将重点放在深度学习上，这是一种下一代机器学习方法，越来越多地被应用于应对这些数据的复杂性和数量的相关问题上。<strong>深度学习方法通常利用神经网络。最简单的神经网络架构有三层：输入层，中间或隐藏层，以及输出或预测层</strong>。输入层中的神经元将原始数据作为输入，并将信息传递给隐藏层，隐藏层使用数学函数将原始数据转换为“Representation”，帮助机器进而学习数据中的模式。输出层根据隐藏层所执行的转换重新回到分类或回归问题。此过程的目标是训练神经网络，使其学习恰当的“Representation”以准确地预测新的输入数据集的输出值。<strong>深度神经网络是一个包含多个隐藏层的神经网络；隐藏层的数量越多，神经网络越深。隐藏层被连续地连接，这样每个隐藏层可以将先前隐藏层产生的“Representation”作为输入来学习数据结构的特性。</strong>研究人员可以根据学习模型的目的定义隐藏层的数量和大小。例如，<strong>递归神经网络</strong>（recurrent neural network, RNN）将一维序列数据作为输入，例如句子中的单词或DNA序列中的碱基。 RNN具有“薄”隐藏层，通常由以线性架构连接的单个神经元组成。另一方面，<strong>卷积神经网络</strong>（convolutional neural network, CNN）处理具有两维或更多维度的数据，例如二维图像或高维多组学数据集。 CNN通常具有复杂的隐藏层，每一层隐藏层同时又具有多种神经元。<strong>深度学习的一个重要方面是这些层的行为，即他们如何转换数据可以通过机器学习而不是由研究人员定义。</strong>深层神经网络通过迭代地调整其内部参数实现预测误差的最小化，这种过程一般通过<strong>反向传播（backpropagation）</strong>实现。通过反向传播，模型输出与目标输出之间差异的误差信号被计算并通过系统反馈。然后调整神经网络每层中的参数（或权重），从而使每个神经元的误差以及整个网络的误差最小化。这个过程可以重复多次，直到模型的输出（预测）和目标输出之间的差异降低到可接受的水平。深度学习方法可以识别复杂数据集中的新模式，这些模式可能会被其他技术忽略。这是一种特别强大的生物应用工具，可以从复杂的数据集中提取最具预测性的特征。<strong>深度学习范式的一个主要缺点是训练深度神经网络需要大量的数据集</strong>，主要因为需要在深度神经网络中训练许多隐藏层，但是<strong>这些大量的数据集在许多生物学研究中往往无法实现</strong>。此外，<strong>深度学习中涉及的复杂架构和训练过程在很大程度上妨碍了人们理解深度神经网络如何进行计算和预测的过程，因为人们只能控制输入数据和模型中的一些参数（例如隐藏层的数量和大小），这可能会限制预测模型的可解释性，从而限制其用于获得对潜在生物学机制的相关研究中。</strong> 在周的推送中，我们具体讨论机器学习将如何应用于疾病生物学，药物发现，微生物组研究和合成生物学等领域，以及机器学习对于这些领域未来的影响。参考资料：Camacho, Diogo M., et al. "Next-Generation Machine Learning for Biological Networks." <em>Cell</em> (2018).</p><p><strong>END</strong></p></div>
+                    
+                        <ul class="tags">
+                            <li>
+                                <a href="../tag/synthetic-biology/" title="Synthetic Biology" class="tag tag-5be14c1c96b4716bc3475e2f synthetic-biology">Synthetic Biology</a>
+                            </li>  
+                            <li>
+                                <a href="../tag/machine-learning/" title="Machine Learning" class="tag tag-5be25e69bec9610c2278d323 machine-learning">Machine Learning</a>
+                            </li>  
+                            <li>
+                                <a href="../tag/artificial-intelligence/" title="Artificial Intelligence" class="tag tag-5be25e69bec9610c2278d324 artificial-intelligence">Artificial Intelligence</a>
+                            </li>  
+                        </ul>
+
+                    <div class="share">
+                        <a href="index.html#" class="trigger-share"><i class="fas fa-share-alt"></i></a>
                         <ul>
-                            <li><a href="../zhe-shi-yi-chang-quan-qiu-he-cheng-sheng-wu-xue-ling-yu-de-kuang-huan-guo-ji-yi-chuan-gong-cheng-ji-qi-da-sai-ji-jiang-kai-mu/">这是一场全球合成生物学领域的狂欢！</a></li>
-                            <li><a href="../wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-xia-ji-qi-xue-xi-jiang-ru-he-zhu-li-wang-luo-sheng-wu-xue/">网络生物学与机器学习（下）：机器学习将如何助力网络生物学？</a></li>
-                            <li><a href="../ru-he-xiang-liu-lan-peng-you-quan-yi-yang-liao-jie-zui-xin-de-wen-xian/">如何像浏览朋友圈一样了解最新的文献？</a></li>
+                            <li><a href="https://twitter.com/share?text=%E7%BD%91%E7%BB%9C%E7%94%9F%E7%89%A9%E5%AD%A6%E4%B8%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%8A%EF%BC%89%EF%BC%9A%E4%BB%80%E4%B9%88%E6%98%AF%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0&amp;url=http://localhost:2368/wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-shang-shi-yao-shi-ji-qi-xue-xi/" onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;" data-toggle="tooltip" data-placement="right" title="Share on Twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-shang-shi-yao-shi-ji-qi-xue-xi/" onclick="window.open(this.href, 'share-facebook', 'width=580,height=296');return false;" data-toggle="tooltip" data-placement="right" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://plus.google.com/share?url=http://localhost:2368/wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-shang-shi-yao-shi-ji-qi-xue-xi/" onclick="window.open(this.href, 'share-google-plus', 'width=400,height=466');return false;" data-toggle="tooltip" data-placement="right" title="Share on Google+"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a href="https://www.reddit.com/submit?url=http://localhost:2368/wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-shang-shi-yao-shi-ji-qi-xue-xi/" target="_blank" data-toggle="tooltip" data-placement="right" title="Share on Reddit"><i class="fab fa-reddit-alien"></i></a></li>
+                            <li><a href="mailto:?subject=REGENESIS%20-%20%E7%BD%91%E7%BB%9C%E7%94%9F%E7%89%A9%E5%AD%A6%E4%B8%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%8A%EF%BC%89%EF%BC%9A%E4%BB%80%E4%B9%88%E6%98%AF%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0&amp;body=http://localhost:2368/wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-shang-shi-yao-shi-ji-qi-xue-xi/" data-toggle="tooltip" data-placement="right" title="Share by Email"><i class="fas fa-envelope"></i></a></li>
                         </ul>
                     </div>
-                    <footer class="read-next-card-footer">
-                        <a href="../tag/synthetic-biology/">See all 8 posts →</a>
-                    </footer>
-                </article>
-
-                <article class="post-card post tag-synthetic-biology tag-machine-learning tag-artificial-intelligence">
-        <a class="post-card-image-link" href="../wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-xia-ji-qi-xue-xi-jiang-ru-he-zhu-li-wang-luo-sheng-wu-xue/">
-            <div class="post-card-image" style="background-image: url(../content/images/2018/11/v2-263e80b123fd73d8598ae01262273b12_r.jpg)"></div>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="../wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-xia-ji-qi-xue-xi-jiang-ru-he-zhu-li-wang-luo-sheng-wu-xue/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Synthetic Biology</span>
-                <h2 class="post-card-title">网络生物学与机器学习（下）：机器学习将如何助力网络生物学？</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>本文为第二部分，主要从四个方面，包括疾病生物学，药物发现，微生物组研究和合成生物学，讨论机器学习与网络生物学交叉研究的机遇和挑战。</p>
+                    
+                </div>
             </section>
-        </a>
-        <footer class="post-card-meta">
+        </article>
+    </main>
 
-            <ul class="author-list">
-                <li class="author-list-item">
-
-                    <div class="author-name-tooltip">
-                        Fankang Meng
-                    </div>
-
-                        <a href="../author/mengfankang/" class="static-avatar"><img class="author-profile-image" src="../content/images/2018/11/IMG_1269.JPG" alt="Fankang Meng"></a>
-                </li>
-            </ul>
-
-            <span class="reading-time">24 min read</span>
-
-        </footer>
-    </div>
-</article>
-
-                <article class="post-card post tag-synthetic-biology tag-reading tag-papers tag-software">
-        <a class="post-card-image-link" href="../ru-he-xiang-liu-lan-peng-you-quan-yi-yang-liao-jie-zui-xin-de-wen-xian/">
-            <div class="post-card-image" style="background-image: url(../content/images/2018/11/v2-b8db452a74af7a171d8c029c56415307_r.jpg)"></div>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="../ru-he-xiang-liu-lan-peng-you-quan-yi-yang-liao-jie-zui-xin-de-wen-xian/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Synthetic Biology</span>
-                <h2 class="post-card-title">如何像浏览朋友圈一样了解最新的文献？</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>如何把握科研前言的最新动态？想必这是所有研究人员都在思考的问题。同时在这个信息爆炸的时代，如何对纷繁复杂的科研信息进行过滤，高效的了解最关键的信息也是我们关心的。</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-
-            <ul class="author-list">
-                <li class="author-list-item">
-
-                    <div class="author-name-tooltip">
-                        Fankang Meng
-                    </div>
-
-                        <a href="../author/mengfankang/" class="static-avatar"><img class="author-profile-image" src="../content/images/2018/11/IMG_1269.JPG" alt="Fankang Meng"></a>
-                </li>
-            </ul>
-
-            <span class="reading-time">5 min read</span>
-
-        </footer>
-    </div>
-</article>
-
-        </div>
-    </div>
-</aside>
-
-<div class="floating-header">
-    <div class="floating-header-logo">
-        <a href="../">
-                <img src="../content/images/2018/11/0.png" alt="REGENESIS icon">
-            <span>REGENESIS</span>
-        </a>
-    </div>
-    <span class="floating-header-divider">—</span>
-    <div class="floating-header-title">网络生物学与机器学习（上）：什么是机器学习</div>
-    <div class="floating-header-share">
-        <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
-    <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"></path>
-</svg>
-</div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=%E7%BD%91%E7%BB%9C%E7%94%9F%E7%89%A9%E5%AD%A6%E4%B8%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%8A%EF%BC%89%EF%BC%9A%E4%BB%80%E4%B9%88%E6%98%AF%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0&amp;url=http://localhost:2368/wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-shang-shi-yao-shi-ji-qi-xue-xi/" onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
-            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"></path></svg>
-        </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-shang-shi-yao-shi-ji-qi-xue-xi/" onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
-            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"></path></svg>
-        </a>
-    </div>
-    <progress id="reading-progress" class="progress" value="0">
-        <div class="progress-container">
-            <span class="progress-bar"></span>
-        </div>
-    </progress>
-</div>
-
-
-
-
-        <footer class="site-footer outer">
-            <div class="site-footer-content inner">
-                <section class="copyright"><a href="../">REGENESIS</a> © 2018</section>
-                <nav class="site-footer-nav">
-                    <a href="../">Latest Posts</a>
-                    <a href="https://www.facebook.com/profile.php?id=100005569278801" target="_blank" rel="noopener">Facebook</a>
-                    <a href="https://twitter.com/FankangMeng" target="_blank" rel="noopener">Twitter</a>
-                    <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
-                </nav>
+    <div class="comments container">
+        <div class="row">
+            <div class="col-lg-8 col-sm-10 mr-auto ml-auto">
+                <h3>Comments</h3>
+                <a href="index.html#" class="comments-trigger">
+                    <i class="fas fa-comments"></i> Write a comment ...
+                </a>
+                <div class="comments-inner"></div>
             </div>
-        </footer>
-
+        </div>
     </div>
 
-    <div id="subscribe" class="subscribe-overlay">
-        <a class="subscribe-overlay-close" href="index.html#"></a>
-        <div class="subscribe-overlay-content">
-                <img class="subscribe-overlay-logo" src="../content/images/2018/11/avatar-1.png" alt="REGENESIS">
-            <h1 class="subscribe-overlay-title">Subscribe to REGENESIS</h1>
-            <p class="subscribe-overlay-description">Stay up to date! Get all the latest &amp; greatest posts delivered straight to your inbox</p>
-            <form method="post" action="http://localhost:2368/subscribe/" id="" class="">
+                <div class="related-posts">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 col-sm-10 mr-auto ml-auto">
+                                <h3>Related posts</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="swiper-button-prev" title="Previous post"></div>
+                        <div class="swiper-button-next" title="Next post"></div>
+                        <div class="swiper-wrapper loop">
+                                <div class="swiper-slide">
+                                    <article class="post tag-synthetic-biology tag-machine-learning tag-artificial-intelligence">
+        <a href="../wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-xia-ji-qi-xue-xi-jiang-ru-he-zhu-li-wang-luo-sheng-wu-xue/" title="网络生物学与机器学习（下）：机器学习将如何助力网络生物学？" class="img-holder">
+            <img src="../content/images/2018/11/v2-263e80b123fd73d8598ae01262273b12_r.jpg" alt="网络生物学与机器学习（下）：机器学习将如何助力网络生物学？">
+        </a>
+    <div class="inner">
+            <ul class="tags">
+                <li>
+                    <a href="../tag/synthetic-biology/" title="Synthetic Biology" class="tag tag-5be14c1c96b4716bc3475e2f synthetic-biology">Synthetic Biology</a>
+                </li>  
+                <li>
+                    <a href="../tag/machine-learning/" title="Machine Learning" class="tag tag-5be25e69bec9610c2278d323 machine-learning">Machine Learning</a>
+                </li>  
+                <li>
+                    <a href="../tag/artificial-intelligence/" title="Artificial Intelligence" class="tag tag-5be25e69bec9610c2278d324 artificial-intelligence">Artificial Intelligence</a>
+                </li>  
+            </ul>
+        <h2 class="post-title"><a href="../wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-xia-ji-qi-xue-xi-jiang-ru-he-zhu-li-wang-luo-sheng-wu-xue/" title="网络生物学与机器学习（下）：机器学习将如何助力网络生物学？">网络生物学与机器学习（下）：机器学习将如何助力网络生物学？</a></h2>
+        <p class="excerpt">本文为第二部分，主要从四个方面，包括疾病生物学，药物发现，微生物组研究和合成生物学，讨论机器学习与网络生物学交叉研究的机遇和挑战。 ... <a class="read-more" href="../wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-xia-ji-qi-xue-xi-jiang-ru-he-zhu-li-wang-luo-sheng-wu-xue/" title="网络生物学与机器学习（下）：机器学习将如何助力网络生物学？">read more</a></p>
+        <ul class="post-meta">
+            <li><time class="post-date" datetime="2018-11-07"><i class="fas fa-calendar-alt"></i> 07 Nov 2018</time></li>
+            <li><div class="post-author"><i class="fas fa-user"></i> <a href="../author/mengfankang/">Fankang Meng</a></div></li>
+            <li><div class="post-reading-time"><i class="fas fa-clock"></i> 24 min read</div></li>
+            <li class="share">
+                <a href="index.html#" class="trigger-share"><i class="fas fa-share-alt"></i></a>
+                <ul>
+                    <li><a href="https://twitter.com/share?text=%E7%BD%91%E7%BB%9C%E7%94%9F%E7%89%A9%E5%AD%A6%E4%B8%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%8B%EF%BC%89%EF%BC%9A%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B0%86%E5%A6%82%E4%BD%95%E5%8A%A9%E5%8A%9B%E7%BD%91%E7%BB%9C%E7%94%9F%E7%89%A9%E5%AD%A6%EF%BC%9F&amp;url=http://localhost:2368/wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-xia-ji-qi-xue-xi-jiang-ru-he-zhu-li-wang-luo-sheng-wu-xue/" onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;" data-toggle="tooltip" data-placement="right" title="Share on Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-xia-ji-qi-xue-xi-jiang-ru-he-zhu-li-wang-luo-sheng-wu-xue/" onclick="window.open(this.href, 'share-facebook', 'width=580,height=296');return false;" data-toggle="tooltip" data-placement="right" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://plus.google.com/share?url=http://localhost:2368/wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-xia-ji-qi-xue-xi-jiang-ru-he-zhu-li-wang-luo-sheng-wu-xue/" onclick="window.open(this.href, 'share-google-plus', 'width=400,height=466');return false;" data-toggle="tooltip" data-placement="right" title="Share on Google+"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="https://www.reddit.com/submit?url=http://localhost:2368/wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-xia-ji-qi-xue-xi-jiang-ru-he-zhu-li-wang-luo-sheng-wu-xue/" target="_blank" data-toggle="tooltip" data-placement="right" title="Share on Reddit"><i class="fab fa-reddit-alien"></i></a></li>
+                    <li><a href="mailto:?subject=REGENESIS%20-%20%E7%BD%91%E7%BB%9C%E7%94%9F%E7%89%A9%E5%AD%A6%E4%B8%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%8B%EF%BC%89%EF%BC%9A%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B0%86%E5%A6%82%E4%BD%95%E5%8A%A9%E5%8A%9B%E7%BD%91%E7%BB%9C%E7%94%9F%E7%89%A9%E5%AD%A6%EF%BC%9F&amp;body=http://localhost:2368/wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-xia-ji-qi-xue-xi-jiang-ru-he-zhu-li-wang-luo-sheng-wu-xue/" data-toggle="tooltip" data-placement="right" title="Share by Email"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+            </li>
+        </ul>
+        <a href="index.html#" class="read-later" data-id="5be25eb3bec9610c2278d328"><i class="far fa-bookmark" data-toggle="tooltip" data-placement="right" title="Bookmark article"></i><i class="fas fa-bookmark" data-toggle="tooltip" data-placement="right" title="Remove bookmark"></i></a>
+    </div>
+</article>                                </div>
+                                <div class="swiper-slide">
+                                    <article class="post tag-synthetic-biology tag-reading tag-papers tag-software">
+        <a href="../ru-he-xiang-liu-lan-peng-you-quan-yi-yang-liao-jie-zui-xin-de-wen-xian/" title="如何像浏览朋友圈一样了解最新的文献？" class="img-holder">
+            <img src="../content/images/2018/11/v2-b8db452a74af7a171d8c029c56415307_r.jpg" alt="如何像浏览朋友圈一样了解最新的文献？">
+        </a>
+    <div class="inner">
+            <ul class="tags">
+                <li>
+                    <a href="../tag/synthetic-biology/" title="Synthetic Biology" class="tag tag-5be14c1c96b4716bc3475e2f synthetic-biology">Synthetic Biology</a>
+                </li>  
+                <li>
+                    <a href="../tag/reading/" title="Reading" class="tag tag-5be25ababec9610c2278d318 reading">Reading</a>
+                </li>  
+                <li>
+                    <a href="../tag/papers/" title="Papers" class="tag tag-5be25ababec9610c2278d319 papers">Papers</a>
+                </li>  
+                <li>
+                    <a href="../tag/software/" title="software" class="tag tag-5be25ababec9610c2278d31a software">software</a>
+                </li>  
+            </ul>
+        <h2 class="post-title"><a href="../ru-he-xiang-liu-lan-peng-you-quan-yi-yang-liao-jie-zui-xin-de-wen-xian/" title="如何像浏览朋友圈一样了解最新的文献？">如何像浏览朋友圈一样了解最新的文献？</a></h2>
+        <p class="excerpt">如何把握科研前言的最新动态？想必这是所有研究人员都在思考的问题。同时在这个信息爆炸的时代，如何对纷繁复杂的科研信息进行过滤，高效的了解最关键的信息也是我们关心的。 ... <a class="read-more" href="../ru-he-xiang-liu-lan-peng-you-quan-yi-yang-liao-jie-zui-xin-de-wen-xian/" title="如何像浏览朋友圈一样了解最新的文献？">read more</a></p>
+        <ul class="post-meta">
+            <li><time class="post-date" datetime="2018-11-07"><i class="fas fa-calendar-alt"></i> 07 Nov 2018</time></li>
+            <li><div class="post-author"><i class="fas fa-user"></i> <a href="../author/mengfankang/">Fankang Meng</a></div></li>
+            <li><div class="post-reading-time"><i class="fas fa-clock"></i> 5 min read</div></li>
+            <li class="share">
+                <a href="index.html#" class="trigger-share"><i class="fas fa-share-alt"></i></a>
+                <ul>
+                    <li><a href="https://twitter.com/share?text=%E5%A6%82%E4%BD%95%E5%83%8F%E6%B5%8F%E8%A7%88%E6%9C%8B%E5%8F%8B%E5%9C%88%E4%B8%80%E6%A0%B7%E4%BA%86%E8%A7%A3%E6%9C%80%E6%96%B0%E7%9A%84%E6%96%87%E7%8C%AE%EF%BC%9F&amp;url=http://localhost:2368/ru-he-xiang-liu-lan-peng-you-quan-yi-yang-liao-jie-zui-xin-de-wen-xian/" onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;" data-toggle="tooltip" data-placement="right" title="Share on Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/ru-he-xiang-liu-lan-peng-you-quan-yi-yang-liao-jie-zui-xin-de-wen-xian/" onclick="window.open(this.href, 'share-facebook', 'width=580,height=296');return false;" data-toggle="tooltip" data-placement="right" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://plus.google.com/share?url=http://localhost:2368/ru-he-xiang-liu-lan-peng-you-quan-yi-yang-liao-jie-zui-xin-de-wen-xian/" onclick="window.open(this.href, 'share-google-plus', 'width=400,height=466');return false;" data-toggle="tooltip" data-placement="right" title="Share on Google+"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="https://www.reddit.com/submit?url=http://localhost:2368/ru-he-xiang-liu-lan-peng-you-quan-yi-yang-liao-jie-zui-xin-de-wen-xian/" target="_blank" data-toggle="tooltip" data-placement="right" title="Share on Reddit"><i class="fab fa-reddit-alien"></i></a></li>
+                    <li><a href="mailto:?subject=REGENESIS%20-%20%E5%A6%82%E4%BD%95%E5%83%8F%E6%B5%8F%E8%A7%88%E6%9C%8B%E5%8F%8B%E5%9C%88%E4%B8%80%E6%A0%B7%E4%BA%86%E8%A7%A3%E6%9C%80%E6%96%B0%E7%9A%84%E6%96%87%E7%8C%AE%EF%BC%9F&amp;body=http://localhost:2368/ru-he-xiang-liu-lan-peng-you-quan-yi-yang-liao-jie-zui-xin-de-wen-xian/" data-toggle="tooltip" data-placement="right" title="Share by Email"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+            </li>
+        </ul>
+        <a href="index.html#" class="read-later" data-id="5be25a6fbec9610c2278d314"><i class="far fa-bookmark" data-toggle="tooltip" data-placement="right" title="Bookmark article"></i><i class="fas fa-bookmark" data-toggle="tooltip" data-placement="right" title="Remove bookmark"></i></a>
+    </div>
+</article>                                </div>
+                                <div class="swiper-slide">
+                                    <article class="post tag-synthetic-biology">
+        <a href="../zao-wu-jiu-lu-ru-he-wu-zhong-sheng-you/" title="造物九律：如何无中生有" class="img-holder">
+            <img src="../content/images/2018/11/v2-474d21558d213a4338620c3f378160f2_1200x500.jpg" alt="造物九律：如何无中生有">
+        </a>
+    <div class="inner">
+            <ul class="tags">
+                <li>
+                    <a href="../tag/synthetic-biology/" title="Synthetic Biology" class="tag tag-5be14c1c96b4716bc3475e2f synthetic-biology">Synthetic Biology</a>
+                </li>  
+            </ul>
+        <h2 class="post-title"><a href="../zao-wu-jiu-lu-ru-he-wu-zhong-sheng-you/" title="造物九律：如何无中生有">造物九律：如何无中生有</a></h2>
+        <p class="excerpt">大自然从无创造了有。  先是一颗坚硬的岩石星球，然后是生命，许许多多的生命；先是贫瘠的荒山，然后是点缀着鱼和香蒲、还有红翅黑鹂的山涧；先是橡子，然后是一片橡树林。 ... <a class="read-more" href="../zao-wu-jiu-lu-ru-he-wu-zhong-sheng-you/" title="造物九律：如何无中生有">read more</a></p>
+        <ul class="post-meta">
+            <li><time class="post-date" datetime="2018-11-07"><i class="fas fa-calendar-alt"></i> 07 Nov 2018</time></li>
+            <li><div class="post-author"><i class="fas fa-user"></i> <a href="../author/mengfankang/">Fankang Meng</a></div></li>
+            <li><div class="post-reading-time"><i class="fas fa-clock"></i> 12 min read</div></li>
+            <li class="share">
+                <a href="index.html#" class="trigger-share"><i class="fas fa-share-alt"></i></a>
+                <ul>
+                    <li><a href="https://twitter.com/share?text=%E9%80%A0%E7%89%A9%E4%B9%9D%E5%BE%8B%EF%BC%9A%E5%A6%82%E4%BD%95%E6%97%A0%E4%B8%AD%E7%94%9F%E6%9C%89&amp;url=http://localhost:2368/zao-wu-jiu-lu-ru-he-wu-zhong-sheng-you/" onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;" data-toggle="tooltip" data-placement="right" title="Share on Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/zao-wu-jiu-lu-ru-he-wu-zhong-sheng-you/" onclick="window.open(this.href, 'share-facebook', 'width=580,height=296');return false;" data-toggle="tooltip" data-placement="right" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://plus.google.com/share?url=http://localhost:2368/zao-wu-jiu-lu-ru-he-wu-zhong-sheng-you/" onclick="window.open(this.href, 'share-google-plus', 'width=400,height=466');return false;" data-toggle="tooltip" data-placement="right" title="Share on Google+"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="https://www.reddit.com/submit?url=http://localhost:2368/zao-wu-jiu-lu-ru-he-wu-zhong-sheng-you/" target="_blank" data-toggle="tooltip" data-placement="right" title="Share on Reddit"><i class="fab fa-reddit-alien"></i></a></li>
+                    <li><a href="mailto:?subject=REGENESIS%20-%20%E9%80%A0%E7%89%A9%E4%B9%9D%E5%BE%8B%EF%BC%9A%E5%A6%82%E4%BD%95%E6%97%A0%E4%B8%AD%E7%94%9F%E6%9C%89&amp;body=http://localhost:2368/zao-wu-jiu-lu-ru-he-wu-zhong-sheng-you/" data-toggle="tooltip" data-placement="right" title="Share by Email"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+            </li>
+        </ul>
+        <a href="index.html#" class="read-later" data-id="5be259a9bec9610c2278d30f"><i class="far fa-bookmark" data-toggle="tooltip" data-placement="right" title="Bookmark article"></i><i class="fas fa-bookmark" data-toggle="tooltip" data-placement="right" title="Remove bookmark"></i></a>
+    </div>
+</article>                                </div>
+                                <div class="swiper-slide">
+                                    <article class="post tag-synthetic-biology">
+        <a href="../welcome-4/" title="合成生物学的现在与未来丨国科大中学生夏令营科普演讲" class="img-holder">
+            <img src="../content/images/2018/11/guokeda.jpg" alt="合成生物学的现在与未来丨国科大中学生夏令营科普演讲">
+        </a>
+    <div class="inner">
+            <ul class="tags">
+                <li>
+                    <a href="../tag/synthetic-biology/" title="Synthetic Biology" class="tag tag-5be14c1c96b4716bc3475e2f synthetic-biology">Synthetic Biology</a>
+                </li>  
+            </ul>
+        <h2 class="post-title"><a href="../welcome-4/" title="合成生物学的现在与未来丨国科大中学生夏令营科普演讲">合成生物学的现在与未来丨国科大中学生夏令营科普演讲</a></h2>
+        <p class="excerpt">作为一名年轻的研究生，在这里，我想说一点对大家的期望，我想这些话也是对我说的。 首先，我希望你们在未来的科学研究中能够不断主动拓宽自己的视野，作为世界科学领域的储备力量，我想我们应该通过研究来为人类、社会以及整个世界的问题提供一个解决方案。 ... <a class="read-more" href="../welcome-4/" title="合成生物学的现在与未来丨国科大中学生夏令营科普演讲">read more</a></p>
+        <ul class="post-meta">
+            <li><time class="post-date" datetime="2018-11-06"><i class="fas fa-calendar-alt"></i> 06 Nov 2018</time></li>
+            <li><div class="post-author"><i class="fas fa-user"></i> <a href="../author/mengfankang/">Fankang Meng</a></div></li>
+            <li><div class="post-reading-time"><i class="fas fa-clock"></i> 32 min read</div></li>
+            <li class="share">
+                <a href="index.html#" class="trigger-share"><i class="fas fa-share-alt"></i></a>
+                <ul>
+                    <li><a href="https://twitter.com/share?text=%E5%90%88%E6%88%90%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9A%84%E7%8E%B0%E5%9C%A8%E4%B8%8E%E6%9C%AA%E6%9D%A5%E4%B8%A8%E5%9B%BD%E7%A7%91%E5%A4%A7%E4%B8%AD%E5%AD%A6%E7%94%9F%E5%A4%8F%E4%BB%A4%E8%90%A5%E7%A7%91%E6%99%AE%E6%BC%94%E8%AE%B2&amp;url=http://localhost:2368/welcome-4/" onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;" data-toggle="tooltip" data-placement="right" title="Share on Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/welcome-4/" onclick="window.open(this.href, 'share-facebook', 'width=580,height=296');return false;" data-toggle="tooltip" data-placement="right" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://plus.google.com/share?url=http://localhost:2368/welcome-4/" onclick="window.open(this.href, 'share-google-plus', 'width=400,height=466');return false;" data-toggle="tooltip" data-placement="right" title="Share on Google+"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="https://www.reddit.com/submit?url=http://localhost:2368/welcome-4/" target="_blank" data-toggle="tooltip" data-placement="right" title="Share on Reddit"><i class="fab fa-reddit-alien"></i></a></li>
+                    <li><a href="mailto:?subject=REGENESIS%20-%20%E5%90%88%E6%88%90%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9A%84%E7%8E%B0%E5%9C%A8%E4%B8%8E%E6%9C%AA%E6%9D%A5%E4%B8%A8%E5%9B%BD%E7%A7%91%E5%A4%A7%E4%B8%AD%E5%AD%A6%E7%94%9F%E5%A4%8F%E4%BB%A4%E8%90%A5%E7%A7%91%E6%99%AE%E6%BC%94%E8%AE%B2&amp;body=http://localhost:2368/welcome-4/" data-toggle="tooltip" data-placement="right" title="Share by Email"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+            </li>
+        </ul>
+        <a href="index.html#" class="read-later" data-id="5be190bd04d89c0266e97129"><i class="far fa-bookmark" data-toggle="tooltip" data-placement="right" title="Bookmark article"></i><i class="fas fa-bookmark" data-toggle="tooltip" data-placement="right" title="Remove bookmark"></i></a>
+    </div>
+</article>                                </div>
+                                <div class="swiper-slide">
+                                    <article class="post tag-synthetic-biology tag-genetic-circuits">
+        <a href="../welcome/" title="《Science》同期发表两篇合成生物学重磅文章，著名学者Uri Alon同期发表评述" class="img-holder">
+            <img src="../content/images/2018/11/Science.jpg" alt="《Science》同期发表两篇合成生物学重磅文章，著名学者Uri Alon同期发表评述">
+        </a>
+    <div class="inner">
+            <ul class="tags">
+                <li>
+                    <a href="../tag/synthetic-biology/" title="Synthetic Biology" class="tag tag-5be14c1c96b4716bc3475e2f synthetic-biology">Synthetic Biology</a>
+                </li>  
+                <li>
+                    <a href="../tag/genetic-circuits/" title="Genetic Circuits" class="tag tag-5be14c1c96b4716bc3475e2e genetic-circuits">Genetic Circuits</a>
+                </li>  
+            </ul>
+        <h2 class="post-title"><a href="../welcome/" title="《Science》同期发表两篇合成生物学重磅文章，著名学者Uri Alon同期发表评述">《Science》同期发表两篇合成生物学重磅文章，著名学者Uri Alon同期发表评述</a></h2>
+        <p class="excerpt">9月21日，《Science》同期发表两篇重磅合成生物学研究文章。 ... <a class="read-more" href="../welcome/" title="《Science》同期发表两篇合成生物学重磅文章，著名学者Uri Alon同期发表评述">read more</a></p>
+        <ul class="post-meta">
+            <li><time class="post-date" datetime="2018-11-06"><i class="fas fa-calendar-alt"></i> 06 Nov 2018</time></li>
+            <li><div class="post-author"><i class="fas fa-user"></i> <a href="../author/mengfankang/">Fankang Meng</a></div></li>
+            <li><div class="post-reading-time"><i class="fas fa-clock"></i> 16 min read</div></li>
+            <li class="share">
+                <a href="index.html#" class="trigger-share"><i class="fas fa-share-alt"></i></a>
+                <ul>
+                    <li><a href="https://twitter.com/share?text=%E3%80%8AScience%E3%80%8B%E5%90%8C%E6%9C%9F%E5%8F%91%E8%A1%A8%E4%B8%A4%E7%AF%87%E5%90%88%E6%88%90%E7%94%9F%E7%89%A9%E5%AD%A6%E9%87%8D%E7%A3%85%E6%96%87%E7%AB%A0%EF%BC%8C%E8%91%97%E5%90%8D%E5%AD%A6%E8%80%85Uri%20Alon%E5%90%8C%E6%9C%9F%E5%8F%91%E8%A1%A8%E8%AF%84%E8%BF%B0&amp;url=http://localhost:2368/welcome/" onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;" data-toggle="tooltip" data-placement="right" title="Share on Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/welcome/" onclick="window.open(this.href, 'share-facebook', 'width=580,height=296');return false;" data-toggle="tooltip" data-placement="right" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://plus.google.com/share?url=http://localhost:2368/welcome/" onclick="window.open(this.href, 'share-google-plus', 'width=400,height=466');return false;" data-toggle="tooltip" data-placement="right" title="Share on Google+"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="https://www.reddit.com/submit?url=http://localhost:2368/welcome/" target="_blank" data-toggle="tooltip" data-placement="right" title="Share on Reddit"><i class="fab fa-reddit-alien"></i></a></li>
+                    <li><a href="mailto:?subject=REGENESIS%20-%20%E3%80%8AScience%E3%80%8B%E5%90%8C%E6%9C%9F%E5%8F%91%E8%A1%A8%E4%B8%A4%E7%AF%87%E5%90%88%E6%88%90%E7%94%9F%E7%89%A9%E5%AD%A6%E9%87%8D%E7%A3%85%E6%96%87%E7%AB%A0%EF%BC%8C%E8%91%97%E5%90%8D%E5%AD%A6%E8%80%85Uri%20Alon%E5%90%8C%E6%9C%9F%E5%8F%91%E8%A1%A8%E8%AF%84%E8%BF%B0&amp;body=http://localhost:2368/welcome/" data-toggle="tooltip" data-placement="right" title="Share by Email"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+            </li>
+        </ul>
+        <a href="index.html#" class="read-later" data-id="5be18f4504d89c0266e9711e"><i class="far fa-bookmark" data-toggle="tooltip" data-placement="right" title="Bookmark article"></i><i class="fas fa-bookmark" data-toggle="tooltip" data-placement="right" title="Remove bookmark"></i></a>
+    </div>
+</article>                                </div>
+                                <div class="swiper-slide">
+                                    <article class="post tag-synthetic-biology tag-spacex">
+        <a href="../welcome-3/" title="SpaceX要实现人类星际殖民，合成生物学能够做些什么？" class="img-holder">
+            <img src="../content/images/2018/11/mars-launch.jpg" alt="SpaceX要实现人类星际殖民，合成生物学能够做些什么？">
+        </a>
+    <div class="inner">
+            <ul class="tags">
+                <li>
+                    <a href="../tag/synthetic-biology/" title="Synthetic Biology" class="tag tag-5be14c1c96b4716bc3475e2f synthetic-biology">Synthetic Biology</a>
+                </li>  
+                <li>
+                    <a href="../tag/spacex/" title="SpaceX" class="tag tag-5be15d9b04d89c0266e970fe spacex">SpaceX</a>
+                </li>  
+            </ul>
+        <h2 class="post-title"><a href="../welcome-3/" title="SpaceX要实现人类星际殖民，合成生物学能够做些什么？">SpaceX要实现人类星际殖民，合成生物学能够做些什么？</a></h2>
+        <p class="excerpt">毫无疑问，生物技术尤其是合成生物学技术将在未来太空探索中扮演着重要的角色，那么太空合成生物学想要解决人类的太空移民需要解决那些问题呢？ ... <a class="read-more" href="../welcome-3/" title="SpaceX要实现人类星际殖民，合成生物学能够做些什么？">read more</a></p>
+        <ul class="post-meta">
+            <li><time class="post-date" datetime="2018-11-06"><i class="fas fa-calendar-alt"></i> 06 Nov 2018</time></li>
+            <li><div class="post-author"><i class="fas fa-user"></i> <a href="../author/mengfankang/">Fankang Meng</a></div></li>
+            <li><div class="post-reading-time"><i class="fas fa-clock"></i> 12 min read</div></li>
+            <li class="share">
+                <a href="index.html#" class="trigger-share"><i class="fas fa-share-alt"></i></a>
+                <ul>
+                    <li><a href="https://twitter.com/share?text=SpaceX%E8%A6%81%E5%AE%9E%E7%8E%B0%E4%BA%BA%E7%B1%BB%E6%98%9F%E9%99%85%E6%AE%96%E6%B0%91%EF%BC%8C%E5%90%88%E6%88%90%E7%94%9F%E7%89%A9%E5%AD%A6%E8%83%BD%E5%A4%9F%E5%81%9A%E4%BA%9B%E4%BB%80%E4%B9%88%EF%BC%9F&amp;url=http://localhost:2368/welcome-3/" onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;" data-toggle="tooltip" data-placement="right" title="Share on Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/welcome-3/" onclick="window.open(this.href, 'share-facebook', 'width=580,height=296');return false;" data-toggle="tooltip" data-placement="right" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://plus.google.com/share?url=http://localhost:2368/welcome-3/" onclick="window.open(this.href, 'share-google-plus', 'width=400,height=466');return false;" data-toggle="tooltip" data-placement="right" title="Share on Google+"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="https://www.reddit.com/submit?url=http://localhost:2368/welcome-3/" target="_blank" data-toggle="tooltip" data-placement="right" title="Share on Reddit"><i class="fab fa-reddit-alien"></i></a></li>
+                    <li><a href="mailto:?subject=REGENESIS%20-%20SpaceX%E8%A6%81%E5%AE%9E%E7%8E%B0%E4%BA%BA%E7%B1%BB%E6%98%9F%E9%99%85%E6%AE%96%E6%B0%91%EF%BC%8C%E5%90%88%E6%88%90%E7%94%9F%E7%89%A9%E5%AD%A6%E8%83%BD%E5%A4%9F%E5%81%9A%E4%BA%9B%E4%BB%80%E4%B9%88%EF%BC%9F&amp;body=http://localhost:2368/welcome-3/" data-toggle="tooltip" data-placement="right" title="Share by Email"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+            </li>
+        </ul>
+        <a href="index.html#" class="read-later" data-id="5be14ee204d89c0266e970ef"><i class="far fa-bookmark" data-toggle="tooltip" data-placement="right" title="Bookmark article"></i><i class="fas fa-bookmark" data-toggle="tooltip" data-placement="right" title="Remove bookmark"></i></a>
+    </div>
+</article>                                </div>
+                        </div>
+                    </div>
+                </div>
+
+    <div class="fixed-post-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 ml-auto mr-auto">
+                        <a href="../ru-he-xiang-liu-lan-peng-you-quan-yi-yang-liao-jie-zui-xin-de-wen-xian/" class="prev"><i class="fas fa-angle-left"></i> Previous post</a>
+                    <a href="../">Back to homepage</a>
+                        <a href="../wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-xia-ji-qi-xue-xi-jiang-ru-he-zhu-li-wang-luo-sheng-wu-xue/" class="next">Next post <i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+            <footer class="site-footer clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                    <h3>About</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed lacus id tortor iaculis iaculis dignissim eget justo. <br><br> Maecenas posuere eros nisl, ut pharetra turpis faucibus a. In imperdiet urna mattis lacus mollis, sit amet pulvinar purus vehicula.</p>
+                </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <h3>Tags</h3>
+                                <ul class="tags">
+                                            <li>
+                                                <a href="../tag/genetic-circuits/">Genetic Circuits</a>
+                                            </li>
+                                            <li>
+                                                <a href="../tag/synthetic-biology/">Synthetic Biology</a>
+                                            </li>
+                                            <li>
+                                                <a href="../tag/spacex/">SpaceX</a>
+                                            </li>
+                                            <li>
+                                                <a href="../tag/reading/">Reading</a>
+                                            </li>
+                                            <li>
+                                                <a href="../tag/papers/">Papers</a>
+                                            </li>
+                                            <li>
+                                                <a href="../tag/software/">software</a>
+                                            </li>
+                                            <li>
+                                                <a href="../tag/machine-learning/">Machine Learning</a>
+                                            </li>
+                                            <li>
+                                                <a href="../tag/artificial-intelligence/">Artificial Intelligence</a>
+                                            </li>
+                                            <li>
+                                                <a href="../tag/igem/">iGEM</a>
+                                            </li>
+                                            <li>
+                                                <a href="../tag/markdown/">Markdown</a>
+                                            </li>
+                                            <li>
+                                                <a href="../tag/elon-musk/">Elon Musk</a>
+                                            </li>
+                                            <li>
+                                                <a href="../tag/learning-everything/">Learning Everything</a>
+                                            </li>
+                                </ul>
+                            </div>
+                <div class="col-sm-6 col-lg-3">
+                    <h3>Latest posts</h3>
+                    <ul class="latest-posts">
+                        <li>
+                            <h5><a href="../the-elon-musk-story-3d-animated/" title="The Elon Musk Story | 3D Animated">The Elon Musk Story | 3D Animated</a></h5>
+                            <time class="post-date" datetime="2018-11-07"><i class="fas fa-calendar-alt"></i> 07 Nov 2018</time>
+                        </li>
+                        <li>
+                            <h5><a href="../markdownyu-fa/" title="Markdown语法">Markdown语法</a></h5>
+                            <time class="post-date" datetime="2018-11-07"><i class="fas fa-calendar-alt"></i> 07 Nov 2018</time>
+                        </li>
+                        <li>
+                            <h5><a href="../guo-ke-da-igem-2018/" title="我们用合成生物学创造了一朵五彩芬芳的玫瑰？你想来看看吗？">我们用合成生物学创造了一朵五彩芬芳的玫瑰？你想来看看吗？</a></h5>
+                            <time class="post-date" datetime="2018-11-07"><i class="fas fa-calendar-alt"></i> 07 Nov 2018</time>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <h3>Newsletter</h3>
+                    <div class="subscribe-container">
+                        <p>Subscribe to our newsletter to receive our latest news.</p>
+                        <form method="post" action="http://localhost:2368/subscribe/" id="" class="gh-signin">
     <input class="confirm" type="hidden" name="confirm"><input class="location" type="hidden" name="location"><input class="referrer" type="hidden" name="referrer">
 
     <div class="form-group">
-        <input class="subscribe-email" type="email" name="email" placeholder="youremail@example.com">
+        <input class="gh-input" type="email" name="email" placeholder="Your email address">
     </div>
-    <button id="" class="" type="submit"><span>Subscribe</span></button>
+    <button id="" class="fas fa-angle-right" type="submit"><span>Subscribe</span></button>
     
 <script>
     (function(g,h,o,s,t){
@@ -368,92 +602,28 @@ ghost.init({
 </form>
 
 
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="container-fluid copyright">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="copyright">Copyright © 2018, <a href="../">REGENESIS</a>. All Right Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     </div>
 
-    <script>
-        var images = document.querySelectorAll('.kg-gallery-image img');
-        images.forEach(function (image) {
-            var container = image.closest('.kg-gallery-image');
-            var width = image.attributes.width.value;
-            var height = image.attributes.height.value;
-            var ratio = width / height;
-            container.style.flex = ratio + ' 1 0%';
-        })
-    </script>
+
+    <script type="text/javascript" src="../assets/js/libraries.js?v=9a51de674b"></script>
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
-    </script>
-    <script type="text/javascript" src="../assets/built/jquery.fitvids.js?v=cbc3160cf5"></script>
-
-
-    <script>
-
-// NOTE: Scroll performance is poor in Safari
-// - this appears to be due to the events firing much more slowly in Safari.
-//   Dropping the scroll event and using only a raf loop results in smoother
-//   scrolling but continuous processing even when not scrolling
-$(document).ready(function () {
-    // Start fitVids
-    var $postContent = $(".post-full-content");
-    $postContent.fitVids();
-    // End fitVids
-
-    var progressBar = document.querySelector('#reading-progress');
-    var header = document.querySelector('.floating-header');
-    var title = document.querySelector('.post-full-title');
-
-    var lastScrollY = window.scrollY;
-    var lastWindowHeight = window.innerHeight;
-    var lastDocumentHeight = $(document).height();
-    var ticking = false;
-
-    function onScroll() {
-        lastScrollY = window.scrollY;
-        requestTick();
-    }
-
-    function onResize() {
-        lastWindowHeight = window.innerHeight;
-        lastDocumentHeight = $(document).height();
-        requestTick();
-    }
-
-    function requestTick() {
-        if (!ticking) {
-            requestAnimationFrame(update);
-        }
-        ticking = true;
-    }
-
-    function update() {
-        var trigger = title.getBoundingClientRect().top + window.scrollY;
-        var triggerOffset = title.offsetHeight + 35;
-        var progressMax = lastDocumentHeight - lastWindowHeight;
-
-        // show/hide floating header
-        if (lastScrollY >= trigger + triggerOffset) {
-            header.classList.add('floating-active');
-        } else {
-            header.classList.remove('floating-active');
-        }
-
-        progressBar.setAttribute('max', progressMax);
-        progressBar.setAttribute('value', lastScrollY);
-
-        ticking = false;
-    }
-
-    window.addEventListener('scroll', onScroll, {passive: true});
-    window.addEventListener('resize', onResize, false);
-
-    update();
-
-});
-</script>
-
-
+    <!--  执行highlight.js -->
+<script src="http://cdn.bootcss.com/highlight.js/9.9.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
     
+    <script type="text/javascript" src="../assets/js/main.js?v=9a51de674b"></script>
 
 </body>

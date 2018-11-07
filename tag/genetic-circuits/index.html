@@ -1,15 +1,22 @@
 
 <head>
 
-    <meta charset="utf-8">
+        <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Genetic Circuits - REGENESIS </title>
+    <title>Genetic Circuits - REGENESIS</title>
+
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="../../assets/built/screen.css?v=cbc3160cf5">
+    <link rel="shortcut icon" href="../../favicon.png">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/libraries.css?v=9a51de674b">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css?v=9a51de674b">
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+    
     <link rel="shortcut icon" href="../../favicon.png" type="image/png">
     <link rel="canonical" href="index.html">
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -53,7 +60,7 @@
 }
     </script>
 
-    <script src="../../public/ghost-sdk.js?v=cbc3160cf5"></script>
+    <script src="../../public/ghost-sdk.js?v=9a51de674b"></script>
 <script>
 ghost.init({
 	clientId: "ghost-frontend",
@@ -62,145 +69,284 @@ ghost.init({
 </script>
     <meta name="generator" content="Ghost 2.4">
     <link rel="alternate" type="application/rss+xml" title="REGENESIS" href="../../rss/index.html">
+    <!--  加载highlight.js样式 -->
+<link href="http://cdn.bootcss.com/highlight.js/9.9.0/styles/tomorrow-night-eighties.min.css" rel="stylesheet">
+<!--  加载google字体 -->
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Poppins:300,600">
+<!--  设置字体 -->
+<style>
+body,p,code,h1, h2, h3, h4, h5, h6,.hljs {
+    font-family: 'Poppins', monospace;
+}
+.hljs {
+    font-size: 1.2em
+}
+</style>
 
 </head>
-<body class="tag-template tag-genetic-circuits">
+<body class="tag-template tag-genetic-circuits nav-closed">
 
-    <div class="site-wrapper">
-
-        
-<header class="site-header outer " style="background-image: url(../../content/images/2018/11/v2-4e90aaa211ccc5b2555545b3484f9cbb_1200x500.jpg)">
-    <div class="inner">
-        <nav class="site-nav">
-    <div class="site-nav-left">
-                <a class="site-nav-logo" href="../../"><img src="../../content/images/2018/11/avatar-1.png" alt="REGENESIS"></a>
-            <ul class="nav" role="menu">
-    <li class="nav-home" role="menuitem"><a href="../../">Home</a></li>
-    <li class="nav-synthetic-biology" role="menuitem"><a href="../synthetic-biology/">Synthetic Biology</a></li>
-    <li class="nav-ucas-life" role="menuitem"><a href="http://localhost:2368/ucas-life/">UCAS Life</a></li>
-    <li class="nav-igem" role="menuitem"><a href="http://localhost:2368/igem/">iGEM</a></li>
-    <li class="nav-author" role="menuitem"><a href="../../author/mengfankang/">Author</a></li>
-</ul>
-
-    </div>
-    <div class="site-nav-right">
-        <div class="social-links">
-                <a class="social-link social-link-fb" href="https://www.facebook.com/profile.php?id=100005569278801" title="Facebook" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"></path></svg>
-</a>
-                <a class="social-link social-link-tw" href="https://twitter.com/FankangMeng" title="Twitter" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"></path></svg>
-</a>
-        </div>
-            <a class="subscribe-button" href="index.html#subscribe">Subscribe</a>
-    </div>
+    <div class="main-container">
+    
+        <header>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 ml-auto">
+                <div class="blog-logo">
+                    <a href="../../" title="REGENESIS">
+                         <img src="../../content/images/2018/11/avatar-1.png" alt="REGENESIS">  
+                    </a>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="inner">
+                    <div class="navigation">
+                        <a href="index.html#" class="navigation-trigger">
+                            <svg width="19" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="#path0_fill" transform="translate(.344 .195)"></use><defs><path id="path0_fill" d="M1.044 2.128h15.912c.577 0 1.044-.476 1.044-1.064C18 .477 17.533 0 16.956 0H1.044C.467 0 0 .477 0 1.064c0 .588.467 1.064 1.044 1.064zm15.912 4.387H1.044C.467 6.515 0 6.993 0 7.58c0 .589.467 1.064 1.044 1.064h15.912c.577 0 1.044-.475 1.044-1.064 0-.586-.467-1.064-1.044-1.064zm0 6.515H1.044C.467 13.03 0 13.508 0 14.094c0 .589.467 1.064 1.044 1.064h15.912c.577 0 1.044-.476 1.044-1.064 0-.586-.467-1.064-1.044-1.064z"></path></defs></svg>
+                        </a>
+                        <div class="navigation-popover">
+                            <a href="index.html#" class="close"></a>
+                            <nav class="nav">
+    <ul>
+            <li class="nav-home"><a href="../../" title="Home">Home</a></li>
+            <li class="nav-article"><a href="../synthetic-biology/" title="Article">Article</a></li>
+            <li class="nav-life"><a href="http://localhost:2368/tag/ucas-life/" title="Life">Life</a></li>
+            <li class="nav-igem"><a href="../igem/" title="iGEM">iGEM</a></li>
+            <li class="nav-spacex"><a href="http://localhost:2368/tag/spacex-elonmusk/" title="SpaceX">SpaceX</a></li>
+            <li class="nav-learning"><a href="../learning-everything/" title="Learning">Learning</a></li>
+            <li class="nav-author"><a href="../../author/mengfankang/" title="Author">Author</a></li>
+    </ul>
 </nav>
-        <div class="site-header-content">
-            <h1 class="site-title">Genetic Circuits</h1>
-            <h2 class="site-description">
-                    A collection of 2 posts
-            </h2>
+                        </div>
+                    </div>
+                    <div class="triggers">
+                            <div class="search">
+                                <a href="index.html#" class="search-trigger"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 56.966 56.966"><path d="M55.146 51.887L41.588 37.786A22.926 22.926 0 0 0 46.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 0 0 .083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z" fill="#fff"></path></svg></a>
+                                <div class="search-popover">
+                                    <a href="index.html#" class="close"></a>
+                                    <form>
+                                        <input id="search-field" placeholder="Search" autocomplete="off">
+                                    </form>
+                                    <div id="results" data-other="Other"></div>      
+                                </div>
+                            </div>
+                            <div class="bookmark-content">
+                                <a href="index.html#" class="bookmark"><span class="counter hidden"></span><i class="far fa-bookmark"></i><i class="fas fa-bookmark"></i></a>
+                                <div class="bookmark-popover">
+                                    <a href="index.html#" class="close"></a>
+                                    <h3>Bookmarks</h3>
+                                    <div class="bookmark-container">
+                                        <p class="no-bookmarks">You haven't yet saved any bookmarks. To bookmark a post, just click <i class="far fa-bookmark"></i>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="social-content">
+                            <a href="index.html#" class="social-trigger"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path d="M397.19 0c-50.33 0-91.278 40.947-91.278 91.278 0 50.33 40.947 91.278 91.278 91.278s91.279-40.947 91.279-91.278C488.468 40.947 447.521 0 397.19 0zm0 141.191c-27.523 0-49.913-22.391-49.913-49.913s22.391-49.913 49.913-49.913c27.523 0 49.914 22.391 49.914 49.913s-22.391 49.913-49.914 49.913zM114.809 164.722c-50.33 0-91.278 40.947-91.278 91.278s40.947 91.278 91.278 91.278S206.087 306.33 206.087 256s-40.947-91.278-91.278-91.278zm0 141.191c-27.522 0-49.913-22.391-49.913-49.913s22.391-49.913 49.913-49.913 49.913 22.391 49.913 49.913c0 27.523-22.391 49.913-49.913 49.913zM397.19 329.445c-50.33 0-91.278 40.947-91.278 91.278S346.859 512 397.19 512s91.279-40.947 91.279-91.278c-.001-50.33-40.948-91.277-91.279-91.277zm0 141.191c-27.523 0-49.913-22.39-49.913-49.913 0-27.523 22.391-49.913 49.913-49.913 27.523 0 49.914 22.39 49.914 49.913 0 27.522-22.391 49.913-49.914 49.913z" fill="#fff"></path><path d="M346.891 367.32l-160.722-93.656c-9.869-5.751-22.532-2.412-28.282 7.457-5.752 9.87-2.413 22.532 7.457 28.283l160.721 93.656a20.591 20.591 0 0 0 10.393 2.816c7.118 0 14.047-3.68 17.89-10.272 5.751-9.87 2.412-22.532-7.457-28.284zM354.105 116.386c-5.757-9.865-18.422-13.194-28.287-7.438l-160.487 93.656c-9.865 5.758-13.195 18.422-7.438 28.288 3.845 6.588 10.768 10.261 17.882 10.261 3.539 0 7.128-.91 10.405-2.823l160.486-93.656c9.867-5.758 13.197-18.423 7.439-28.288z" fill="#fff"></path></svg></a>
+                            <div class="social-popover" data-twitter="@FankangMeng">
+                                <a href="index.html#" class="close"></a>
+                                <h3>Connect with us</h3>
+                                <div class="social-container">
+                                    <ul class="social-icons">
+                                            <li><a href="https://www.facebook.com/profile.php?id=100005569278801" class="facebook" title="profile.php?id=100005569278801" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                            <li><a href="https://twitter.com/FankangMeng" class="twitter" title="@FankangMeng" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://www.youtube.com/" class="youtube" title="Youtube" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://www.instagram.com/" class="instagram" title="Instagram" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                                        <li><a href="http://localhost:2368/rss" title="RSS Feed" target="_blank"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</header>
+</header>        
+        
+    <div class="intro">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <div class="bg" style="background-image: url(../../content/images/2018/11/v2-4e90aaa211ccc5b2555545b3484f9cbb_1200x500.jpg);"></div>
+                    <div class="inner">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h1 class="post-title">Genetic Circuits</h1>
+                                    <p class="excerpt"></p>
+                                    <ul class="post-meta">
+                                     	<li>A collection of 2 posts</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </div>
+            <a href="index.html#" class="go"><i class="fas fa-angle-down"></i></a>
+        </div>
+    </div>
 
-<main id="site-main" class="site-main outer">
+<main id="content" class="container" role="main">
+	<div class="row">
+		<div class="col-lg-8 col-md-10 col-sm-12 ml-auto mr-auto loop">
+    			<article class="post tag-synthetic-biology tag-genetic-circuits">
+        <a href="../../welcome/" title="《Science》同期发表两篇合成生物学重磅文章，著名学者Uri Alon同期发表评述" class="img-holder">
+            <img src="../../content/images/2018/11/Science.jpg" alt="《Science》同期发表两篇合成生物学重磅文章，著名学者Uri Alon同期发表评述">
+        </a>
     <div class="inner">
-        <div class="post-feed">
-                <article class="post-card post tag-synthetic-biology tag-genetic-circuits">
-        <a class="post-card-image-link" href="../../welcome/">
-            <div class="post-card-image" style="background-image: url(../../content/images/2018/11/Science.jpg)"></div>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="../../welcome/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Synthetic Biology</span>
-                <h2 class="post-card-title">《Science》同期发表两篇合成生物学重磅文章，著名学者Uri Alon同期发表评述</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>9月21日，《Science》同期发表两篇重磅合成生物学研究文章。</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-
-            <ul class="author-list">
-                <li class="author-list-item">
-
-                    <div class="author-name-tooltip">
-                        Fankang Meng
-                    </div>
-
-                        <a href="../../author/mengfankang/" class="static-avatar"><img class="author-profile-image" src="../../content/images/2018/11/IMG_1269.JPG" alt="Fankang Meng"></a>
-                </li>
+            <ul class="tags">
+                <li>
+                    <a href="../synthetic-biology/" title="Synthetic Biology" class="tag tag-5be14c1c96b4716bc3475e2f synthetic-biology">Synthetic Biology</a>
+                </li>  
+                <li>
+                    <a href="index.html" title="Genetic Circuits" class="tag tag-5be14c1c96b4716bc3475e2e genetic-circuits">Genetic Circuits</a>
+                </li>  
             </ul>
-
-            <span class="reading-time">16 min read</span>
-
-        </footer>
+        <h2 class="post-title"><a href="../../welcome/" title="《Science》同期发表两篇合成生物学重磅文章，著名学者Uri Alon同期发表评述">《Science》同期发表两篇合成生物学重磅文章，著名学者Uri Alon同期发表评述</a></h2>
+        <p class="excerpt">9月21日，《Science》同期发表两篇重磅合成生物学研究文章。 ... <a class="read-more" href="../../welcome/" title="《Science》同期发表两篇合成生物学重磅文章，著名学者Uri Alon同期发表评述">read more</a></p>
+        <ul class="post-meta">
+            <li><time class="post-date" datetime="2018-11-06"><i class="fas fa-calendar-alt"></i> 06 Nov 2018</time></li>
+            <li><div class="post-author"><i class="fas fa-user"></i> <a href="../../author/mengfankang/">Fankang Meng</a></div></li>
+            <li><div class="post-reading-time"><i class="fas fa-clock"></i> 16 min read</div></li>
+            <li class="share">
+                <a href="index.html#" class="trigger-share"><i class="fas fa-share-alt"></i></a>
+                <ul>
+                    <li><a href="https://twitter.com/share?text=%E3%80%8AScience%E3%80%8B%E5%90%8C%E6%9C%9F%E5%8F%91%E8%A1%A8%E4%B8%A4%E7%AF%87%E5%90%88%E6%88%90%E7%94%9F%E7%89%A9%E5%AD%A6%E9%87%8D%E7%A3%85%E6%96%87%E7%AB%A0%EF%BC%8C%E8%91%97%E5%90%8D%E5%AD%A6%E8%80%85Uri%20Alon%E5%90%8C%E6%9C%9F%E5%8F%91%E8%A1%A8%E8%AF%84%E8%BF%B0&amp;url=http://localhost:2368/welcome/" onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;" data-toggle="tooltip" data-placement="right" title="Share on Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/welcome/" onclick="window.open(this.href, 'share-facebook', 'width=580,height=296');return false;" data-toggle="tooltip" data-placement="right" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://plus.google.com/share?url=http://localhost:2368/welcome/" onclick="window.open(this.href, 'share-google-plus', 'width=400,height=466');return false;" data-toggle="tooltip" data-placement="right" title="Share on Google+"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="https://www.reddit.com/submit?url=http://localhost:2368/welcome/" target="_blank" data-toggle="tooltip" data-placement="right" title="Share on Reddit"><i class="fab fa-reddit-alien"></i></a></li>
+                    <li><a href="mailto:?subject=REGENESIS%20-%20%E3%80%8AScience%E3%80%8B%E5%90%8C%E6%9C%9F%E5%8F%91%E8%A1%A8%E4%B8%A4%E7%AF%87%E5%90%88%E6%88%90%E7%94%9F%E7%89%A9%E5%AD%A6%E9%87%8D%E7%A3%85%E6%96%87%E7%AB%A0%EF%BC%8C%E8%91%97%E5%90%8D%E5%AD%A6%E8%80%85Uri%20Alon%E5%90%8C%E6%9C%9F%E5%8F%91%E8%A1%A8%E8%AF%84%E8%BF%B0&amp;body=http://localhost:2368/welcome/" data-toggle="tooltip" data-placement="right" title="Share by Email"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+            </li>
+        </ul>
+        <a href="index.html#" class="read-later" data-id="5be18f4504d89c0266e9711e"><i class="far fa-bookmark" data-toggle="tooltip" data-placement="right" title="Bookmark article"></i><i class="fas fa-bookmark" data-toggle="tooltip" data-placement="right" title="Remove bookmark"></i></a>
     </div>
-</article>
-                <article class="post-card post tag-genetic-circuits tag-synthetic-biology">
-        <a class="post-card-image-link" href="../../welcome-2/">
-            <div class="post-card-image" style="background-image: url(../../content/images/2018/11/0-2.jpeg)"></div>
+</article>    			<article class="post tag-genetic-circuits tag-synthetic-biology">
+        <a href="../../welcome-2/" title="我们细胞中的“遗传电路”" class="img-holder">
+            <img src="../../content/images/2018/11/0-2.jpeg" alt="我们细胞中的“遗传电路”">
         </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="../../welcome-2/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Genetic Circuits</span>
-                <h2 class="post-card-title">我们细胞中的“遗传电路”</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>当你正在静静的阅读这篇文章时，你身体内数十亿的细胞正在进行着疯狂的生物计算，这使得你作为做一个生命个体存在于宇宙中成为可能。</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-
-            <ul class="author-list">
-                <li class="author-list-item">
-
-                    <div class="author-name-tooltip">
-                        Fankang Meng
-                    </div>
-
-                        <a href="../../author/mengfankang/" class="static-avatar"><img class="author-profile-image" src="../../content/images/2018/11/IMG_1269.JPG" alt="Fankang Meng"></a>
-                </li>
+    <div class="inner">
+            <ul class="tags">
+                <li>
+                    <a href="index.html" title="Genetic Circuits" class="tag tag-5be14c1c96b4716bc3475e2e genetic-circuits">Genetic Circuits</a>
+                </li>  
+                <li>
+                    <a href="../synthetic-biology/" title="Synthetic Biology" class="tag tag-5be14c1c96b4716bc3475e2f synthetic-biology">Synthetic Biology</a>
+                </li>  
             </ul>
-
-            <span class="reading-time">10 min read</span>
-
-        </footer>
+        <h2 class="post-title"><a href="../../welcome-2/" title="我们细胞中的“遗传电路”">我们细胞中的“遗传电路”</a></h2>
+        <p class="excerpt">当你正在静静的阅读这篇文章时，你身体内数十亿的细胞正在进行着疯狂的生物计算，这使得你作为做一个生命个体存在于宇宙中成为可能。 ... <a class="read-more" href="../../welcome-2/" title="我们细胞中的“遗传电路”">read more</a></p>
+        <ul class="post-meta">
+            <li><time class="post-date" datetime="2018-11-06"><i class="fas fa-calendar-alt"></i> 06 Nov 2018</time></li>
+            <li><div class="post-author"><i class="fas fa-user"></i> <a href="../../author/mengfankang/">Fankang Meng</a></div></li>
+            <li><div class="post-reading-time"><i class="fas fa-clock"></i> 10 min read</div></li>
+            <li class="share">
+                <a href="index.html#" class="trigger-share"><i class="fas fa-share-alt"></i></a>
+                <ul>
+                    <li><a href="https://twitter.com/share?text=%E6%88%91%E4%BB%AC%E7%BB%86%E8%83%9E%E4%B8%AD%E7%9A%84%E2%80%9C%E9%81%97%E4%BC%A0%E7%94%B5%E8%B7%AF%E2%80%9D&amp;url=http://localhost:2368/welcome-2/" onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;" data-toggle="tooltip" data-placement="right" title="Share on Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/welcome-2/" onclick="window.open(this.href, 'share-facebook', 'width=580,height=296');return false;" data-toggle="tooltip" data-placement="right" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://plus.google.com/share?url=http://localhost:2368/welcome-2/" onclick="window.open(this.href, 'share-google-plus', 'width=400,height=466');return false;" data-toggle="tooltip" data-placement="right" title="Share on Google+"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="https://www.reddit.com/submit?url=http://localhost:2368/welcome-2/" target="_blank" data-toggle="tooltip" data-placement="right" title="Share on Reddit"><i class="fab fa-reddit-alien"></i></a></li>
+                    <li><a href="mailto:?subject=REGENESIS%20-%20%E6%88%91%E4%BB%AC%E7%BB%86%E8%83%9E%E4%B8%AD%E7%9A%84%E2%80%9C%E9%81%97%E4%BC%A0%E7%94%B5%E8%B7%AF%E2%80%9D&amp;body=http://localhost:2368/welcome-2/" data-toggle="tooltip" data-placement="right" title="Share by Email"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+            </li>
+        </ul>
+        <a href="index.html#" class="read-later" data-id="5be14b0196b4716bc3475e2a"><i class="far fa-bookmark" data-toggle="tooltip" data-placement="right" title="Bookmark article"></i><i class="fas fa-bookmark" data-toggle="tooltip" data-placement="right" title="Remove bookmark"></i></a>
     </div>
-</article>
-        </div>
+</article>		</div>
     </div>
 </main>
+<div class="container">
+	<div class="row">
+		<div class="col-md-8 ml-auto mr-auto text-center">
+			<a href="index.html#" id="load-posts" data-posts_per_page="5" class="hidden">Load more posts</a>
 
+			<nav class="pagination" role="navigation">
+				<div class="container">
+				    <span class="page-number">1 of 1</span>
+				</div>
+			</nav>
+		</div>
+	</div>
+</div>
 
-        <footer class="site-footer outer">
-            <div class="site-footer-content inner">
-                <section class="copyright"><a href="../../">REGENESIS</a> © 2018</section>
-                <nav class="site-footer-nav">
-                    <a href="../../">Latest Posts</a>
-                    <a href="https://www.facebook.com/profile.php?id=100005569278801" target="_blank" rel="noopener">Facebook</a>
-                    <a href="https://twitter.com/FankangMeng" target="_blank" rel="noopener">Twitter</a>
-                    <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
-                </nav>
-            </div>
-        </footer>
-
-    </div>
-
-    <div id="subscribe" class="subscribe-overlay">
-        <a class="subscribe-overlay-close" href="index.html#"></a>
-        <div class="subscribe-overlay-content">
-                <img class="subscribe-overlay-logo" src="../../content/images/2018/11/avatar-1.png" alt="REGENESIS">
-            <h1 class="subscribe-overlay-title">Subscribe to REGENESIS</h1>
-            <p class="subscribe-overlay-description">Stay up to date! Get all the latest &amp; greatest posts delivered straight to your inbox</p>
-            <form method="post" action="http://localhost:2368/subscribe/" id="" class="">
+            <footer class="site-footer clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                    <h3>About</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed lacus id tortor iaculis iaculis dignissim eget justo. <br><br> Maecenas posuere eros nisl, ut pharetra turpis faucibus a. In imperdiet urna mattis lacus mollis, sit amet pulvinar purus vehicula.</p>
+                </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <h3>Tags</h3>
+                                <ul class="tags">
+                                            <li>
+                                                <a href="index.html">Genetic Circuits</a>
+                                            </li>
+                                            <li>
+                                                <a href="../synthetic-biology/">Synthetic Biology</a>
+                                            </li>
+                                            <li>
+                                                <a href="../spacex/">SpaceX</a>
+                                            </li>
+                                            <li>
+                                                <a href="../reading/">Reading</a>
+                                            </li>
+                                            <li>
+                                                <a href="../papers/">Papers</a>
+                                            </li>
+                                            <li>
+                                                <a href="../software/">software</a>
+                                            </li>
+                                            <li>
+                                                <a href="../machine-learning/">Machine Learning</a>
+                                            </li>
+                                            <li>
+                                                <a href="../artificial-intelligence/">Artificial Intelligence</a>
+                                            </li>
+                                            <li>
+                                                <a href="../igem/">iGEM</a>
+                                            </li>
+                                            <li>
+                                                <a href="../markdown/">Markdown</a>
+                                            </li>
+                                            <li>
+                                                <a href="../elon-musk/">Elon Musk</a>
+                                            </li>
+                                            <li>
+                                                <a href="../learning-everything/">Learning Everything</a>
+                                            </li>
+                                </ul>
+                            </div>
+                <div class="col-sm-6 col-lg-3">
+                    <h3>Latest posts</h3>
+                    <ul class="latest-posts">
+                        <li>
+                            <h5><a href="../../the-elon-musk-story-3d-animated/" title="The Elon Musk Story | 3D Animated">The Elon Musk Story | 3D Animated</a></h5>
+                            <time class="post-date" datetime="2018-11-07"><i class="fas fa-calendar-alt"></i> 07 Nov 2018</time>
+                        </li>
+                        <li>
+                            <h5><a href="../../markdownyu-fa/" title="Markdown语法">Markdown语法</a></h5>
+                            <time class="post-date" datetime="2018-11-07"><i class="fas fa-calendar-alt"></i> 07 Nov 2018</time>
+                        </li>
+                        <li>
+                            <h5><a href="../../guo-ke-da-igem-2018/" title="我们用合成生物学创造了一朵五彩芬芳的玫瑰？你想来看看吗？">我们用合成生物学创造了一朵五彩芬芳的玫瑰？你想来看看吗？</a></h5>
+                            <time class="post-date" datetime="2018-11-07"><i class="fas fa-calendar-alt"></i> 07 Nov 2018</time>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <h3>Newsletter</h3>
+                    <div class="subscribe-container">
+                        <p>Subscribe to our newsletter to receive our latest news.</p>
+                        <form method="post" action="http://localhost:2368/subscribe/" id="" class="gh-signin">
     <input class="confirm" type="hidden" name="confirm"><input class="location" type="hidden" name="location"><input class="referrer" type="hidden" name="referrer">
 
     <div class="form-group">
-        <input class="subscribe-email" type="email" name="email" placeholder="youremail@example.com">
+        <input class="gh-input" type="email" name="email" placeholder="Your email address">
     </div>
-    <button id="" class="" type="submit"><span>Subscribe</span></button>
+    <button id="" class="fas fa-angle-right" type="submit"><span>Subscribe</span></button>
     
 <script>
     (function(g,h,o,s,t){
@@ -217,35 +363,31 @@ ghost.init({
 </form>
 
 
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="container-fluid copyright">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="copyright">Copyright © 2018, <a href="../../">REGENESIS</a>. All Right Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     </div>
 
+
+    <script type="text/javascript" src="../../assets/js/libraries.js?v=9a51de674b"></script>
+
+
+    <!--  执行highlight.js -->
+<script src="http://cdn.bootcss.com/highlight.js/9.9.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+    
     <script>
-        var images = document.querySelectorAll('.kg-gallery-image img');
-        images.forEach(function (image) {
-            var container = image.closest('.kg-gallery-image');
-            var width = image.attributes.width.value;
-            var height = image.attributes.height.value;
-            var ratio = width / height;
-            container.style.flex = ratio + ' 1 0%';
-        })
-    </script>
-
-
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
-    </script>
-    <script type="text/javascript" src="../../assets/built/jquery.fitvids.js?v=cbc3160cf5"></script>
-
-    <script>
-        // maxPages is a global variable that is needed to determine
-        // if we need to load more pages for the infinitescroll, or if
-        // we reached the last page already.
         var maxPages = parseInt('1');
     </script>
-    <script src="../../assets/built/infinitescroll.js?v=cbc3160cf5"></script>
-
-    
-
-    
+    <script type="text/javascript" src="../../assets/js/main.js?v=9a51de674b"></script>
 
 </body>

@@ -1,15 +1,22 @@
 
 <head>
 
-    <meta charset="utf-8">
+        <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>SpaceX要实现人类星际殖民，合成生物学能够做些什么？Fankang Meng </title>
+    <title>SpaceX要实现人类星际殖民，合成生物学能够做些什么？</title>
+
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="../assets/built/screen.css?v=cbc3160cf5">
+    <link rel="shortcut icon" href="../favicon.png">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/libraries.css?v=9a51de674b">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css?v=9a51de674b">
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+    
     <link rel="shortcut icon" href="../favicon.png" type="image/png">
     <link rel="canonical" href="index.html">
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -80,7 +87,7 @@
 }
     </script>
 
-    <script src="../public/ghost-sdk.js?v=cbc3160cf5"></script>
+    <script src="../public/ghost-sdk.js?v=9a51de674b"></script>
 <script>
 ghost.init({
 	clientId: "ghost-frontend",
@@ -89,272 +96,496 @@ ghost.init({
 </script>
     <meta name="generator" content="Ghost 2.4">
     <link rel="alternate" type="application/rss+xml" title="REGENESIS" href="../rss/index.html">
+    <!--  加载highlight.js样式 -->
+<link href="http://cdn.bootcss.com/highlight.js/9.9.0/styles/tomorrow-night-eighties.min.css" rel="stylesheet">
+<!--  加载google字体 -->
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Poppins:300,600">
+<!--  设置字体 -->
+<style>
+body,p,code,h1, h2, h3, h4, h5, h6,.hljs {
+    font-family: 'Poppins', monospace;
+}
+.hljs {
+    font-size: 1.2em
+}
+</style>
 
 </head>
-<body class="post-template tag-synthetic-biology tag-spacex">
+<body class="post-template tag-synthetic-biology tag-spacex nav-closed">
 
-    <div class="site-wrapper">
-
-        
-
-<header class="site-header outer">
-    <div class="inner">
-        <nav class="site-nav">
-    <div class="site-nav-left">
-                <a class="site-nav-logo" href="../"><img src="../content/images/2018/11/avatar-1.png" alt="REGENESIS"></a>
-            <ul class="nav" role="menu">
-    <li class="nav-home" role="menuitem"><a href="../">Home</a></li>
-    <li class="nav-synthetic-biology" role="menuitem"><a href="../tag/synthetic-biology/">Synthetic Biology</a></li>
-    <li class="nav-ucas-life" role="menuitem"><a href="http://localhost:2368/ucas-life/">UCAS Life</a></li>
-    <li class="nav-igem" role="menuitem"><a href="http://localhost:2368/igem/">iGEM</a></li>
-    <li class="nav-author" role="menuitem"><a href="../author/mengfankang/">Author</a></li>
-</ul>
-
-    </div>
-    <div class="site-nav-right">
-        <div class="social-links">
-                <a class="social-link social-link-fb" href="https://www.facebook.com/profile.php?id=100005569278801" title="Facebook" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"></path></svg>
-</a>
-                <a class="social-link social-link-tw" href="https://twitter.com/FankangMeng" title="Twitter" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"></path></svg>
-</a>
-        </div>
-            <a class="subscribe-button" href="index.html#subscribe">Subscribe</a>
-    </div>
+    <div class="main-container">
+    
+        <header>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 ml-auto">
+                <div class="blog-logo">
+                    <a href="../" title="REGENESIS">
+                         <img src="../content/images/2018/11/avatar-1.png" alt="REGENESIS">  
+                    </a>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="inner">
+                    <div class="navigation">
+                        <a href="index.html#" class="navigation-trigger">
+                            <svg width="19" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="#path0_fill" transform="translate(.344 .195)"></use><defs><path id="path0_fill" d="M1.044 2.128h15.912c.577 0 1.044-.476 1.044-1.064C18 .477 17.533 0 16.956 0H1.044C.467 0 0 .477 0 1.064c0 .588.467 1.064 1.044 1.064zm15.912 4.387H1.044C.467 6.515 0 6.993 0 7.58c0 .589.467 1.064 1.044 1.064h15.912c.577 0 1.044-.475 1.044-1.064 0-.586-.467-1.064-1.044-1.064zm0 6.515H1.044C.467 13.03 0 13.508 0 14.094c0 .589.467 1.064 1.044 1.064h15.912c.577 0 1.044-.476 1.044-1.064 0-.586-.467-1.064-1.044-1.064z"></path></defs></svg>
+                        </a>
+                        <div class="navigation-popover">
+                            <a href="index.html#" class="close"></a>
+                            <nav class="nav">
+    <ul>
+            <li class="nav-home"><a href="../" title="Home">Home</a></li>
+            <li class="nav-article"><a href="../tag/synthetic-biology/" title="Article">Article</a></li>
+            <li class="nav-life"><a href="http://localhost:2368/tag/ucas-life/" title="Life">Life</a></li>
+            <li class="nav-igem"><a href="../tag/igem/" title="iGEM">iGEM</a></li>
+            <li class="nav-spacex"><a href="http://localhost:2368/tag/spacex-elonmusk/" title="SpaceX">SpaceX</a></li>
+            <li class="nav-learning"><a href="../tag/learning-everything/" title="Learning">Learning</a></li>
+            <li class="nav-author"><a href="../author/mengfankang/" title="Author">Author</a></li>
+    </ul>
 </nav>
+                        </div>
+                    </div>
+                    <div class="triggers">
+                            <div class="search">
+                                <a href="index.html#" class="search-trigger"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 56.966 56.966"><path d="M55.146 51.887L41.588 37.786A22.926 22.926 0 0 0 46.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 0 0 .083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z" fill="#fff"></path></svg></a>
+                                <div class="search-popover">
+                                    <a href="index.html#" class="close"></a>
+                                    <form>
+                                        <input id="search-field" placeholder="Search" autocomplete="off">
+                                    </form>
+                                    <div id="results" data-other="Other"></div>      
+                                </div>
+                            </div>
+                            <div class="bookmark-content">
+                                <a href="index.html#" class="bookmark"><span class="counter hidden"></span><i class="far fa-bookmark"></i><i class="fas fa-bookmark"></i></a>
+                                <div class="bookmark-popover">
+                                    <a href="index.html#" class="close"></a>
+                                    <h3>Bookmarks</h3>
+                                    <div class="bookmark-container">
+                                        <p class="no-bookmarks">You haven't yet saved any bookmarks. To bookmark a post, just click <i class="far fa-bookmark"></i>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="social-content">
+                            <a href="index.html#" class="social-trigger"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path d="M397.19 0c-50.33 0-91.278 40.947-91.278 91.278 0 50.33 40.947 91.278 91.278 91.278s91.279-40.947 91.279-91.278C488.468 40.947 447.521 0 397.19 0zm0 141.191c-27.523 0-49.913-22.391-49.913-49.913s22.391-49.913 49.913-49.913c27.523 0 49.914 22.391 49.914 49.913s-22.391 49.913-49.914 49.913zM114.809 164.722c-50.33 0-91.278 40.947-91.278 91.278s40.947 91.278 91.278 91.278S206.087 306.33 206.087 256s-40.947-91.278-91.278-91.278zm0 141.191c-27.522 0-49.913-22.391-49.913-49.913s22.391-49.913 49.913-49.913 49.913 22.391 49.913 49.913c0 27.523-22.391 49.913-49.913 49.913zM397.19 329.445c-50.33 0-91.278 40.947-91.278 91.278S346.859 512 397.19 512s91.279-40.947 91.279-91.278c-.001-50.33-40.948-91.277-91.279-91.277zm0 141.191c-27.523 0-49.913-22.39-49.913-49.913 0-27.523 22.391-49.913 49.913-49.913 27.523 0 49.914 22.39 49.914 49.913 0 27.522-22.391 49.913-49.914 49.913z" fill="#fff"></path><path d="M346.891 367.32l-160.722-93.656c-9.869-5.751-22.532-2.412-28.282 7.457-5.752 9.87-2.413 22.532 7.457 28.283l160.721 93.656a20.591 20.591 0 0 0 10.393 2.816c7.118 0 14.047-3.68 17.89-10.272 5.751-9.87 2.412-22.532-7.457-28.284zM354.105 116.386c-5.757-9.865-18.422-13.194-28.287-7.438l-160.487 93.656c-9.865 5.758-13.195 18.422-7.438 28.288 3.845 6.588 10.768 10.261 17.882 10.261 3.539 0 7.128-.91 10.405-2.823l160.486-93.656c9.867-5.758 13.197-18.423 7.439-28.288z" fill="#fff"></path></svg></a>
+                            <div class="social-popover" data-twitter="@FankangMeng">
+                                <a href="index.html#" class="close"></a>
+                                <h3>Connect with us</h3>
+                                <div class="social-container">
+                                    <ul class="social-icons">
+                                            <li><a href="https://www.facebook.com/profile.php?id=100005569278801" class="facebook" title="profile.php?id=100005569278801" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                            <li><a href="https://twitter.com/FankangMeng" class="twitter" title="@FankangMeng" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://www.youtube.com/" class="youtube" title="Youtube" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://www.instagram.com/" class="instagram" title="Instagram" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                                        <li><a href="http://localhost:2368/rss" title="RSS Feed" target="_blank"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</header>
+</header>        
+        
+    <div class="intro">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <div class="bg" style="background-image: url(../content/images/2018/11/mars-launch.jpg);"></div>
+                    <div class="inner">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-9">
+                                        <ul class="tags">
+                                            <li>
+                                                <a href="../tag/synthetic-biology/" title="Synthetic Biology" class="tag tag-5be14c1c96b4716bc3475e2f synthetic-biology">Synthetic Biology</a>
+                                            </li>  
+                                            <li>
+                                                <a href="../tag/spacex/" title="SpaceX" class="tag tag-5be15d9b04d89c0266e970fe spacex">SpaceX</a>
+                                            </li>  
+                                        </ul>
+                                    <h1 class="post-title">SpaceX要实现人类星际殖民，合成生物学能够做些什么？</h1>
+                                    <ul class="post-meta">
+                                        <li><time class="post-date" datetime="2018-11-06"><i class="fas fa-calendar-alt"></i> 06 Nov 2018</time></li>
+                                        <li><div class="post-author"><i class="fas fa-user"></i> <a href="../author/mengfankang/">Fankang Meng</a></div></li>
+                                        <li><div class="post-reading-time"><i class="fas fa-clock"></i> 12 min read</div></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </div>
+            <a href="index.html#" class="go"><i class="fas fa-angle-down"></i></a>
+        </div>
+    </div>
+    <main id="content" class="container content-inner" role="main" data-id="5be14ee204d89c0266e970ef">
+        <article class="post tag-synthetic-biology tag-spacex row">
+            <section class="content-holder col-lg-8 col-sm-10 ml-auto mr-auto">
 
-<div style="position:absolute;left:-10000px;"> 
-    <img src="index.html" width="400" height="400" style="width:400px;height:400px;"> </div>   
-
-<main id="site-main" class="site-main outer">
-    <div class="inner">
-
-        <article class="post-full post tag-synthetic-biology tag-spacex ">
-
-            <header class="post-full-header">
-                <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="2018-11-06">6 November 2018</time>
-                        <span class="date-divider">/</span> <a href="../tag/synthetic-biology/">Synthetic Biology</a>
-                </section>
-                <h1 class="post-full-title">SpaceX要实现人类星际殖民，合成生物学能够做些什么？</h1>
-            </header>
-
-            <figure class="post-full-image" style="background-image: url(../content/images/2018/11/mars-launch.jpg)">
-            </figure>
-
-            <section class="post-full-content">
                 <div class="post-content">
-                    <p><strong>撰文丨孟凡康</strong>（中国科学院大学）</p><p>“You want to wake up in the morning and think the future is going to be great - and that's what being a spacefaring civilization is all about. It's about believing in the future and thinking that the future will be better than the past. And I can't think of anything more exciting than going out there and being among the stars.”</p><p>— ELON MUSK, SPACEX</p><p>9月18日，早晨9点。虽然前一晚忙于实验到了将近凌晨2点才回到宿舍，在稍微睡了一个小小的懒觉之后，在去实验室的路上准时打开手机直播画面，此时Elon Musk穿着其标志性的夹克衫正在SpaceX的火箭工厂中心进行演讲。</p><figure class="kg-card kg-image-card"><img src="https://pic2.zhimg.com/80/v2-aaead25fffd96f6d27f1006656714421_hd.jpg" class="kg-image"></figure><p>在这天，SpaceX将公布第一位前往月球的地球乘客。后来大家也都知道了，日本企业家前泽友作将在2023年搭乘SpaceX的BFR火箭和BFS飞船前往月球进行环月之旅。同时他将邀请6-8位地球的艺术家，一同前往，去近距离欣赏美丽的月球[1]。</p><p>这就是人类吧，满含着浪漫主义，同时又充满探索未来的勇气与决心。</p><p>作为史上最强大的火箭，BFR未来同时将承担Musk建立火星移民城市的重任。</p><p>Musk也在直播中说到：Become a multi-planet civilization as soon as possible（尽快建立多星球殖民文明）。</p><blockquote><strong>火星是人类最有可能移民的星球之一</strong></blockquote><p>我们大家都有所了解，最为离地球最近的天体之一，火星也是人类进行星际移民的首选之一。同时在近年的研究中，我们不仅发现了火星存在水，同时也发现火星的极地存在着地下冷冻冰川，并且有可能存在相应的生态系统。这也大大的增加了人们对于移民火星的兴趣。</p><p>而SpaceX则为了我们提供了可行的方法与相对较高的预期。通过BFR和BFS，SpaceX计划在火星建立起相应的人类基地[2]。</p><figure class="kg-card kg-image-card"><img src="https://pic4.zhimg.com/80/v2-0c72ab4329184f384edbbf7afdb8357f_hd.jpg" class="kg-image"><figcaption>SpaceX火星移民城市图景</figcaption></figure><video preload="auto" width="854" height="480" controls="">
+                    <div class="editor-content" data-clipboard="Copy link to clipboard."><p><strong>撰文丨孟凡康</strong>（中国科学院大学）</p><p>“You want to wake up in the morning and think the future is going to be great - and that's what being a spacefaring civilization is all about. It's about believing in the future and thinking that the future will be better than the past. And I can't think of anything more exciting than going out there and being among the stars.”</p><p>— ELON MUSK, SPACEX</p><p>9月18日，早晨9点。虽然前一晚忙于实验到了将近凌晨2点才回到宿舍，在稍微睡了一个小小的懒觉之后，在去实验室的路上准时打开手机直播画面，此时Elon Musk穿着其标志性的夹克衫正在SpaceX的火箭工厂中心进行演讲。</p><figure class="kg-card kg-image-card"><img src="https://pic2.zhimg.com/80/v2-aaead25fffd96f6d27f1006656714421_hd.jpg" class="kg-image"></figure><p>在这天，SpaceX将公布第一位前往月球的地球乘客。后来大家也都知道了，日本企业家前泽友作将在2023年搭乘SpaceX的BFR火箭和BFS飞船前往月球进行环月之旅。同时他将邀请6-8位地球的艺术家，一同前往，去近距离欣赏美丽的月球[1]。</p><p>这就是人类吧，满含着浪漫主义，同时又充满探索未来的勇气与决心。</p><p>作为史上最强大的火箭，BFR未来同时将承担Musk建立火星移民城市的重任。</p><p>Musk也在直播中说到：Become a multi-planet civilization as soon as possible（尽快建立多星球殖民文明）。</p><blockquote><strong>火星是人类最有可能移民的星球之一</strong></blockquote><p>我们大家都有所了解，最为离地球最近的天体之一，火星也是人类进行星际移民的首选之一。同时在近年的研究中，我们不仅发现了火星存在水，同时也发现火星的极地存在着地下冷冻冰川，并且有可能存在相应的生态系统。这也大大的增加了人们对于移民火星的兴趣。</p><p>而SpaceX则为了我们提供了可行的方法与相对较高的预期。通过BFR和BFS，SpaceX计划在火星建立起相应的人类基地[2]。</p><figure class="kg-card kg-image-card"><img src="https://pic4.zhimg.com/80/v2-0c72ab4329184f384edbbf7afdb8357f_hd.jpg" class="kg-image"><figcaption>SpaceX火星移民城市图景</figcaption></figure><video preload="auto" width="854" height="480" controls="">
     <source src="https://res.cloudinary.com/dzho7c6pm/video/upload/v1541504349/SpaceX_Interplanetary_Transport_System.mp4" type="video/mp4">
 </source></video><p></p><blockquote><strong>合成生物学在星际殖民中可能扮演的角色</strong></blockquote><p>作为SpaceX的狂热粉丝，在和朋友的聊天中，我一直调侃，我认为我要和Elon Musk产生关联，那么一定是我作为合成生物学家通过工程化手段解决生物火星殖民的挑战，比如设计一个可以生存在火星极端环境中的微生物。出于个人的兴趣，我一直在关注合成生物学能够在人类外星殖民中做些什么？合成生物学在未来外星殖民中扮演中什么样的角色？</p><p>国科大的一门夏季学科课程——《天体生物学》则给我提供了很多的思路与观点。根据我个人的了解，其实合成生物学在太空中已经是一个有着明确目标的研究领域了，其名称为太空合成生物学（Space Sythetic Biology）。太空合成生物学是生物技术的一个分支，其旨在通过对生物系统进行工程化改造，让生物可以应用于太空探索、工业生产以及科学研究等方面。</p><p>简单来说，太空合成生物学，是一门航天航空工程与生物工程的交叉学科，在长期的空间任务中拥有重要的价值。例如，利用合成生物学的方法可以将航天废物和星球资源转化成可用的产品。这种策略相比于传统的方案（依赖于资源星际运输），只需要很少的载重（根据不同的任务，可以节省多达26-85%的载重）。同时这还可以减少能量的利用和发射体积（两种重要的航天标准），比如合成生物学改造的细菌可以通过利用太阳能和目的地可用的营养资源进行繁殖和扩增，而在运输过程中只需要储存少量的菌体即可。除了成本低效益高，这也能进一步提升航天员的安全，因为传统的非生命方案往往需要大量冗余的机制和附加物理系统。同时，生物本身的多样化也是一种极大的优势。我们可以利用来自三个生物界的微生物用作航空用途，一般来说主要是细菌、古菌还有真核细胞。这些生物都是可行的轻量级工具，不仅可以是用于空间应用的可靠生物底盘，同时也是对现有空间技术的一种拓展，毕竟现有的空间技术主要还是以植物为主（比如植物生产食物等）。</p><blockquote><strong>太空合成生物学发展需要解决的6大关键挑战</strong></blockquote><p>毫无疑问，生物技术尤其是合成生物学技术将在未来太空探索中扮演着重要的角色，那么太空合成生物学想要解决人类的太空移民需要解决那些问题呢？2015年有一篇来自Journal Of The Royal Society Interface，名为《Grand challenges in space synthetic biology》[3]的文章中列出了太空合成生物学发展需要解决的6大关键挑战，分别是：</p><ol><li>资源利用 (Resource utilization)</li><li>物质生产 (Manufacturing)</li><li>生命维持 (Life support)</li><li>太空医疗与人类健康 (Space medicine and human health)</li><li>太空生命系统控制论 (Space cybernetics)</li><li>外星环境地球化 (Terraforming)</li></ol><figure class="kg-card kg-image-card"><img src="https://pic3.zhimg.com/80/v2-29633af0b5b092b1118152cd240e1b2a_hd.jpg" class="kg-image"></figure><ul><li><strong>资源利用</strong></li></ul><p>（a）确保生物在极端环境的功能</p><p>（b）拥有利用三种资源的能力：废物、挥发物和矿物</p><p>（c）可以为生产过程和基于细胞的生物材料提供原料</p><ul><li><strong>物质生产</strong></li></ul><p>（a）同粘合剂共同作用以满足与建筑相关的需求，比如结合土被，生物沉积物和生物聚合物</p><p>（b）可以产生火箭的动力和推进燃料</p><p>（c）利用现有合成生物学能力重新审视制造和建筑技术</p><ul><li><strong>生命支持</strong></li></ul><p>（a）提升废物，特别是废水的生物管理。</p><p>（b）通过将生物技术结合到传统的无生命结构中，调节和再循环空气、水和固体废物。</p><p>（c）生产美味，质地丰富，营养丰富的食物。</p><p>（d）为其他生物（比如植物）提供营养，并协助营养元素的循环利用。</p><ul><li><strong>航天医学和人类健康</strong></li></ul><p>（a）预防疾病和维持人类微生物组。</p><p>（b）利用生物制造合成药物对抗疾病、辐射损害和重力变化造成的影响</p><p>（c）开发抗辐射、具有自我修复能力的防护服和屏蔽设备。</p><ul><li><strong>太空生命系统控制论</strong></li></ul><p>（a）开发生物控制装置或者系统：生物传感器(Sensors)，执行器(Actuators)和控制器(Controllers)。</p><p>（b）设计生物控制系统，这些系统可以完全由生物部分组成，或者将生物系统与非生物系统整合在一起，产生一种人造生命形式。</p><ul><li><strong>外星环境地球化</strong></li></ul><p>完成碳和氮循环的少数多功能物种的半外星环境地球化(Paraterraforming)。</p><p>其中外星环境地球化是一个及其漫长的过程，那么如何实现呢？请看下面这段视频：如何将火星变成宜居的星球？[4]（人类设想的方案之一）</p><video preload="auto" width="854" height="480" controls="">
     <source src="https://res.cloudinary.com/dzho7c6pm/video/upload/v1541504376/10000000_205966403341393_3950166191900721152_n.mp4" type="video/mp4">
-</source></video><p></p><blockquote><strong>合成生物技术于太空应用中面临的问题</strong></blockquote><p>仍然记得在2016年iGEM Giant Jamboree颁奖典礼的现场。那时候也正好是NASA新闻发布会公布了火星的确存在水的证据，现场的嘉宾告诉我们：火星上有水！现场的各位iGEMer欢呼雀跃，激动不已。同时很多iGEM队伍也非常对火星移民非常感兴趣，谷歌搜索iGEM + Mars关键词，可以发现很多队伍在利用合成生物学让我们能够在火星立足，比如今年的Copenhagen iGEM team (链接：<a href="http://link.zhihu.com/?target=http%3A//2018.igem.org/Team%3AUCopenhagen" rel="nofollow noreferrer">http://2018.igem.org/Team:UCopenhagen</a>)</p><figure class="kg-card kg-image-card"><img src="https://pic1.zhimg.com/80/v2-a17effe6a349cb74e1ca476c9b291664_hd.jpg" class="kg-image"><figcaption>Copenhagen iGEM team的PharMARSy项目[5]</figcaption></figure><p>但是不计后果、一时脑热的火星殖民似乎不是一个明智之举，除了一些重大的挑战之外，也有人在思考人类的行为是否会对火星造成破坏。因为今年NASA公布的结果显示，火星极地是存在液态盐湖的，假使这种液态盐湖中存在活跃的生态系统，人类的殖民行为是否也会破火星原有的生态系统呢？</p><p>在知乎上大家也对火星存在液态盐湖的消息产生了浓厚的兴趣。比如知乎@喵大侠就想向火星的液态盐湖中撒播“生命种子”。</p><figure class="kg-card kg-image-card"><img src="https://pic1.zhimg.com/80/v2-893ea47475fc95879edaae970ca9e624_hd.jpg" class="kg-image"></figure><p>但是撒播“生命种子”的行为需要更全面的考虑。除了技术层面，还需要更多伦理层面的思考。在行星保护规则的约束下，这样的任务会被非常谨慎的规划，以免地球微生物侵入火星原生环境。这类似于对于转基因或者遗传工程改造生物的规定。在没有完全对结果可控之前我们需要谨慎的行动。假使火星存在生态系统，但是原有生态系统可能十分脆弱，来自地球的“生命种子”可能会带来灾难。同时“生命种子”在火星上的进化方向也是未知的，这也有可能带来未知的风险。</p><figure class="kg-card kg-image-card"><img src="https://pic4.zhimg.com/80/v2-91bfc8db2224dee11676c7d11aacc687_hd.jpg" class="kg-image"></figure><p>不仅如此，合成生物技术在太空中的应用还面临着更多的挑战。首先合成生物学在太空中的应用导致的潜在问题与在地球上的应用有很多共同点，比如现在普遍关注的生物安全问题。但也面临着许多超出地球应用预期的新问题，包括太空法律建立与执行 (space law)、行星保护 (planetary protection)、交叉污染 (cross-contaimination)、太空微生物学 (Space microbiology)、风险评估 (risk assessments)、决策基础结构 (decision-making infrastructure)、长期人类星际任务 (long duration human missions)、行星环境地球化 (terraforming)以及可以能的外星生命发现 (ET life discovery)。以下列表总结了合成生物学技术在地球以及地球外应用时所面临问题的相似点与区分点[6]。</p><blockquote><strong>写在最后</strong></blockquote><p>在直播结束后，我和同学闲聊：如果你有机会去火星，作为火星人类文明的开拓者，你会去吗？他很犹豫。然后我似乎心血来潮了一般，突破很坚定的说，我想我一定会去。因为这会让我的人生充满意义，我也许去会和一群科学家建立一个火星合成生物学研究基地，可以让火星上产生更多生命的可能。</p><p>不由的又想起了童年时，从东方的地平线到西方的地平线，那个满天繁星的夜晚，第一次被浩瀚的宇宙吸引，那一晚激动的我无法睡眠，久久望着窗外。又想起了，童年时站在板凳上盯着火星看的那个傍晚，那是火星几十年里离地球最近的一天，它红红的大大的发着光，是如此的令人惊叹和向往。</p><p>也许在有生之年里，真的能够与火星结缘呢？至少见证人类登陆火星是应该可以实现的。</p><p>期待。</p><p>参考文献：</p><p>[1] <a href="http://link.zhihu.com/?target=https%3A//dearmoon.earth/" rel="nofollow noreferrer">https://dearmoon.earth/</a></p><p>[2] <a href="http://link.zhihu.com/?target=https%3A//www.spacex.com/mars" rel="nofollow noreferrer">https://www.spacex.com/mars</a></p><p>[3] Menezes, Amor A., et al. "Grand challenges in space synthetic biology." <em>Journal of The Royal Society Interface</em> 12.113 (2015): 20150803.</p><p>[4] <a href="http://link.zhihu.com/?target=https%3A//www.facebook.com/ScienceNaturePage/videos/1332147706917484/" rel="nofollow noreferrer">https://www.facebook.com/ScienceNaturePage/videos/1332147706917484/</a></p><p>[5] <a href="http://link.zhihu.com/?target=http%3A//2018.igem.org/Team%3AUCopenhagen" rel="nofollow noreferrer">http://2018.igem.org/Team:UCopenhagen</a></p><p>[6] Race, Margaret S., et al. "Synthetic biology in space: considering the broad societal and ethical implications." <em>International Journal of Astrobiology</em> 11.2 (2012): 133-139.</p>
-                </div>
-            </section>
-
-            <section class="subscribe-form">
-                <h3 class="subscribe-form-title">Subscribe to REGENESIS</h3>
-                <p>Get the latest posts delivered right to your inbox</p>
-                <form method="post" action="http://localhost:2368/subscribe/" id="" class="">
-    <input class="confirm" type="hidden" name="confirm"><input class="location" type="hidden" name="location"><input class="referrer" type="hidden" name="referrer">
-
-    <div class="form-group">
-        <input class="subscribe-email" type="email" name="email" placeholder="youremail@example.com">
-    </div>
-    <button id="" class="" type="submit"><span>Subscribe</span></button>
-    
-<script>
-    (function(g,h,o,s,t){
-        var buster = function(b,m) {
-            h[o]('input.'+b).forEach(function (i) {
-                i.value=i.value || m;
-            });
-        };
-        buster('location', g.location.href);
-        buster('referrer', h.referrer);
-    })(window,document,'querySelectorAll','value');
-</script>
-
-</form>
-
-
-            </section>
-
-            <footer class="post-full-footer">
-
-
+</source></video><p></p><blockquote><strong>合成生物技术于太空应用中面临的问题</strong></blockquote><p>仍然记得在2016年iGEM Giant Jamboree颁奖典礼的现场。那时候也正好是NASA新闻发布会公布了火星的确存在水的证据，现场的嘉宾告诉我们：火星上有水！现场的各位iGEMer欢呼雀跃，激动不已。同时很多iGEM队伍也非常对火星移民非常感兴趣，谷歌搜索iGEM + Mars关键词，可以发现很多队伍在利用合成生物学让我们能够在火星立足，比如今年的Copenhagen iGEM team (链接：<a href="http://link.zhihu.com/?target=http%3A//2018.igem.org/Team%3AUCopenhagen" rel="nofollow noreferrer">http://2018.igem.org/Team:UCopenhagen</a>)</p><figure class="kg-card kg-image-card"><img src="https://pic1.zhimg.com/80/v2-a17effe6a349cb74e1ca476c9b291664_hd.jpg" class="kg-image"><figcaption>Copenhagen iGEM team的PharMARSy项目[5]</figcaption></figure><p>但是不计后果、一时脑热的火星殖民似乎不是一个明智之举，除了一些重大的挑战之外，也有人在思考人类的行为是否会对火星造成破坏。因为今年NASA公布的结果显示，火星极地是存在液态盐湖的，假使这种液态盐湖中存在活跃的生态系统，人类的殖民行为是否也会破火星原有的生态系统呢？</p><p>在知乎上大家也对火星存在液态盐湖的消息产生了浓厚的兴趣。比如知乎@喵大侠就想向火星的液态盐湖中撒播“生命种子”。</p><figure class="kg-card kg-image-card"><img src="https://pic1.zhimg.com/80/v2-893ea47475fc95879edaae970ca9e624_hd.jpg" class="kg-image"></figure><p>但是撒播“生命种子”的行为需要更全面的考虑。除了技术层面，还需要更多伦理层面的思考。在行星保护规则的约束下，这样的任务会被非常谨慎的规划，以免地球微生物侵入火星原生环境。这类似于对于转基因或者遗传工程改造生物的规定。在没有完全对结果可控之前我们需要谨慎的行动。假使火星存在生态系统，但是原有生态系统可能十分脆弱，来自地球的“生命种子”可能会带来灾难。同时“生命种子”在火星上的进化方向也是未知的，这也有可能带来未知的风险。</p><figure class="kg-card kg-image-card"><img src="https://pic4.zhimg.com/80/v2-91bfc8db2224dee11676c7d11aacc687_hd.jpg" class="kg-image"></figure><p>不仅如此，合成生物技术在太空中的应用还面临着更多的挑战。首先合成生物学在太空中的应用导致的潜在问题与在地球上的应用有很多共同点，比如现在普遍关注的生物安全问题。但也面临着许多超出地球应用预期的新问题，包括太空法律建立与执行 (space law)、行星保护 (planetary protection)、交叉污染 (cross-contaimination)、太空微生物学 (Space microbiology)、风险评估 (risk assessments)、决策基础结构 (decision-making infrastructure)、长期人类星际任务 (long duration human missions)、行星环境地球化 (terraforming)以及可以能的外星生命发现 (ET life discovery)。以下列表总结了合成生物学技术在地球以及地球外应用时所面临问题的相似点与区分点[6]。</p><blockquote><strong>写在最后</strong></blockquote><p>在直播结束后，我和同学闲聊：如果你有机会去火星，作为火星人类文明的开拓者，你会去吗？他很犹豫。然后我似乎心血来潮了一般，突破很坚定的说，我想我一定会去。因为这会让我的人生充满意义，我也许去会和一群科学家建立一个火星合成生物学研究基地，可以让火星上产生更多生命的可能。</p><p>不由的又想起了童年时，从东方的地平线到西方的地平线，那个满天繁星的夜晚，第一次被浩瀚的宇宙吸引，那一晚激动的我无法睡眠，久久望着窗外。又想起了，童年时站在板凳上盯着火星看的那个傍晚，那是火星几十年里离地球最近的一天，它红红的大大的发着光，是如此的令人惊叹和向往。</p><p>也许在有生之年里，真的能够与火星结缘呢？至少见证人类登陆火星是应该可以实现的。</p><p>期待。</p><p>参考文献：</p><p>[1] <a href="http://link.zhihu.com/?target=https%3A//dearmoon.earth/" rel="nofollow noreferrer">https://dearmoon.earth/</a></p><p>[2] <a href="http://link.zhihu.com/?target=https%3A//www.spacex.com/mars" rel="nofollow noreferrer">https://www.spacex.com/mars</a></p><p>[3] Menezes, Amor A., et al. "Grand challenges in space synthetic biology." <em>Journal of The Royal Society Interface</em> 12.113 (2015): 20150803.</p><p>[4] <a href="http://link.zhihu.com/?target=https%3A//www.facebook.com/ScienceNaturePage/videos/1332147706917484/" rel="nofollow noreferrer">https://www.facebook.com/ScienceNaturePage/videos/1332147706917484/</a></p><p>[5] <a href="http://link.zhihu.com/?target=http%3A//2018.igem.org/Team%3AUCopenhagen" rel="nofollow noreferrer">http://2018.igem.org/Team:UCopenhagen</a></p><p>[6] Race, Margaret S., et al. "Synthetic biology in space: considering the broad societal and ethical implications." <em>International Journal of Astrobiology</em> 11.2 (2012): 133-139.</p></div>
                     
-<section class="author-card">
-        <img class="author-profile-image" src="../content/images/2018/11/IMG_1269.JPG" alt="Fankang Meng">
-    <section class="author-card-content">
-        <h4 class="author-card-name"><a href="../author/mengfankang/">Fankang Meng</a></h4>
-            <p>Read <a href="../author/mengfankang/">more posts</a> by this author.</p>
-    </section>
-</section>
-<div class="post-full-footer-right">
-    <a class="author-card-button" href="../author/mengfankang/">Read More</a>
-</div>
+                        <ul class="tags">
+                            <li>
+                                <a href="../tag/synthetic-biology/" title="Synthetic Biology" class="tag tag-5be14c1c96b4716bc3475e2f synthetic-biology">Synthetic Biology</a>
+                            </li>  
+                            <li>
+                                <a href="../tag/spacex/" title="SpaceX" class="tag tag-5be15d9b04d89c0266e970fe spacex">SpaceX</a>
+                            </li>  
+                        </ul>
 
-
-            </footer>
-
-
-        </article>
-
-    </div>
-</main>
-
-<aside class="read-next outer">
-    <div class="inner">
-        <div class="read-next-feed">
-                <article class="read-next-card" style="background-image: url(../content/images/2018/11/0-4.jpeg)">
-                    <header class="read-next-card-header">
-                        <small class="read-next-card-header-sitetitle">— REGENESIS —</small>
-                        <h3 class="read-next-card-header-title"><a href="../tag/synthetic-biology/">Synthetic Biology</a></h3>
-                    </header>
-                    <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"></path></svg>
-</div>
-                    <div class="read-next-card-content">
+                    <div class="share">
+                        <a href="index.html#" class="trigger-share"><i class="fas fa-share-alt"></i></a>
                         <ul>
-                            <li><a href="../zhe-shi-yi-chang-quan-qiu-he-cheng-sheng-wu-xue-ling-yu-de-kuang-huan-guo-ji-yi-chuan-gong-cheng-ji-qi-da-sai-ji-jiang-kai-mu/">这是一场全球合成生物学领域的狂欢！</a></li>
-                            <li><a href="../wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-xia-ji-qi-xue-xi-jiang-ru-he-zhu-li-wang-luo-sheng-wu-xue/">网络生物学与机器学习（下）：机器学习将如何助力网络生物学？</a></li>
-                            <li><a href="../wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-shang-shi-yao-shi-ji-qi-xue-xi/">网络生物学与机器学习（上）：什么是机器学习</a></li>
+                            <li><a href="https://twitter.com/share?text=SpaceX%E8%A6%81%E5%AE%9E%E7%8E%B0%E4%BA%BA%E7%B1%BB%E6%98%9F%E9%99%85%E6%AE%96%E6%B0%91%EF%BC%8C%E5%90%88%E6%88%90%E7%94%9F%E7%89%A9%E5%AD%A6%E8%83%BD%E5%A4%9F%E5%81%9A%E4%BA%9B%E4%BB%80%E4%B9%88%EF%BC%9F&amp;url=http://localhost:2368/welcome-3/" onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;" data-toggle="tooltip" data-placement="right" title="Share on Twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/welcome-3/" onclick="window.open(this.href, 'share-facebook', 'width=580,height=296');return false;" data-toggle="tooltip" data-placement="right" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://plus.google.com/share?url=http://localhost:2368/welcome-3/" onclick="window.open(this.href, 'share-google-plus', 'width=400,height=466');return false;" data-toggle="tooltip" data-placement="right" title="Share on Google+"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a href="https://www.reddit.com/submit?url=http://localhost:2368/welcome-3/" target="_blank" data-toggle="tooltip" data-placement="right" title="Share on Reddit"><i class="fab fa-reddit-alien"></i></a></li>
+                            <li><a href="mailto:?subject=REGENESIS%20-%20SpaceX%E8%A6%81%E5%AE%9E%E7%8E%B0%E4%BA%BA%E7%B1%BB%E6%98%9F%E9%99%85%E6%AE%96%E6%B0%91%EF%BC%8C%E5%90%88%E6%88%90%E7%94%9F%E7%89%A9%E5%AD%A6%E8%83%BD%E5%A4%9F%E5%81%9A%E4%BA%9B%E4%BB%80%E4%B9%88%EF%BC%9F&amp;body=http://localhost:2368/welcome-3/" data-toggle="tooltip" data-placement="right" title="Share by Email"><i class="fas fa-envelope"></i></a></li>
                         </ul>
                     </div>
-                    <footer class="read-next-card-footer">
-                        <a href="../tag/synthetic-biology/">See all 8 posts →</a>
-                    </footer>
-                </article>
-
-                <article class="post-card post tag-synthetic-biology tag-genetic-circuits">
-        <a class="post-card-image-link" href="../welcome/">
-            <div class="post-card-image" style="background-image: url(../content/images/2018/11/Science.jpg)"></div>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="../welcome/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Synthetic Biology</span>
-                <h2 class="post-card-title">《Science》同期发表两篇合成生物学重磅文章，著名学者Uri Alon同期发表评述</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>9月21日，《Science》同期发表两篇重磅合成生物学研究文章。</p>
+                    
+                </div>
             </section>
-        </a>
-        <footer class="post-card-meta">
+        </article>
+    </main>
 
-            <ul class="author-list">
-                <li class="author-list-item">
-
-                    <div class="author-name-tooltip">
-                        Fankang Meng
-                    </div>
-
-                        <a href="../author/mengfankang/" class="static-avatar"><img class="author-profile-image" src="../content/images/2018/11/IMG_1269.JPG" alt="Fankang Meng"></a>
-                </li>
-            </ul>
-
-            <span class="reading-time">16 min read</span>
-
-        </footer>
-    </div>
-</article>
-
-                <article class="post-card post tag-genetic-circuits tag-synthetic-biology">
-        <a class="post-card-image-link" href="../welcome-2/">
-            <div class="post-card-image" style="background-image: url(../content/images/2018/11/0-2.jpeg)"></div>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="../welcome-2/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Genetic Circuits</span>
-                <h2 class="post-card-title">我们细胞中的“遗传电路”</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>当你正在静静的阅读这篇文章时，你身体内数十亿的细胞正在进行着疯狂的生物计算，这使得你作为做一个生命个体存在于宇宙中成为可能。</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-
-            <ul class="author-list">
-                <li class="author-list-item">
-
-                    <div class="author-name-tooltip">
-                        Fankang Meng
-                    </div>
-
-                        <a href="../author/mengfankang/" class="static-avatar"><img class="author-profile-image" src="../content/images/2018/11/IMG_1269.JPG" alt="Fankang Meng"></a>
-                </li>
-            </ul>
-
-            <span class="reading-time">10 min read</span>
-
-        </footer>
-    </div>
-</article>
-
-        </div>
-    </div>
-</aside>
-
-<div class="floating-header">
-    <div class="floating-header-logo">
-        <a href="../">
-                <img src="../content/images/2018/11/0.png" alt="REGENESIS icon">
-            <span>REGENESIS</span>
-        </a>
-    </div>
-    <span class="floating-header-divider">—</span>
-    <div class="floating-header-title">SpaceX要实现人类星际殖民，合成生物学能够做些什么？</div>
-    <div class="floating-header-share">
-        <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
-    <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"></path>
-</svg>
-</div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=SpaceX%E8%A6%81%E5%AE%9E%E7%8E%B0%E4%BA%BA%E7%B1%BB%E6%98%9F%E9%99%85%E6%AE%96%E6%B0%91%EF%BC%8C%E5%90%88%E6%88%90%E7%94%9F%E7%89%A9%E5%AD%A6%E8%83%BD%E5%A4%9F%E5%81%9A%E4%BA%9B%E4%BB%80%E4%B9%88%EF%BC%9F&amp;url=http://localhost:2368/welcome-3/" onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
-            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"></path></svg>
-        </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/welcome-3/" onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
-            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"></path></svg>
-        </a>
-    </div>
-    <progress id="reading-progress" class="progress" value="0">
-        <div class="progress-container">
-            <span class="progress-bar"></span>
-        </div>
-    </progress>
-</div>
-
-
-
-
-        <footer class="site-footer outer">
-            <div class="site-footer-content inner">
-                <section class="copyright"><a href="../">REGENESIS</a> © 2018</section>
-                <nav class="site-footer-nav">
-                    <a href="../">Latest Posts</a>
-                    <a href="https://www.facebook.com/profile.php?id=100005569278801" target="_blank" rel="noopener">Facebook</a>
-                    <a href="https://twitter.com/FankangMeng" target="_blank" rel="noopener">Twitter</a>
-                    <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
-                </nav>
+    <div class="comments container">
+        <div class="row">
+            <div class="col-lg-8 col-sm-10 mr-auto ml-auto">
+                <h3>Comments</h3>
+                <a href="index.html#" class="comments-trigger">
+                    <i class="fas fa-comments"></i> Write a comment ...
+                </a>
+                <div class="comments-inner"></div>
             </div>
-        </footer>
-
+        </div>
     </div>
 
-    <div id="subscribe" class="subscribe-overlay">
-        <a class="subscribe-overlay-close" href="index.html#"></a>
-        <div class="subscribe-overlay-content">
-                <img class="subscribe-overlay-logo" src="../content/images/2018/11/avatar-1.png" alt="REGENESIS">
-            <h1 class="subscribe-overlay-title">Subscribe to REGENESIS</h1>
-            <p class="subscribe-overlay-description">Stay up to date! Get all the latest &amp; greatest posts delivered straight to your inbox</p>
-            <form method="post" action="http://localhost:2368/subscribe/" id="" class="">
+                <div class="related-posts">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 col-sm-10 mr-auto ml-auto">
+                                <h3>Related posts</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="swiper-button-prev" title="Previous post"></div>
+                        <div class="swiper-button-next" title="Next post"></div>
+                        <div class="swiper-wrapper loop">
+                                <div class="swiper-slide">
+                                    <article class="post tag-synthetic-biology tag-machine-learning tag-artificial-intelligence">
+        <a href="../wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-xia-ji-qi-xue-xi-jiang-ru-he-zhu-li-wang-luo-sheng-wu-xue/" title="网络生物学与机器学习（下）：机器学习将如何助力网络生物学？" class="img-holder">
+            <img src="../content/images/2018/11/v2-263e80b123fd73d8598ae01262273b12_r.jpg" alt="网络生物学与机器学习（下）：机器学习将如何助力网络生物学？">
+        </a>
+    <div class="inner">
+            <ul class="tags">
+                <li>
+                    <a href="../tag/synthetic-biology/" title="Synthetic Biology" class="tag tag-5be14c1c96b4716bc3475e2f synthetic-biology">Synthetic Biology</a>
+                </li>  
+                <li>
+                    <a href="../tag/machine-learning/" title="Machine Learning" class="tag tag-5be25e69bec9610c2278d323 machine-learning">Machine Learning</a>
+                </li>  
+                <li>
+                    <a href="../tag/artificial-intelligence/" title="Artificial Intelligence" class="tag tag-5be25e69bec9610c2278d324 artificial-intelligence">Artificial Intelligence</a>
+                </li>  
+            </ul>
+        <h2 class="post-title"><a href="../wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-xia-ji-qi-xue-xi-jiang-ru-he-zhu-li-wang-luo-sheng-wu-xue/" title="网络生物学与机器学习（下）：机器学习将如何助力网络生物学？">网络生物学与机器学习（下）：机器学习将如何助力网络生物学？</a></h2>
+        <p class="excerpt">本文为第二部分，主要从四个方面，包括疾病生物学，药物发现，微生物组研究和合成生物学，讨论机器学习与网络生物学交叉研究的机遇和挑战。 ... <a class="read-more" href="../wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-xia-ji-qi-xue-xi-jiang-ru-he-zhu-li-wang-luo-sheng-wu-xue/" title="网络生物学与机器学习（下）：机器学习将如何助力网络生物学？">read more</a></p>
+        <ul class="post-meta">
+            <li><time class="post-date" datetime="2018-11-07"><i class="fas fa-calendar-alt"></i> 07 Nov 2018</time></li>
+            <li><div class="post-author"><i class="fas fa-user"></i> <a href="../author/mengfankang/">Fankang Meng</a></div></li>
+            <li><div class="post-reading-time"><i class="fas fa-clock"></i> 24 min read</div></li>
+            <li class="share">
+                <a href="index.html#" class="trigger-share"><i class="fas fa-share-alt"></i></a>
+                <ul>
+                    <li><a href="https://twitter.com/share?text=%E7%BD%91%E7%BB%9C%E7%94%9F%E7%89%A9%E5%AD%A6%E4%B8%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%8B%EF%BC%89%EF%BC%9A%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B0%86%E5%A6%82%E4%BD%95%E5%8A%A9%E5%8A%9B%E7%BD%91%E7%BB%9C%E7%94%9F%E7%89%A9%E5%AD%A6%EF%BC%9F&amp;url=http://localhost:2368/wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-xia-ji-qi-xue-xi-jiang-ru-he-zhu-li-wang-luo-sheng-wu-xue/" onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;" data-toggle="tooltip" data-placement="right" title="Share on Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-xia-ji-qi-xue-xi-jiang-ru-he-zhu-li-wang-luo-sheng-wu-xue/" onclick="window.open(this.href, 'share-facebook', 'width=580,height=296');return false;" data-toggle="tooltip" data-placement="right" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://plus.google.com/share?url=http://localhost:2368/wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-xia-ji-qi-xue-xi-jiang-ru-he-zhu-li-wang-luo-sheng-wu-xue/" onclick="window.open(this.href, 'share-google-plus', 'width=400,height=466');return false;" data-toggle="tooltip" data-placement="right" title="Share on Google+"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="https://www.reddit.com/submit?url=http://localhost:2368/wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-xia-ji-qi-xue-xi-jiang-ru-he-zhu-li-wang-luo-sheng-wu-xue/" target="_blank" data-toggle="tooltip" data-placement="right" title="Share on Reddit"><i class="fab fa-reddit-alien"></i></a></li>
+                    <li><a href="mailto:?subject=REGENESIS%20-%20%E7%BD%91%E7%BB%9C%E7%94%9F%E7%89%A9%E5%AD%A6%E4%B8%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%8B%EF%BC%89%EF%BC%9A%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B0%86%E5%A6%82%E4%BD%95%E5%8A%A9%E5%8A%9B%E7%BD%91%E7%BB%9C%E7%94%9F%E7%89%A9%E5%AD%A6%EF%BC%9F&amp;body=http://localhost:2368/wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-xia-ji-qi-xue-xi-jiang-ru-he-zhu-li-wang-luo-sheng-wu-xue/" data-toggle="tooltip" data-placement="right" title="Share by Email"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+            </li>
+        </ul>
+        <a href="index.html#" class="read-later" data-id="5be25eb3bec9610c2278d328"><i class="far fa-bookmark" data-toggle="tooltip" data-placement="right" title="Bookmark article"></i><i class="fas fa-bookmark" data-toggle="tooltip" data-placement="right" title="Remove bookmark"></i></a>
+    </div>
+</article>                                </div>
+                                <div class="swiper-slide">
+                                    <article class="post tag-synthetic-biology tag-machine-learning tag-artificial-intelligence">
+        <a href="../wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-shang-shi-yao-shi-ji-qi-xue-xi/" title="网络生物学与机器学习（上）：什么是机器学习" class="img-holder">
+            <img src="../content/images/2018/11/v2-26fe4c9e520b0743cb5dc8f9578a7685_r.jpg" alt="网络生物学与机器学习（上）：什么是机器学习">
+        </a>
+    <div class="inner">
+            <ul class="tags">
+                <li>
+                    <a href="../tag/synthetic-biology/" title="Synthetic Biology" class="tag tag-5be14c1c96b4716bc3475e2f synthetic-biology">Synthetic Biology</a>
+                </li>  
+                <li>
+                    <a href="../tag/machine-learning/" title="Machine Learning" class="tag tag-5be25e69bec9610c2278d323 machine-learning">Machine Learning</a>
+                </li>  
+                <li>
+                    <a href="../tag/artificial-intelligence/" title="Artificial Intelligence" class="tag tag-5be25e69bec9610c2278d324 artificial-intelligence">Artificial Intelligence</a>
+                </li>  
+            </ul>
+        <h2 class="post-title"><a href="../wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-shang-shi-yao-shi-ji-qi-xue-xi/" title="网络生物学与机器学习（上）：什么是机器学习">网络生物学与机器学习（上）：什么是机器学习</a></h2>
+        <p class="excerpt">机器学习，一种旨在从多维数据集构建可预测模型的数据分析技术，正在成为现代生物学研究不可或缺的一部分。通过对大型数据集进行学习并对生成可预测的模型，机器学习可用于研究复杂的细胞系统，如生物网络。 ... <a class="read-more" href="../wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-shang-shi-yao-shi-ji-qi-xue-xi/" title="网络生物学与机器学习（上）：什么是机器学习">read more</a></p>
+        <ul class="post-meta">
+            <li><time class="post-date" datetime="2018-11-07"><i class="fas fa-calendar-alt"></i> 07 Nov 2018</time></li>
+            <li><div class="post-author"><i class="fas fa-user"></i> <a href="../author/mengfankang/">Fankang Meng</a></div></li>
+            <li><div class="post-reading-time"><i class="fas fa-clock"></i> 22 min read</div></li>
+            <li class="share">
+                <a href="index.html#" class="trigger-share"><i class="fas fa-share-alt"></i></a>
+                <ul>
+                    <li><a href="https://twitter.com/share?text=%E7%BD%91%E7%BB%9C%E7%94%9F%E7%89%A9%E5%AD%A6%E4%B8%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%8A%EF%BC%89%EF%BC%9A%E4%BB%80%E4%B9%88%E6%98%AF%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0&amp;url=http://localhost:2368/wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-shang-shi-yao-shi-ji-qi-xue-xi/" onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;" data-toggle="tooltip" data-placement="right" title="Share on Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-shang-shi-yao-shi-ji-qi-xue-xi/" onclick="window.open(this.href, 'share-facebook', 'width=580,height=296');return false;" data-toggle="tooltip" data-placement="right" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://plus.google.com/share?url=http://localhost:2368/wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-shang-shi-yao-shi-ji-qi-xue-xi/" onclick="window.open(this.href, 'share-google-plus', 'width=400,height=466');return false;" data-toggle="tooltip" data-placement="right" title="Share on Google+"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="https://www.reddit.com/submit?url=http://localhost:2368/wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-shang-shi-yao-shi-ji-qi-xue-xi/" target="_blank" data-toggle="tooltip" data-placement="right" title="Share on Reddit"><i class="fab fa-reddit-alien"></i></a></li>
+                    <li><a href="mailto:?subject=REGENESIS%20-%20%E7%BD%91%E7%BB%9C%E7%94%9F%E7%89%A9%E5%AD%A6%E4%B8%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%8A%EF%BC%89%EF%BC%9A%E4%BB%80%E4%B9%88%E6%98%AF%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0&amp;body=http://localhost:2368/wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-shang-shi-yao-shi-ji-qi-xue-xi/" data-toggle="tooltip" data-placement="right" title="Share by Email"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+            </li>
+        </ul>
+        <a href="index.html#" class="read-later" data-id="5be25e21bec9610c2278d31f"><i class="far fa-bookmark" data-toggle="tooltip" data-placement="right" title="Bookmark article"></i><i class="fas fa-bookmark" data-toggle="tooltip" data-placement="right" title="Remove bookmark"></i></a>
+    </div>
+</article>                                </div>
+                                <div class="swiper-slide">
+                                    <article class="post tag-synthetic-biology tag-reading tag-papers tag-software">
+        <a href="../ru-he-xiang-liu-lan-peng-you-quan-yi-yang-liao-jie-zui-xin-de-wen-xian/" title="如何像浏览朋友圈一样了解最新的文献？" class="img-holder">
+            <img src="../content/images/2018/11/v2-b8db452a74af7a171d8c029c56415307_r.jpg" alt="如何像浏览朋友圈一样了解最新的文献？">
+        </a>
+    <div class="inner">
+            <ul class="tags">
+                <li>
+                    <a href="../tag/synthetic-biology/" title="Synthetic Biology" class="tag tag-5be14c1c96b4716bc3475e2f synthetic-biology">Synthetic Biology</a>
+                </li>  
+                <li>
+                    <a href="../tag/reading/" title="Reading" class="tag tag-5be25ababec9610c2278d318 reading">Reading</a>
+                </li>  
+                <li>
+                    <a href="../tag/papers/" title="Papers" class="tag tag-5be25ababec9610c2278d319 papers">Papers</a>
+                </li>  
+                <li>
+                    <a href="../tag/software/" title="software" class="tag tag-5be25ababec9610c2278d31a software">software</a>
+                </li>  
+            </ul>
+        <h2 class="post-title"><a href="../ru-he-xiang-liu-lan-peng-you-quan-yi-yang-liao-jie-zui-xin-de-wen-xian/" title="如何像浏览朋友圈一样了解最新的文献？">如何像浏览朋友圈一样了解最新的文献？</a></h2>
+        <p class="excerpt">如何把握科研前言的最新动态？想必这是所有研究人员都在思考的问题。同时在这个信息爆炸的时代，如何对纷繁复杂的科研信息进行过滤，高效的了解最关键的信息也是我们关心的。 ... <a class="read-more" href="../ru-he-xiang-liu-lan-peng-you-quan-yi-yang-liao-jie-zui-xin-de-wen-xian/" title="如何像浏览朋友圈一样了解最新的文献？">read more</a></p>
+        <ul class="post-meta">
+            <li><time class="post-date" datetime="2018-11-07"><i class="fas fa-calendar-alt"></i> 07 Nov 2018</time></li>
+            <li><div class="post-author"><i class="fas fa-user"></i> <a href="../author/mengfankang/">Fankang Meng</a></div></li>
+            <li><div class="post-reading-time"><i class="fas fa-clock"></i> 5 min read</div></li>
+            <li class="share">
+                <a href="index.html#" class="trigger-share"><i class="fas fa-share-alt"></i></a>
+                <ul>
+                    <li><a href="https://twitter.com/share?text=%E5%A6%82%E4%BD%95%E5%83%8F%E6%B5%8F%E8%A7%88%E6%9C%8B%E5%8F%8B%E5%9C%88%E4%B8%80%E6%A0%B7%E4%BA%86%E8%A7%A3%E6%9C%80%E6%96%B0%E7%9A%84%E6%96%87%E7%8C%AE%EF%BC%9F&amp;url=http://localhost:2368/ru-he-xiang-liu-lan-peng-you-quan-yi-yang-liao-jie-zui-xin-de-wen-xian/" onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;" data-toggle="tooltip" data-placement="right" title="Share on Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/ru-he-xiang-liu-lan-peng-you-quan-yi-yang-liao-jie-zui-xin-de-wen-xian/" onclick="window.open(this.href, 'share-facebook', 'width=580,height=296');return false;" data-toggle="tooltip" data-placement="right" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://plus.google.com/share?url=http://localhost:2368/ru-he-xiang-liu-lan-peng-you-quan-yi-yang-liao-jie-zui-xin-de-wen-xian/" onclick="window.open(this.href, 'share-google-plus', 'width=400,height=466');return false;" data-toggle="tooltip" data-placement="right" title="Share on Google+"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="https://www.reddit.com/submit?url=http://localhost:2368/ru-he-xiang-liu-lan-peng-you-quan-yi-yang-liao-jie-zui-xin-de-wen-xian/" target="_blank" data-toggle="tooltip" data-placement="right" title="Share on Reddit"><i class="fab fa-reddit-alien"></i></a></li>
+                    <li><a href="mailto:?subject=REGENESIS%20-%20%E5%A6%82%E4%BD%95%E5%83%8F%E6%B5%8F%E8%A7%88%E6%9C%8B%E5%8F%8B%E5%9C%88%E4%B8%80%E6%A0%B7%E4%BA%86%E8%A7%A3%E6%9C%80%E6%96%B0%E7%9A%84%E6%96%87%E7%8C%AE%EF%BC%9F&amp;body=http://localhost:2368/ru-he-xiang-liu-lan-peng-you-quan-yi-yang-liao-jie-zui-xin-de-wen-xian/" data-toggle="tooltip" data-placement="right" title="Share by Email"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+            </li>
+        </ul>
+        <a href="index.html#" class="read-later" data-id="5be25a6fbec9610c2278d314"><i class="far fa-bookmark" data-toggle="tooltip" data-placement="right" title="Bookmark article"></i><i class="fas fa-bookmark" data-toggle="tooltip" data-placement="right" title="Remove bookmark"></i></a>
+    </div>
+</article>                                </div>
+                                <div class="swiper-slide">
+                                    <article class="post tag-synthetic-biology">
+        <a href="../zao-wu-jiu-lu-ru-he-wu-zhong-sheng-you/" title="造物九律：如何无中生有" class="img-holder">
+            <img src="../content/images/2018/11/v2-474d21558d213a4338620c3f378160f2_1200x500.jpg" alt="造物九律：如何无中生有">
+        </a>
+    <div class="inner">
+            <ul class="tags">
+                <li>
+                    <a href="../tag/synthetic-biology/" title="Synthetic Biology" class="tag tag-5be14c1c96b4716bc3475e2f synthetic-biology">Synthetic Biology</a>
+                </li>  
+            </ul>
+        <h2 class="post-title"><a href="../zao-wu-jiu-lu-ru-he-wu-zhong-sheng-you/" title="造物九律：如何无中生有">造物九律：如何无中生有</a></h2>
+        <p class="excerpt">大自然从无创造了有。  先是一颗坚硬的岩石星球，然后是生命，许许多多的生命；先是贫瘠的荒山，然后是点缀着鱼和香蒲、还有红翅黑鹂的山涧；先是橡子，然后是一片橡树林。 ... <a class="read-more" href="../zao-wu-jiu-lu-ru-he-wu-zhong-sheng-you/" title="造物九律：如何无中生有">read more</a></p>
+        <ul class="post-meta">
+            <li><time class="post-date" datetime="2018-11-07"><i class="fas fa-calendar-alt"></i> 07 Nov 2018</time></li>
+            <li><div class="post-author"><i class="fas fa-user"></i> <a href="../author/mengfankang/">Fankang Meng</a></div></li>
+            <li><div class="post-reading-time"><i class="fas fa-clock"></i> 12 min read</div></li>
+            <li class="share">
+                <a href="index.html#" class="trigger-share"><i class="fas fa-share-alt"></i></a>
+                <ul>
+                    <li><a href="https://twitter.com/share?text=%E9%80%A0%E7%89%A9%E4%B9%9D%E5%BE%8B%EF%BC%9A%E5%A6%82%E4%BD%95%E6%97%A0%E4%B8%AD%E7%94%9F%E6%9C%89&amp;url=http://localhost:2368/zao-wu-jiu-lu-ru-he-wu-zhong-sheng-you/" onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;" data-toggle="tooltip" data-placement="right" title="Share on Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/zao-wu-jiu-lu-ru-he-wu-zhong-sheng-you/" onclick="window.open(this.href, 'share-facebook', 'width=580,height=296');return false;" data-toggle="tooltip" data-placement="right" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://plus.google.com/share?url=http://localhost:2368/zao-wu-jiu-lu-ru-he-wu-zhong-sheng-you/" onclick="window.open(this.href, 'share-google-plus', 'width=400,height=466');return false;" data-toggle="tooltip" data-placement="right" title="Share on Google+"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="https://www.reddit.com/submit?url=http://localhost:2368/zao-wu-jiu-lu-ru-he-wu-zhong-sheng-you/" target="_blank" data-toggle="tooltip" data-placement="right" title="Share on Reddit"><i class="fab fa-reddit-alien"></i></a></li>
+                    <li><a href="mailto:?subject=REGENESIS%20-%20%E9%80%A0%E7%89%A9%E4%B9%9D%E5%BE%8B%EF%BC%9A%E5%A6%82%E4%BD%95%E6%97%A0%E4%B8%AD%E7%94%9F%E6%9C%89&amp;body=http://localhost:2368/zao-wu-jiu-lu-ru-he-wu-zhong-sheng-you/" data-toggle="tooltip" data-placement="right" title="Share by Email"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+            </li>
+        </ul>
+        <a href="index.html#" class="read-later" data-id="5be259a9bec9610c2278d30f"><i class="far fa-bookmark" data-toggle="tooltip" data-placement="right" title="Bookmark article"></i><i class="fas fa-bookmark" data-toggle="tooltip" data-placement="right" title="Remove bookmark"></i></a>
+    </div>
+</article>                                </div>
+                                <div class="swiper-slide">
+                                    <article class="post tag-synthetic-biology">
+        <a href="../welcome-4/" title="合成生物学的现在与未来丨国科大中学生夏令营科普演讲" class="img-holder">
+            <img src="../content/images/2018/11/guokeda.jpg" alt="合成生物学的现在与未来丨国科大中学生夏令营科普演讲">
+        </a>
+    <div class="inner">
+            <ul class="tags">
+                <li>
+                    <a href="../tag/synthetic-biology/" title="Synthetic Biology" class="tag tag-5be14c1c96b4716bc3475e2f synthetic-biology">Synthetic Biology</a>
+                </li>  
+            </ul>
+        <h2 class="post-title"><a href="../welcome-4/" title="合成生物学的现在与未来丨国科大中学生夏令营科普演讲">合成生物学的现在与未来丨国科大中学生夏令营科普演讲</a></h2>
+        <p class="excerpt">作为一名年轻的研究生，在这里，我想说一点对大家的期望，我想这些话也是对我说的。 首先，我希望你们在未来的科学研究中能够不断主动拓宽自己的视野，作为世界科学领域的储备力量，我想我们应该通过研究来为人类、社会以及整个世界的问题提供一个解决方案。 ... <a class="read-more" href="../welcome-4/" title="合成生物学的现在与未来丨国科大中学生夏令营科普演讲">read more</a></p>
+        <ul class="post-meta">
+            <li><time class="post-date" datetime="2018-11-06"><i class="fas fa-calendar-alt"></i> 06 Nov 2018</time></li>
+            <li><div class="post-author"><i class="fas fa-user"></i> <a href="../author/mengfankang/">Fankang Meng</a></div></li>
+            <li><div class="post-reading-time"><i class="fas fa-clock"></i> 32 min read</div></li>
+            <li class="share">
+                <a href="index.html#" class="trigger-share"><i class="fas fa-share-alt"></i></a>
+                <ul>
+                    <li><a href="https://twitter.com/share?text=%E5%90%88%E6%88%90%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9A%84%E7%8E%B0%E5%9C%A8%E4%B8%8E%E6%9C%AA%E6%9D%A5%E4%B8%A8%E5%9B%BD%E7%A7%91%E5%A4%A7%E4%B8%AD%E5%AD%A6%E7%94%9F%E5%A4%8F%E4%BB%A4%E8%90%A5%E7%A7%91%E6%99%AE%E6%BC%94%E8%AE%B2&amp;url=http://localhost:2368/welcome-4/" onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;" data-toggle="tooltip" data-placement="right" title="Share on Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/welcome-4/" onclick="window.open(this.href, 'share-facebook', 'width=580,height=296');return false;" data-toggle="tooltip" data-placement="right" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://plus.google.com/share?url=http://localhost:2368/welcome-4/" onclick="window.open(this.href, 'share-google-plus', 'width=400,height=466');return false;" data-toggle="tooltip" data-placement="right" title="Share on Google+"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="https://www.reddit.com/submit?url=http://localhost:2368/welcome-4/" target="_blank" data-toggle="tooltip" data-placement="right" title="Share on Reddit"><i class="fab fa-reddit-alien"></i></a></li>
+                    <li><a href="mailto:?subject=REGENESIS%20-%20%E5%90%88%E6%88%90%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9A%84%E7%8E%B0%E5%9C%A8%E4%B8%8E%E6%9C%AA%E6%9D%A5%E4%B8%A8%E5%9B%BD%E7%A7%91%E5%A4%A7%E4%B8%AD%E5%AD%A6%E7%94%9F%E5%A4%8F%E4%BB%A4%E8%90%A5%E7%A7%91%E6%99%AE%E6%BC%94%E8%AE%B2&amp;body=http://localhost:2368/welcome-4/" data-toggle="tooltip" data-placement="right" title="Share by Email"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+            </li>
+        </ul>
+        <a href="index.html#" class="read-later" data-id="5be190bd04d89c0266e97129"><i class="far fa-bookmark" data-toggle="tooltip" data-placement="right" title="Bookmark article"></i><i class="fas fa-bookmark" data-toggle="tooltip" data-placement="right" title="Remove bookmark"></i></a>
+    </div>
+</article>                                </div>
+                                <div class="swiper-slide">
+                                    <article class="post tag-synthetic-biology tag-genetic-circuits">
+        <a href="../welcome/" title="《Science》同期发表两篇合成生物学重磅文章，著名学者Uri Alon同期发表评述" class="img-holder">
+            <img src="../content/images/2018/11/Science.jpg" alt="《Science》同期发表两篇合成生物学重磅文章，著名学者Uri Alon同期发表评述">
+        </a>
+    <div class="inner">
+            <ul class="tags">
+                <li>
+                    <a href="../tag/synthetic-biology/" title="Synthetic Biology" class="tag tag-5be14c1c96b4716bc3475e2f synthetic-biology">Synthetic Biology</a>
+                </li>  
+                <li>
+                    <a href="../tag/genetic-circuits/" title="Genetic Circuits" class="tag tag-5be14c1c96b4716bc3475e2e genetic-circuits">Genetic Circuits</a>
+                </li>  
+            </ul>
+        <h2 class="post-title"><a href="../welcome/" title="《Science》同期发表两篇合成生物学重磅文章，著名学者Uri Alon同期发表评述">《Science》同期发表两篇合成生物学重磅文章，著名学者Uri Alon同期发表评述</a></h2>
+        <p class="excerpt">9月21日，《Science》同期发表两篇重磅合成生物学研究文章。 ... <a class="read-more" href="../welcome/" title="《Science》同期发表两篇合成生物学重磅文章，著名学者Uri Alon同期发表评述">read more</a></p>
+        <ul class="post-meta">
+            <li><time class="post-date" datetime="2018-11-06"><i class="fas fa-calendar-alt"></i> 06 Nov 2018</time></li>
+            <li><div class="post-author"><i class="fas fa-user"></i> <a href="../author/mengfankang/">Fankang Meng</a></div></li>
+            <li><div class="post-reading-time"><i class="fas fa-clock"></i> 16 min read</div></li>
+            <li class="share">
+                <a href="index.html#" class="trigger-share"><i class="fas fa-share-alt"></i></a>
+                <ul>
+                    <li><a href="https://twitter.com/share?text=%E3%80%8AScience%E3%80%8B%E5%90%8C%E6%9C%9F%E5%8F%91%E8%A1%A8%E4%B8%A4%E7%AF%87%E5%90%88%E6%88%90%E7%94%9F%E7%89%A9%E5%AD%A6%E9%87%8D%E7%A3%85%E6%96%87%E7%AB%A0%EF%BC%8C%E8%91%97%E5%90%8D%E5%AD%A6%E8%80%85Uri%20Alon%E5%90%8C%E6%9C%9F%E5%8F%91%E8%A1%A8%E8%AF%84%E8%BF%B0&amp;url=http://localhost:2368/welcome/" onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;" data-toggle="tooltip" data-placement="right" title="Share on Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/welcome/" onclick="window.open(this.href, 'share-facebook', 'width=580,height=296');return false;" data-toggle="tooltip" data-placement="right" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://plus.google.com/share?url=http://localhost:2368/welcome/" onclick="window.open(this.href, 'share-google-plus', 'width=400,height=466');return false;" data-toggle="tooltip" data-placement="right" title="Share on Google+"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="https://www.reddit.com/submit?url=http://localhost:2368/welcome/" target="_blank" data-toggle="tooltip" data-placement="right" title="Share on Reddit"><i class="fab fa-reddit-alien"></i></a></li>
+                    <li><a href="mailto:?subject=REGENESIS%20-%20%E3%80%8AScience%E3%80%8B%E5%90%8C%E6%9C%9F%E5%8F%91%E8%A1%A8%E4%B8%A4%E7%AF%87%E5%90%88%E6%88%90%E7%94%9F%E7%89%A9%E5%AD%A6%E9%87%8D%E7%A3%85%E6%96%87%E7%AB%A0%EF%BC%8C%E8%91%97%E5%90%8D%E5%AD%A6%E8%80%85Uri%20Alon%E5%90%8C%E6%9C%9F%E5%8F%91%E8%A1%A8%E8%AF%84%E8%BF%B0&amp;body=http://localhost:2368/welcome/" data-toggle="tooltip" data-placement="right" title="Share by Email"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+            </li>
+        </ul>
+        <a href="index.html#" class="read-later" data-id="5be18f4504d89c0266e9711e"><i class="far fa-bookmark" data-toggle="tooltip" data-placement="right" title="Bookmark article"></i><i class="fas fa-bookmark" data-toggle="tooltip" data-placement="right" title="Remove bookmark"></i></a>
+    </div>
+</article>                                </div>
+                        </div>
+                    </div>
+                </div>
+
+    <div class="fixed-post-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 ml-auto mr-auto">
+                        <a href="../welcome-2/" class="prev"><i class="fas fa-angle-left"></i> Previous post</a>
+                    <a href="../">Back to homepage</a>
+                        <a href="../welcome/" class="next">Next post <i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+            <footer class="site-footer clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                    <h3>About</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed lacus id tortor iaculis iaculis dignissim eget justo. <br><br> Maecenas posuere eros nisl, ut pharetra turpis faucibus a. In imperdiet urna mattis lacus mollis, sit amet pulvinar purus vehicula.</p>
+                </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <h3>Tags</h3>
+                                <ul class="tags">
+                                            <li>
+                                                <a href="../tag/genetic-circuits/">Genetic Circuits</a>
+                                            </li>
+                                            <li>
+                                                <a href="../tag/synthetic-biology/">Synthetic Biology</a>
+                                            </li>
+                                            <li>
+                                                <a href="../tag/spacex/">SpaceX</a>
+                                            </li>
+                                            <li>
+                                                <a href="../tag/reading/">Reading</a>
+                                            </li>
+                                            <li>
+                                                <a href="../tag/papers/">Papers</a>
+                                            </li>
+                                            <li>
+                                                <a href="../tag/software/">software</a>
+                                            </li>
+                                            <li>
+                                                <a href="../tag/machine-learning/">Machine Learning</a>
+                                            </li>
+                                            <li>
+                                                <a href="../tag/artificial-intelligence/">Artificial Intelligence</a>
+                                            </li>
+                                            <li>
+                                                <a href="../tag/igem/">iGEM</a>
+                                            </li>
+                                            <li>
+                                                <a href="../tag/markdown/">Markdown</a>
+                                            </li>
+                                            <li>
+                                                <a href="../tag/elon-musk/">Elon Musk</a>
+                                            </li>
+                                            <li>
+                                                <a href="../tag/learning-everything/">Learning Everything</a>
+                                            </li>
+                                </ul>
+                            </div>
+                <div class="col-sm-6 col-lg-3">
+                    <h3>Latest posts</h3>
+                    <ul class="latest-posts">
+                        <li>
+                            <h5><a href="../the-elon-musk-story-3d-animated/" title="The Elon Musk Story | 3D Animated">The Elon Musk Story | 3D Animated</a></h5>
+                            <time class="post-date" datetime="2018-11-07"><i class="fas fa-calendar-alt"></i> 07 Nov 2018</time>
+                        </li>
+                        <li>
+                            <h5><a href="../markdownyu-fa/" title="Markdown语法">Markdown语法</a></h5>
+                            <time class="post-date" datetime="2018-11-07"><i class="fas fa-calendar-alt"></i> 07 Nov 2018</time>
+                        </li>
+                        <li>
+                            <h5><a href="../guo-ke-da-igem-2018/" title="我们用合成生物学创造了一朵五彩芬芳的玫瑰？你想来看看吗？">我们用合成生物学创造了一朵五彩芬芳的玫瑰？你想来看看吗？</a></h5>
+                            <time class="post-date" datetime="2018-11-07"><i class="fas fa-calendar-alt"></i> 07 Nov 2018</time>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <h3>Newsletter</h3>
+                    <div class="subscribe-container">
+                        <p>Subscribe to our newsletter to receive our latest news.</p>
+                        <form method="post" action="http://localhost:2368/subscribe/" id="" class="gh-signin">
     <input class="confirm" type="hidden" name="confirm"><input class="location" type="hidden" name="location"><input class="referrer" type="hidden" name="referrer">
 
     <div class="form-group">
-        <input class="subscribe-email" type="email" name="email" placeholder="youremail@example.com">
+        <input class="gh-input" type="email" name="email" placeholder="Your email address">
     </div>
-    <button id="" class="" type="submit"><span>Subscribe</span></button>
+    <button id="" class="fas fa-angle-right" type="submit"><span>Subscribe</span></button>
     
 <script>
     (function(g,h,o,s,t){
@@ -371,92 +602,28 @@ ghost.init({
 </form>
 
 
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="container-fluid copyright">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="copyright">Copyright © 2018, <a href="../">REGENESIS</a>. All Right Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     </div>
 
-    <script>
-        var images = document.querySelectorAll('.kg-gallery-image img');
-        images.forEach(function (image) {
-            var container = image.closest('.kg-gallery-image');
-            var width = image.attributes.width.value;
-            var height = image.attributes.height.value;
-            var ratio = width / height;
-            container.style.flex = ratio + ' 1 0%';
-        })
-    </script>
+
+    <script type="text/javascript" src="../assets/js/libraries.js?v=9a51de674b"></script>
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
-    </script>
-    <script type="text/javascript" src="../assets/built/jquery.fitvids.js?v=cbc3160cf5"></script>
-
-
-    <script>
-
-// NOTE: Scroll performance is poor in Safari
-// - this appears to be due to the events firing much more slowly in Safari.
-//   Dropping the scroll event and using only a raf loop results in smoother
-//   scrolling but continuous processing even when not scrolling
-$(document).ready(function () {
-    // Start fitVids
-    var $postContent = $(".post-full-content");
-    $postContent.fitVids();
-    // End fitVids
-
-    var progressBar = document.querySelector('#reading-progress');
-    var header = document.querySelector('.floating-header');
-    var title = document.querySelector('.post-full-title');
-
-    var lastScrollY = window.scrollY;
-    var lastWindowHeight = window.innerHeight;
-    var lastDocumentHeight = $(document).height();
-    var ticking = false;
-
-    function onScroll() {
-        lastScrollY = window.scrollY;
-        requestTick();
-    }
-
-    function onResize() {
-        lastWindowHeight = window.innerHeight;
-        lastDocumentHeight = $(document).height();
-        requestTick();
-    }
-
-    function requestTick() {
-        if (!ticking) {
-            requestAnimationFrame(update);
-        }
-        ticking = true;
-    }
-
-    function update() {
-        var trigger = title.getBoundingClientRect().top + window.scrollY;
-        var triggerOffset = title.offsetHeight + 35;
-        var progressMax = lastDocumentHeight - lastWindowHeight;
-
-        // show/hide floating header
-        if (lastScrollY >= trigger + triggerOffset) {
-            header.classList.add('floating-active');
-        } else {
-            header.classList.remove('floating-active');
-        }
-
-        progressBar.setAttribute('max', progressMax);
-        progressBar.setAttribute('value', lastScrollY);
-
-        ticking = false;
-    }
-
-    window.addEventListener('scroll', onScroll, {passive: true});
-    window.addEventListener('resize', onResize, false);
-
-    update();
-
-});
-</script>
-
-
+    <!--  执行highlight.js -->
+<script src="http://cdn.bootcss.com/highlight.js/9.9.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
     
+    <script type="text/javascript" src="../assets/js/main.js?v=9a51de674b"></script>
 
 </body>
