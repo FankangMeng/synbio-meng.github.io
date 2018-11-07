@@ -1,0 +1,459 @@
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>网络生物学与机器学习（下）：机器学习将如何助力网络生物学？Fankang Meng </title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../assets/built/screen.css?v=cbc3160cf5">
+
+    <link rel="shortcut icon" href="../favicon.png" type="image/png">
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="amp/index.html">
+    
+    <meta property="og:site_name" content="REGENESIS">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="网络生物学与机器学习（下）：机器学习将如何助力网络生物学？">
+    <meta property="og:description" content="本文为第二部分，主要从四个方面，包括疾病生物学，药物发现，微生物组研究和合成生物学，讨论机器学习与网络生物学交叉研究的机遇和挑战。">
+    <meta property="og:url" content="http://localhost:2368/wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-xia-ji-qi-xue-xi-jiang-ru-he-zhu-li-wang-luo-sheng-wu-xue/">
+    <meta property="og:image" content="http://localhost:2368/content/images/2018/11/v2-263e80b123fd73d8598ae01262273b12_r.jpg">
+    <meta property="article:published_time" content="2018-11-07T03:43:46.000Z">
+    <meta property="article:modified_time" content="2018-11-07T03:43:46.000Z">
+    <meta property="article:tag" content="Synthetic Biology">
+    <meta property="article:tag" content="Machine Learning">
+    <meta property="article:tag" content="Artificial Intelligence">
+    
+    <meta property="article:publisher" content="https://www.facebook.com/profile.php?id=100005569278801">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="网络生物学与机器学习（下）：机器学习将如何助力网络生物学？">
+    <meta name="twitter:description" content="本文为第二部分，主要从四个方面，包括疾病生物学，药物发现，微生物组研究和合成生物学，讨论机器学习与网络生物学交叉研究的机遇和挑战。">
+    <meta name="twitter:url" content="http://localhost:2368/wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-xia-ji-qi-xue-xi-jiang-ru-he-zhu-li-wang-luo-sheng-wu-xue/">
+    <meta name="twitter:image" content="http://localhost:2368/content/images/2018/11/v2-263e80b123fd73d8598ae01262273b12_r.jpg">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Fankang Meng">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Synthetic Biology, Machine Learning, Artificial Intelligence">
+    <meta name="twitter:site" content="@FankangMeng">
+    <meta property="og:image:width" content="1500">
+    <meta property="og:image:height" content="670">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "REGENESIS",
+        "logo": "http://localhost:2368/content/images/2018/11/avatar-1.png"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Fankang Meng",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://localhost:2368/content/images/2018/11/IMG_1269.JPG",
+            "width": 910,
+            "height": 910
+        },
+        "url": "http://localhost:2368/author/mengfankang/",
+        "sameAs": []
+    },
+    "headline": "网络生物学与机器学习（下）：机器学习将如何助力网络生物学？",
+    "url": "http://localhost:2368/wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-xia-ji-qi-xue-xi-jiang-ru-he-zhu-li-wang-luo-sheng-wu-xue/",
+    "datePublished": "2018-11-07T03:43:46.000Z",
+    "dateModified": "2018-11-07T03:43:46.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://localhost:2368/content/images/2018/11/v2-263e80b123fd73d8598ae01262273b12_r.jpg",
+        "width": 1500,
+        "height": 670
+    },
+    "keywords": "Synthetic Biology, Machine Learning, Artificial Intelligence",
+    "description": "本文为第二部分，主要从四个方面，包括疾病生物学，药物发现，微生物组研究和合成生物学，讨论机器学习与网络生物学交叉研究的机遇和挑战。",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://localhost:2368/"
+    }
+}
+    </script>
+
+    <script src="../public/ghost-sdk.js?v=cbc3160cf5"></script>
+<script>
+ghost.init({
+	clientId: "ghost-frontend",
+	clientSecret: "bdb31fc049d9"
+});
+</script>
+    <meta name="generator" content="Ghost 2.4">
+    <link rel="alternate" type="application/rss+xml" title="REGENESIS" href="../rss/index.html">
+
+</head>
+<body class="post-template tag-synthetic-biology tag-machine-learning tag-artificial-intelligence">
+
+    <div class="site-wrapper">
+
+        
+
+<header class="site-header outer">
+    <div class="inner">
+        <nav class="site-nav">
+    <div class="site-nav-left">
+                <a class="site-nav-logo" href="../"><img src="../content/images/2018/11/avatar-1.png" alt="REGENESIS"></a>
+            <ul class="nav" role="menu">
+    <li class="nav-home" role="menuitem"><a href="../">Home</a></li>
+    <li class="nav-synthetic-biology" role="menuitem"><a href="../tag/synthetic-biology/">Synthetic Biology</a></li>
+    <li class="nav-ucas-life" role="menuitem"><a href="http://localhost:2368/ucas-life/">UCAS Life</a></li>
+    <li class="nav-igem" role="menuitem"><a href="http://localhost:2368/igem/">iGEM</a></li>
+    <li class="nav-author" role="menuitem"><a href="../author/mengfankang/">Author</a></li>
+</ul>
+
+    </div>
+    <div class="site-nav-right">
+        <div class="social-links">
+                <a class="social-link social-link-fb" href="https://www.facebook.com/profile.php?id=100005569278801" title="Facebook" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"></path></svg>
+</a>
+                <a class="social-link social-link-tw" href="https://twitter.com/FankangMeng" title="Twitter" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"></path></svg>
+</a>
+        </div>
+            <a class="subscribe-button" href="index.html#subscribe">Subscribe</a>
+    </div>
+</nav>
+    </div>
+</header>
+
+<div style="position:absolute;left:-10000px;"> 
+    <img src="index.html" width="400" height="400" style="width:400px;height:400px;"> </div>   
+
+<main id="site-main" class="site-main outer">
+    <div class="inner">
+
+        <article class="post-full post tag-synthetic-biology tag-machine-learning tag-artificial-intelligence ">
+
+            <header class="post-full-header">
+                <section class="post-full-meta">
+                    <time class="post-full-meta-date" datetime="2018-11-07">7 November 2018</time>
+                        <span class="date-divider">/</span> <a href="../tag/synthetic-biology/">Synthetic Biology</a>
+                </section>
+                <h1 class="post-full-title">网络生物学与机器学习（下）：机器学习将如何助力网络生物学？</h1>
+            </header>
+
+            <figure class="post-full-image" style="background-image: url(../content/images/2018/11/v2-263e80b123fd73d8598ae01262273b12_r.jpg)">
+            </figure>
+
+            <section class="post-full-content">
+                <div class="post-content">
+                    <p><strong>机器学习，一种旨在从多维数据集构建可预测模型的数据分析技术，正在成为现代生物学研究不可或缺的一部分。</strong>通过对大型数据集进行学习并对生成可预测的模型，机器学习可用于研究复杂的细胞系统，如生物网络。这篇文章为生命科学领域的研究人员提供了机器学习入门的一些知识，包括深度学习的介绍。同时这篇文章还从四个方面，包括疾病生物学，药物发现，微生物组研究和合成生物学，讨论了机器学习与网络生物学交叉研究的机遇和挑战.<strong>本文为第二部分，主要从四个方面，包括疾病生物学，药物发现，微生物组研究和合成生物学，讨论机器学习与网络生物学交叉研究的机遇和挑战。</strong></p><blockquote><strong>作者：Camacho, D. M., Collins, K. M., Powers, R. K., Costello, J. C., &amp; Collins, J. J翻译：孟凡康（部分内容有删改）全文约6500字，阅读时间约为15分钟</strong></blockquote><p>随着我们在生物系统的多个层面上收集到越来越庞大且多样化的数据，我们可以利用这些数据集设计相应的机器学习方法，在多个层面（从基因调控到物种间相互作用）构建更复杂、更真实的网络模型。 此外，下一代机器学习方法提供的工具可以增加这些网络模型在各种生物医学领域中的应用。 <strong>在接下来的内容中，我们将会从疾病生物学，药物开发，微生物组研究和合成生物学这四个方面探讨网络生物学与机器学习的交叉研究将如何在这些领域发挥重要的作用。</strong></p><h2 id="-"><strong>疾病生物学</strong></h2><p>网络生物学可以帮助我们更好地理解疾病的复杂性。 传统方法依赖于疾病特定方面的识别和特征描述，例如疾病相关基因的发现，而网络生物学采取的是更加全面的方法，因此，网络生物学将为我们揭示更加全面的疾病表型驱动因素的信息。 网络生物学不是简单地识别潜在的生物标志物，而是让我们能够对疾病状态中至关重要的生物分子相互作用的网络和子网络进行描述。<strong>在定义疾病的网络特定特征时，可以合理地使用机器学习算法来帮助理解和定义潜在的疾病机制。</strong>比如，可以使用来自诸如BioGRID来源的现有生物网络知识，探索与健康状态相比，不同生物分子之间的关系如何在疾病状态中发生变化（BioGRID是一个关于基因相互作用，蛋白质 - 蛋白质相互作用，化学相互作用，翻译后修饰的数据库）。从健康队列的数据开始，我们可以训练深度学习算法（例如，深度神经网络）来学习和定义健康状态的基本特征。训练后，我们可以将来自患者群体的数据提供给算法，并用于预测健康状态和疾病状态之间的差异等应用。我们需要更好地了解疾病背后生物网络的复杂结构，以及这些网络的失调如何可能导致某种疾病状态。在这方面，胶囊网络（Capsule networks），可能具有很高的应用价值。<strong>胶囊网络涉及一种新型的神经网络架构，其中CNN被封装在相互连接的模块中。</strong>如前所述，CNN是处理多维数据的一种特殊的深层神经网络，例如网络生物学中发现的组学数据集。另一方面，胶囊网络是将深度神经网络表示为一组模块（胶囊）的代表，其允许以保持数据本身分层结构的方式来学习数据结构。这在图像数据分析中特别有用，因为它允许算法学习独立于图像视角的图像特征。考虑到生物网络本质上是高度模块化的，胶囊网络已经可以成熟的应用于网络生物学和疾病生物学：<strong>胶囊网络为生物分子指定层，同时允许每一层与其他层相互作用。每个生物层可以被视为胶囊。横跨不同生物层产生的数据（例如转录组学，蛋白质组学，代谢组学）可以训练与每个胶囊相关的CNN从而独立地了解这些层中的特定性质。</strong>在胶囊之间应用动态路由（Dynamic routing）的前提将允许不同胶囊将任何其他胶囊的输出作为输入，从而使模型能够了解每个层之间的相互作用和依赖性<strong>。</strong>这种方法将允许人们研究高度模块化的系统，如由基因，蛋白质，代谢物等组成的生物网络，并分析这些网络及其子网络的功能组织和相互作用在疾病状态如何被破坏。我们并没有注意到胶囊网络的任何生物学应用，但它们的独特特征可以使我们能够解开和解决人类疾病的复杂性。 <strong>正如我们下面所描述的那样，胶囊网络和其他深度学习方法的成功实施将取决于适当大、高质量、注释良好的数据集的可用性。</strong></p><h2 id="--1"><strong>药物开发</strong></h2><p>在药物开发中，我们迫切需要表征化合物的作用方式、识别药物的脱靶效应并开发有效的药物组合来治疗复杂疾病。 网络生物学以及机器学习算法已成功应用于这些领域，例如，网络模型和转录组学已被用于预测化合物的可能靶标。 <strong>然而，这方面仍然存在诸多挑战，特别是在缩小药物发开发中生物层次和化学层次的差异。</strong> 下面，我们重点介绍下一代机器学习算法将如何在网络生物学的背景下解决这些挑战并加速药物发现和开发过程。来自药物治疗的多组学数据，以及存储在如dbGAP和GTEx Portal等存储库中的大量基因型数据，为利用机器学习生成综合网络模型带来了所需要的原始生物材料。从机器学习的角度出发，思考如何将这些网络模型与生化上可获得的丰富信息结合起来是及其令人激动的。<strong>多任务学习神经网络（Multi-task-learning neural networks）非常适合这种类型的应用。这类应用的特点是给定的系统中包括横跨多种数据类型（例如，表达谱，化学结构）、包含多种标签（例如对药物，疾病状态的响应）的数据特征。</strong>典型的机器学习应用程序定义了一个单一的任务，其中模型被训练以预测单个标签。如果使用相同的输入数据学习新的标签，则新的模型会被训练出来。也就是说，学习任务被视为独立事件。但是，在某些情况下，从一个任务中学习到的重要信息，可以用于另一个任务的学习过程。多任务学习的基本思想是同时共同学习一组任务。单任务学习的目标是优化单个任务的性能，而<strong>多任务学习的目标是优化所有任务的性能。多任务学习通过多种表征来学习整个系统，从而一次性学习多项任务。</strong>多任务学习同时学习多个相关任务，并且平衡任务之间的差异和相似性。这种方法基于这样一个前提：学习相关联的概念可以强加学习模型的一般化，提高性能的同时也避免了模型的过度拟合。重要的是，多任务学习神经网络可以整合或合成来自不同来源和分析方法的数据。因此，多任务学习可以同时考虑调控网络的作用关系、来自多组学实验的数据、高通量药物筛选数据、生物活性分析以及药物治疗的表型观察等多个层面来预测给定药物的生理反应及其毒性副作用。通过将化学实体的结构化数据结合起来，我们有可能利用多任务学习来弥合药物发现的生物和化学方面的差异。例如，可以使用简化的分子输入-行输入系统（Simplified molecular-input line-entry system, SMILES）这种药物表示方法作为模型输入数据。 SMILES表示法将化学物质的结构转换为线性文本串，可以很容易地将其纳入机器学习应用程序中。将SMILES文本串、不同化合物的靶标以及其转录和毒性的相关数据提供给多任务学习算法，可以用来预测新化合物的潜在副作用或可能靶标。此外，我们还可以使用自然语言处理技术，如词嵌入技术，学习基于SMILES的药物的特定属性，这样一来不仅可以对多任务学习进行补充，同时可以帮助我们在随后的药物设计工作中加入或去除某些化合物的关键特性和/或结构特征。<strong>这些机器学习方法也可以用来研究和利用药物化合物的“肮脏”。</strong>大多数（如果不是全部）化合物对人体的影响超过其治疗的目的，并且这些影响以剂量和网络依赖的方式变化。多任务学习神经网络非常适合从各种数据类型（例如，不同药物的药代动力学和药效学性质，来自这些药物的细胞筛选的多组学数据等）进行学习，以便更好地理解和预测药物的输入—输出关系（例如，各种化学实体的生物物理和结构性质，它们的分子靶标以及它们诱导的生物学反应）。胶囊网络模型可用于研究复杂疾病，预测出治疗疾病时可能需要抑制的多个靶标。这些预测可以被多任务学习用来识别“肮脏”的化合物，或者对此类化合物进行组合以更好的作用于靶点。因此，<strong>我们预见多任务学习与其他深度学习方法结合起来，将有助于解决药物发现中的生物和化学数据整合问题，并创建多层预测网络模型，推进药物的合理化设计。</strong></p><figure class="kg-card kg-image-card"><img src="https://pic3.zhimg.com/v2-d140b4f7f6f5bec504a55b5a294e9b04_b.jpg" class="kg-image"><figcaption>图1. 深度学习的组织构架在药物开发领域具有很高的应用价值。</figcaption></figure><h2 id="--2"><strong>微生物研究</strong></h2><p>人类微生物组包括细菌、古细菌、病毒、真菌、原生动物。这些微生物生活在人体表面或人体内。 每个身体部位的微生物的多样性是惊人的，现在人们认为动态且相互关联的微生物群系统在健康、疾病和发育中起着重要的作用。 人类微生物群的宏基因组数据大量涌现，但将这些数据变得更具有生物学和临床意义仍然是一项重大挑战。 这也为利用下一代机器学习算法力量的网络生物学提供了极好的机会。不同身体部位的微生物和宿主细胞通过产生、交换和利用小生物分子（主要是代谢物）相互作用。 这些相互作用产生了细胞内、细胞间、物种间和跨生物界的代谢网络。 这为任何给定的微生物群—宿主系统创造了基于共享代谢物产生元代谢网络模型（Meta-metabolic network model）的机会。 这些模型可用于绘制、剖析和理解多种微生物与宿主之间的相互作用，以及预测宿主与其寄生微生物之间可能产生的<strong>协同作用和生物质关系（Synergistic and dysbiotic relationship）</strong>。目前为止，我们已经为许多微生物模式生物（例如，大肠杆菌）以及人类细胞构建了代谢网络模型。这些模型提供了代谢物如何通过生物化学反应在给定细胞中相互作用的全局图，我们可以对其进行利用、修改和整合，创建跨越多种生物体或细胞类型的元网络（Meta-networks）。不幸的是，由于数据的稀疏和微生物的数据测定方面的问题，我们对许多微生物中的代谢网络的理解是有限的或根本就不存在。这对于元代谢网络模型的产生提出了重大挑战。这方面的问题也有解决方法，那就是迁移学习（Transefer learning）。与多任务学习相比，<strong>迁移学习旨在从学习不同但相关的任务时获得的知识中进行学习</strong>。不同的生物系统具有许多相似特征，这表明在一个系统中生成的数据可以在一定程度上应用于另一个系统。所以这样一来，真正的挑战变成了如何最好地将在给定系统中学到的知识应用于只存在有限数据的新型系统中。<strong>迁移学习可以根据其他系统的观察结果对新系统进行推断和预测。</strong> 具体而言，迁移学习使人们能够将用于学习特定任务的模型重新定位为学习不同但相关任务的起点。迁移学习背后的概念很容易适用于生物学中的问题。 以代谢网络为例—生化化合物的不变性（即大肠杆菌中的“葡萄糖”与炭疽杆菌中的“葡萄糖”为相同的有机化合物）为知识的归纳迁移提供了基础。 这意味着在模式生物体中优化的机器学习模型可以重复使用或重新用于在数据稀缺的不同生物体中。这为研究微生物群落的代谢复杂性开辟了一条令人兴奋的途径，在这里可以“迁移”或使用来自经过模式物种（如大肠杆菌）的代谢网络上的学习信息，应用于未被研究的物种，从而加速我们对微生物群体中多种物种的理解。<strong>与迁移学习类似，我们可以概念化一种机器学习模型，这种模型可以利用在较简单系统上获得的知识来理解更复杂的系统</strong>。通过这种方式，人们可以建立微生物群与宿主之间的代谢相互作用关系的综合模型。这些模型可以在横跨健康和疾病状态的生物数据集上进行训练，并用于预测特定物种的消失、引入或生长如何破坏或增强生态系统的代谢平衡，或者此物种是否会产生促进健康的有益代谢物，或损害宿主组织的毒性代谢副产物。值得注意的是，这些先进的机器学习技术和网络生物学方法不一定限于人类健康应用—它们可以很容易地扩展到农业、环境和工业环境中的微生物群研究中。</p><h2 id="--3"><strong>合成生物学</strong></h2><p>合成生物学一个重要的研究方向是利用分子元件创建合成基因网络，并利用这些基因线路重编程细胞，赋予它们新的能力。然而，合成基因线路的设计和构建远非直截了当—基因线路的早期版本很少能够按照预期工作，通常需要数周或数月的时间进行反复调谐。<strong>基因线路设计的过程主要受到两点的限制：第一是我们对基因线路核心设计原理的理解有限，第二点是缺乏多元化、表征详细的优质元件。</strong>如今合成生物学的应用范围扩展到了更大的领域（如健康，农业，能源，环境等），所以我们越来越需要让合成生物学的基因线路设计更加直接和可预测，并且可以进一步提高时间效率。这为深度学习方法创造了绝佳机会，我们将在下面重点介绍。合成生物学基因线路存在多个调控层次。在基础水平，线路中存在单独的分子组分，例如基因，启动子，操纵子，终止子和核糖体结合位点。 在中间水平，存在由多个组分组成的调控单元，例如基因—启动子对。 在高级水平，调控单元之间通过相互作用产生特定的基因线路，例如，两个基因—启动子对可以排列在相互抑制的网络中产生双稳态开关。在每一个层次，我们都可以用序列代表来定义某一水平的调控方式、组成性关系（例如，空间和方向的排列）、以及影响功能的生物分子、分子组分和/或子组分之间的相互作用。<strong>我们可以生成、测序和功能表征大量且多样化的分子元件，调节单元以及合成基因线路，为深度学习方法创建适当的训练数据集。</strong> 功能表征可以包括量化RBS的强度、启动子—基因对的Hill系数、以及基因线路的响应时间等等。 由于深度学习方法在很大程度上依赖于大量数据，因此<strong>我们可以将机器与基于板的分析（自动化）结合到实验过程中，开发和实施快速的实验工作流程，对元件、调控单元以及基因线路进行表征。</strong>我们可以设想使用测序和功能表征数据来产生多种生物调控层次的基因线路预测模型。为此，可以开发一个多阶段的深度学习模型，这种模型可以从嵌入有生物序列的学习模型到嵌入有调控模体和线路构建的学习模型中学习每一种基因线路组织方式的的本质。例如，可以利用递归神经网络来编码不同元件的序列，其中序列可以被视为特定的“句子”，其允许模型学习特定的“句子属性” 包括样式，语法和主题，这些序列等同于元件本身的序列信息（启动子，结合区和终止子的DNA序列）。此外，卷积神经网络可用于编码调控单位和合成基因线路拓扑结构上的特征。我<strong>们可以训练算法学习不同元件的序列—功能关系，以及调控单位和合成基因线路的组成—功能关系。利用这种方式，该模型可以从调控（网络控制）角度和拓扑（网络架构）角度学习合成基因线路的关键性质。生成的深度学习模型可用于分析合成生物学的基本设计原则。</strong>相应地，也可用于产生性能增强或功能新颖的元件（例如，诱导型启动子，操纵基因等），从而提高可用于合成生物学设计工作的分子元件的数量和多样性。深度学习模型还可用于设计和识别新的调控单元和合成基因网络。例如，对于给定的期望功能，该模型可用于生成一组产生所述功能的基因线路。<strong>我们将这种方法与数学模型相结合，可以非常迅速地对数千个潜在的线路进行迭代。其中最有价值的候选线路可以进行合成，测试和进一步验证。这方面的进步将有助于合成生物学的快速设计，促进复杂的合成基因线路在生物医学领域的广泛应用。</strong></p><figure class="kg-card kg-image-card"><img src="https://pic1.zhimg.com/v2-36b4cbb5cd9bbcee00494671a3fe1635_b.jpg" class="kg-image"><figcaption>图2. 合成生物学的深度学习应用包括新型设计规则、分子元件以及基因线路的预测。</figcaption></figure><h2 id="--4"><strong>挑战与未来展望</strong></h2><p>从上面的讨论中我们可以清楚地看出，网络生物学与下一代机器学习的交叉研究拥有着巨大的机遇。 但是，还有很多艰难的挑战需要我们客服。 <strong>其中最关键也最重要的是大型数据集。</strong> 深度学习方法和其他下一代机器学习方法对于数据是及其饥渴的。 我们生活在生物学和医学的大数据时代，我们在生物的不同层次收集大量的数据集。 尽管从生物系统获取的数据可能非常复杂，反应生物系统的不同方面的变量可能包含有数千个，但是，<strong>大多数生物数据集的数量级仍然太小，无法深度学习算法的要求。</strong>当然，我们有很多选择来应对这一挑战。<strong>首先是收集大型且注释良好的数据集</strong>。多组学数据集可能过于昂贵，因此我们可以考虑替代方案来补充或补足这些数据。由于许多深度学习算法已经成功地应用于诊断背景下的成像数据，所以增加利用成像数据（包括视频）来表征细胞的形态或表型变化（例如响应药物治疗）将会一种不错的选择。我们可以通过建立具有荧光或比色读数的细胞系来来表征各种治疗方法或环境扰动下的细胞反应。许多生物数据集小而稀疏的特性也给机器学习研究人员带来了一个有趣的挑战—即专门设计来处理此类数据集的新一代深度学习算法。<strong>另一种可能的选择是生成具有实际数据属性的计算机数据。</strong>对于深度学习背景下的图像分析，研究人员通常使用<strong>生成对抗网络（Generative adversarial networks, GAN）</strong>来完成，该方法可以创建与训练数据类似的数据集。 GAN是深度神经网络架构，由两个互相对立的神经网络组成—一个是生成模型（Generative model），用于产生与训练数据集分布相似的新数据，另一个是区分模型（Discriminative model），即对手，用于评估新数据并确定它是否属于实际的训练数据集。两个神经网络之间的竞争会逐渐的改进算法，直到生成的数据集与训练数据集无法区分为止。这种机器学习方法可以很容易地在网络生物学的多组学数据集找到应用的价值。一个简单的例子就是使用GAN生成更大的基因表达数据集，这些数据集将有助于生成转录调控的预测模型。<strong>大多数下一代机器学习模型的“黑箱”性质为生物应用带来了新的挑战。</strong>从生物学的角度来解释给定模型的输出通常是非常困难的，从而限制了该模型在生物机制和网络架构分析中的效果。当然，情况并非总是如此，特别是对于更简单的机器学习方法。例如，稀疏线性回归模型（Sparse linear regression model，比如elastic net, lasso and ridge regression）可以用来学习每个特征相对权重的最佳系数。在这种情况下，模型系数可以告知研究人员模型中每个特征的相对“重要性”。然而，对于更先进的机器学习方法，例如深度神经网络，训练过程对输入数据的处理方式使得我们难以确定特征的相对重要性或特征是否与输出结果存在正相关或负相关。<strong>我们迫切需要开发出一种手段，将深度学习的“黑箱”转变为在生物学角度富有意义且可解释的“白箱”。</strong>在揭示和利用生物复杂网络的方向我们还有很长的路要走 ，机器学习本身还远未实现其在生物研究领域的潜力。 尽管如此，利用机器学习更好的理解复杂生物网络的领域的发展让网络生物学研究可以拥有一个令人激动的未来。参考资料：Camacho, Diogo M., et al. "Next-Generation Machine Learning for Biological Networks." <em>Cell</em> (2018).</p><p><strong>END</strong></p>
+                </div>
+            </section>
+
+            <section class="subscribe-form">
+                <h3 class="subscribe-form-title">Subscribe to REGENESIS</h3>
+                <p>Get the latest posts delivered right to your inbox</p>
+                <form method="post" action="http://localhost:2368/subscribe/" id="" class="">
+    <input class="confirm" type="hidden" name="confirm"><input class="location" type="hidden" name="location"><input class="referrer" type="hidden" name="referrer">
+
+    <div class="form-group">
+        <input class="subscribe-email" type="email" name="email" placeholder="youremail@example.com">
+    </div>
+    <button id="" class="" type="submit"><span>Subscribe</span></button>
+    
+<script>
+    (function(g,h,o,s,t){
+        var buster = function(b,m) {
+            h[o]('input.'+b).forEach(function (i) {
+                i.value=i.value || m;
+            });
+        };
+        buster('location', g.location.href);
+        buster('referrer', h.referrer);
+    })(window,document,'querySelectorAll','value');
+</script>
+
+</form>
+
+
+            </section>
+
+            <footer class="post-full-footer">
+
+
+                    
+<section class="author-card">
+        <img class="author-profile-image" src="../content/images/2018/11/IMG_1269.JPG" alt="Fankang Meng">
+    <section class="author-card-content">
+        <h4 class="author-card-name"><a href="../author/mengfankang/">Fankang Meng</a></h4>
+            <p>Read <a href="../author/mengfankang/">more posts</a> by this author.</p>
+    </section>
+</section>
+<div class="post-full-footer-right">
+    <a class="author-card-button" href="../author/mengfankang/">Read More</a>
+</div>
+
+
+            </footer>
+
+
+        </article>
+
+    </div>
+</main>
+
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+                <article class="read-next-card" style="background-image: url(../content/images/2018/11/0-4.jpeg)">
+                    <header class="read-next-card-header">
+                        <small class="read-next-card-header-sitetitle">— REGENESIS —</small>
+                        <h3 class="read-next-card-header-title"><a href="../tag/synthetic-biology/">Synthetic Biology</a></h3>
+                    </header>
+                    <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"></path></svg>
+</div>
+                    <div class="read-next-card-content">
+                        <ul>
+                            <li><a href="../zhe-shi-yi-chang-quan-qiu-he-cheng-sheng-wu-xue-ling-yu-de-kuang-huan-guo-ji-yi-chuan-gong-cheng-ji-qi-da-sai-ji-jiang-kai-mu/">这是一场全球合成生物学领域的狂欢！</a></li>
+                            <li><a href="../wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-shang-shi-yao-shi-ji-qi-xue-xi/">网络生物学与机器学习（上）：什么是机器学习</a></li>
+                            <li><a href="../ru-he-xiang-liu-lan-peng-you-quan-yi-yang-liao-jie-zui-xin-de-wen-xian/">如何像浏览朋友圈一样了解最新的文献？</a></li>
+                        </ul>
+                    </div>
+                    <footer class="read-next-card-footer">
+                        <a href="../tag/synthetic-biology/">See all 8 posts →</a>
+                    </footer>
+                </article>
+
+                <article class="post-card post tag-igem tag-synthetic-biology">
+        <a class="post-card-image-link" href="../zhe-shi-yi-chang-quan-qiu-he-cheng-sheng-wu-xue-ling-yu-de-kuang-huan-guo-ji-yi-chuan-gong-cheng-ji-qi-da-sai-ji-jiang-kai-mu/">
+            <div class="post-card-image" style="background-image: url(../content/images/2018/11/v2-9681aceb2afe9b3e72dc39095f0b4396_r.jpg)"></div>
+        </a>
+    <div class="post-card-content">
+        <a class="post-card-content-link" href="../zhe-shi-yi-chang-quan-qiu-he-cheng-sheng-wu-xue-ling-yu-de-kuang-huan-guo-ji-yi-chuan-gong-cheng-ji-qi-da-sai-ji-jiang-kai-mu/">
+            <header class="post-card-header">
+                    <span class="post-card-tags">iGEM</span>
+                <h2 class="post-card-title">这是一场全球合成生物学领域的狂欢！</h2>
+            </header>
+            <section class="post-card-excerpt">
+                <p>全球来自高中、大学、以及研究生院一共超过300支队伍，总人数超过4000人将齐聚美国波士顿海耶斯会议中心，参加一年一度的国际遗传工程机器大赛全球决赛.</p>
+            </section>
+        </a>
+        <footer class="post-card-meta">
+
+            <ul class="author-list">
+                <li class="author-list-item">
+
+                    <div class="author-name-tooltip">
+                        Fankang Meng
+                    </div>
+
+                        <a href="../author/mengfankang/" class="static-avatar"><img class="author-profile-image" src="../content/images/2018/11/IMG_1269.JPG" alt="Fankang Meng"></a>
+                </li>
+            </ul>
+
+            <span class="reading-time">9 min read</span>
+
+        </footer>
+    </div>
+</article>
+
+                <article class="post-card post tag-synthetic-biology tag-machine-learning tag-artificial-intelligence">
+        <a class="post-card-image-link" href="../wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-shang-shi-yao-shi-ji-qi-xue-xi/">
+            <div class="post-card-image" style="background-image: url(../content/images/2018/11/v2-26fe4c9e520b0743cb5dc8f9578a7685_r.jpg)"></div>
+        </a>
+    <div class="post-card-content">
+        <a class="post-card-content-link" href="../wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-shang-shi-yao-shi-ji-qi-xue-xi/">
+            <header class="post-card-header">
+                    <span class="post-card-tags">Synthetic Biology</span>
+                <h2 class="post-card-title">网络生物学与机器学习（上）：什么是机器学习</h2>
+            </header>
+            <section class="post-card-excerpt">
+                <p>机器学习，一种旨在从多维数据集构建可预测模型的数据分析技术，正在成为现代生物学研究不可或缺的一部分。通过对大型数据集进行学习并对生成可预测的模型，机器学习可用于研究复杂的细胞系统，如生物网络。</p>
+            </section>
+        </a>
+        <footer class="post-card-meta">
+
+            <ul class="author-list">
+                <li class="author-list-item">
+
+                    <div class="author-name-tooltip">
+                        Fankang Meng
+                    </div>
+
+                        <a href="../author/mengfankang/" class="static-avatar"><img class="author-profile-image" src="../content/images/2018/11/IMG_1269.JPG" alt="Fankang Meng"></a>
+                </li>
+            </ul>
+
+            <span class="reading-time">22 min read</span>
+
+        </footer>
+    </div>
+</article>
+
+        </div>
+    </div>
+</aside>
+
+<div class="floating-header">
+    <div class="floating-header-logo">
+        <a href="../">
+                <img src="../content/images/2018/11/0.png" alt="REGENESIS icon">
+            <span>REGENESIS</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">—</span>
+    <div class="floating-header-title">网络生物学与机器学习（下）：机器学习将如何助力网络生物学？</div>
+    <div class="floating-header-share">
+        <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+    <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"></path>
+</svg>
+</div>
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=%E7%BD%91%E7%BB%9C%E7%94%9F%E7%89%A9%E5%AD%A6%E4%B8%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%8B%EF%BC%89%EF%BC%9A%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B0%86%E5%A6%82%E4%BD%95%E5%8A%A9%E5%8A%9B%E7%BD%91%E7%BB%9C%E7%94%9F%E7%89%A9%E5%AD%A6%EF%BC%9F&amp;url=http://localhost:2368/wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-xia-ji-qi-xue-xi-jiang-ru-he-zhu-li-wang-luo-sheng-wu-xue/" onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"></path></svg>
+        </a>
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/wang-luo-sheng-wu-xue-yu-ji-qi-xue-xi-xia-ji-qi-xue-xi-jiang-ru-he-zhu-li-wang-luo-sheng-wu-xue/" onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"></path></svg>
+        </a>
+    </div>
+    <progress id="reading-progress" class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+
+
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="../">REGENESIS</a> © 2018</section>
+                <nav class="site-footer-nav">
+                    <a href="../">Latest Posts</a>
+                    <a href="https://www.facebook.com/profile.php?id=100005569278801" target="_blank" rel="noopener">Facebook</a>
+                    <a href="https://twitter.com/FankangMeng" target="_blank" rel="noopener">Twitter</a>
+                    <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+    <div id="subscribe" class="subscribe-overlay">
+        <a class="subscribe-overlay-close" href="index.html#"></a>
+        <div class="subscribe-overlay-content">
+                <img class="subscribe-overlay-logo" src="../content/images/2018/11/avatar-1.png" alt="REGENESIS">
+            <h1 class="subscribe-overlay-title">Subscribe to REGENESIS</h1>
+            <p class="subscribe-overlay-description">Stay up to date! Get all the latest &amp; greatest posts delivered straight to your inbox</p>
+            <form method="post" action="http://localhost:2368/subscribe/" id="" class="">
+    <input class="confirm" type="hidden" name="confirm"><input class="location" type="hidden" name="location"><input class="referrer" type="hidden" name="referrer">
+
+    <div class="form-group">
+        <input class="subscribe-email" type="email" name="email" placeholder="youremail@example.com">
+    </div>
+    <button id="" class="" type="submit"><span>Subscribe</span></button>
+    
+<script>
+    (function(g,h,o,s,t){
+        var buster = function(b,m) {
+            h[o]('input.'+b).forEach(function (i) {
+                i.value=i.value || m;
+            });
+        };
+        buster('location', g.location.href);
+        buster('referrer', h.referrer);
+    })(window,document,'querySelectorAll','value');
+</script>
+
+</form>
+
+
+        </div>
+    </div>
+
+    <script>
+        var images = document.querySelectorAll('.kg-gallery-image img');
+        images.forEach(function (image) {
+            var container = image.closest('.kg-gallery-image');
+            var width = image.attributes.width.value;
+            var height = image.attributes.height.value;
+            var ratio = width / height;
+            container.style.flex = ratio + ' 1 0%';
+        })
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="../assets/built/jquery.fitvids.js?v=cbc3160cf5"></script>
+
+
+    <script>
+
+// NOTE: Scroll performance is poor in Safari
+// - this appears to be due to the events firing much more slowly in Safari.
+//   Dropping the scroll event and using only a raf loop results in smoother
+//   scrolling but continuous processing even when not scrolling
+$(document).ready(function () {
+    // Start fitVids
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    // End fitVids
+
+    var progressBar = document.querySelector('#reading-progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        // show/hide floating header
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+
+});
+</script>
+
+
+    
+
+</body>
