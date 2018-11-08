@@ -21,7 +21,7 @@
    ========================================================================== */
 
 html {
-    font-family: sans-serif;
+    font-family: "sofia-pro", "Ubuntu",sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
@@ -117,7 +117,7 @@ td, th{ padding: 0; }
 }
 
 body{
-    font-family: "sofia-pro", "Ubuntu", sans-serif;
+    font-family: "Poppins", "Ubuntu", sans-serif;
     font-weight: 300;
     color: #000000;
     background: #fff;
