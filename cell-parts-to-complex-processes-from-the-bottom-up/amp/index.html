@@ -1,0 +1,656 @@
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Cell parts to complex processes, from the bottom up</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <link rel="shortcut icon" href="../../favicon.png">
+
+    <link rel="shortcut icon" href="../../favicon.png" type="image/png">
+    <link rel="canonical" href="../index.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="REGENESIS">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Cell parts to complex processes, from the bottom up">
+    <meta property="og:description" content="Engineering approaches allow biological structures and behaviours to be reconstituted in vitro. A biologist and a physicist discuss the potential and limitations of this bottom-up philosophy in providing insights into complex biological processes.">
+    <meta property="og:url" content="http://localhost:2368/cell-parts-to-complex-processes-from-the-bottom-up/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1518560503146-4969551ce340?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ&amp;s=074a8ff177552a61ee531914e4dc7c9c">
+    <meta property="article:published_time" content="2018-11-09T06:30:13.000Z">
+    <meta property="article:modified_time" content="2018-11-09T06:30:20.000Z">
+    <meta property="article:tag" content="Synthetic Biology">
+    <meta property="article:tag" content="Nature News">
+    
+    <meta property="article:publisher" content="https://www.facebook.com/profile.php?id=100005569278801">
+    <meta property="article:author" content="https://www.facebook.com/profile.php?id=100005569278801">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cell parts to complex processes, from the bottom up">
+    <meta name="twitter:description" content="Engineering approaches allow biological structures and behaviours to be reconstituted in vitro. A biologist and a physicist discuss the potential and limitations of this bottom-up philosophy in providing insights into complex biological processes.">
+    <meta name="twitter:url" content="http://localhost:2368/cell-parts-to-complex-processes-from-the-bottom-up/">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1518560503146-4969551ce340?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ&amp;s=074a8ff177552a61ee531914e4dc7c9c">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Fankang Meng">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Synthetic Biology, Nature News">
+    <meta name="twitter:site" content="@FankangMeng">
+    <meta name="twitter:creator" content="@FankangMeng">
+    <meta property="og:image:width" content="1080">
+    <meta property="og:image:height" content="720">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "REGENESIS",
+        "logo": "http://localhost:2368/content/images/2018/11/avatar-1.png"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Fankang Meng",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://localhost:2368/content/images/2018/11/IMG_1269.JPG",
+            "width": 910,
+            "height": 910
+        },
+        "url": "http://localhost:2368/author/mengfankang/",
+        "sameAs": [
+            "https://www.facebook.com/profile.php?id=100005569278801",
+            "https://twitter.com/FankangMeng"
+        ]
+    },
+    "headline": "Cell parts to complex processes, from the bottom up",
+    "url": "http://localhost:2368/cell-parts-to-complex-processes-from-the-bottom-up/",
+    "datePublished": "2018-11-09T06:30:13.000Z",
+    "dateModified": "2018-11-09T06:30:20.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://images.unsplash.com/photo-1518560503146-4969551ce340?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ&s=074a8ff177552a61ee531914e4dc7c9c",
+        "width": 1080,
+        "height": 720
+    },
+    "keywords": "Synthetic Biology, Nature News",
+    "description": "Engineering approaches allow biological structures and behaviours to be reconstituted in vitro. A biologist and a physicist discuss the potential and limitations of this bottom-up philosophy in providing insights into complex biological processes.",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://localhost:2368/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 2.4">
+    <link rel="alternate" type="application/rss+xml" title="REGENESIS" href="../../rss/index.html">
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+    <style amp-custom>
+
+        /* ==========================================================================
+           1. General
+           ========================================================================== */
+
+        ::selection {
+            background: rgba(0, 0, 0, 0.2);
+        }
+        ::-moz-selection {
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        ::-webkit-input-placeholder {
+          color: rgba(255, 255, 255, 0.5);
+        }
+        ::-moz-placeholder {
+          color: rgba(255, 255, 255, 0.5);
+        }
+        :-ms-input-placeholder {
+          color: rgba(255, 255, 255, 0.5);
+        }
+        :-moz-placeholder {
+          color: rgba(255, 255, 255, 0.5);
+        }
+
+        body{
+            font-family: "sofia-pro", "Ubuntu", sans-serif;
+            font-weight: 300;
+            color: #000000;
+            background: #fff;
+            font-size: 16px;
+        }
+
+        h1, h2, h3, h4, h5, h6{
+            font-weight: bold;
+            line-height: 1.2;
+            margin-bottom: 30px;
+        }
+
+        b, strong{
+            font-weight: bold;
+        }
+
+        a{
+            color: #000000;
+            text-decoration: none;
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+            -webkit-transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+            transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+        }
+
+        a:hover{
+            text-decoration: none;
+            color: #667EEA;
+        }
+
+        p{
+            line-height: 24px;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        code, kbd, pre, samp {
+            font-family: monospace, monospace;
+            font-size: 1em;
+            color: #444;
+        }
+
+        mark{
+            background: rgba(160, 168, 189, 0.2);
+        }
+
+        figure{
+            margin: 30px 0;
+        }
+
+        pre{
+            color: #444;
+            padding: 20px;
+            background: #F0F0F0;
+        }
+
+        label.error{
+            font-size: 12px;
+            margin-top: 5px;
+            color: #ea6666;
+        }
+
+        input, textarea{
+            width: 100%;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #fff;
+            background-color: #000;
+            background-image: none;
+            background: #202226;
+            border: 1px solid #a0a8bd;
+            box-sizing: border-box;
+            border-radius: 3px;
+            height: 40px;
+            display: block;
+        }
+
+        .content-inner ul, .content-inner ol {
+            line-height: 28px;
+            font-size: 18px;
+            padding-left: 20px;
+        }
+
+        .btn{
+            padding: 9px 19px;
+            border-radius: 30px;
+            box-shadow: none;
+            outline: 0;
+            line-height: normal;
+            font-size: 14px;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: bold;
+            position: relative;
+            background: transparent;
+            border: 1px solid #a0a8be;
+            color: #a0a8bd;
+            outline: 0;
+        }
+
+        .btn.focus, .btn:focus{
+            box-shadow: none;
+        }
+        .intro{
+            position: relative;
+            z-index: 110;
+            overflow: hidden;
+            margin: 0 auto 50px auto;
+        }
+        .intro .swiper-slide .bg img{
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+        }
+        .intro .swiper-slide{
+            background: #000;
+            display: flex;
+            position: relative;
+            padding: 50px 0;
+            align-items: center;
+            height: auto;
+        }
+
+        .intro .swiper-slide .post{
+            width: 100%;
+        }
+
+        .intro .swiper-slide .bg{
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            width: 1366px;
+            height: 768px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .intro .swiper-slide .bg:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: linear-gradient(180deg, #000000 0%, rgba(51, 51, 51, 0.1) 75%);
+        }
+
+        .intro .swiper-slide .inner{
+            position: relative;
+            z-index: 2;
+            color: #fff;
+            display: flex;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+        }
+
+        .intro .swiper-slide .inner .post-title{
+            font-weight: bold;
+            font-size: 42px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .intro .swiper-pagination{
+            bottom: auto;
+            left: auto;
+            right: calc((100% - 1140px)/2 + 15px);
+            top: 50%;
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            transform: translateY(-50%);
+        }
+
+        .intro .swiper-pagination .swiper-pagination-bullet{
+            position: relative;
+            display: block;
+            width: 30px;
+            height: 48px;
+            margin: 5px 0;
+            background: transparent;
+            opacity: 1;
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+            -webkit-transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+            transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+        }
+
+        .intro .swiper-pagination .swiper-pagination-bullet i{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            border-radius: 0;
+            overflow: hidden;
+        }
+
+        .intro .swiper-pagination .swiper-pagination-bullet b{
+            color: #fff;
+            position: absolute;
+            top: -3px;
+            right: 0;
+            opacity: .2;
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+            -webkit-transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+            transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+        }
+
+        .intro .swiper-pagination .swiper-pagination-bullet:hover{
+            background: transparent;
+        }
+
+        .intro .swiper-pagination .swiper-pagination-bullet:hover b{
+            opacity: .4;
+        }
+
+        .intro .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+            background: transparent;
+        }
+
+        .intro .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active b{
+            color: #667EEA;
+            opacity: 1;
+        }
+
+        .intro .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active i{
+            opacity: 1;
+        }
+
+        .intro .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active i:before{
+            -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+        }
+
+        .intro .swiper-pagination .swiper-pagination-bullet i:before,
+        .intro .swiper-pagination .swiper-pagination-bullet i:after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #667EEA;
+            -webkit-transform: translate3d(0,100%,0);
+            transform: translate3d(0,100%,0);
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+            -webkit-transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+            transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+        }
+
+        .intro .swiper-pagination .swiper-pagination-bullet i:after{
+            background: #fff;
+            opacity: .2;
+            -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+        }
+
+        .intro .swiper-pagination .swiper-pagination-bullet:hover i:after{
+            opacity: .4;
+        }
+
+        .intro .swiper-pagination .swiper-pagination-bullet.next i:before{
+            -webkit-animation: next 8.2s linear forwards;
+            -moz-animation:    next 8.2s linear infinite;
+            -o-animation:      next 8.2s linear infinite;
+            animation:         next 8.2s linear forwards;
+        }
+
+        .intro .excerpt{
+            margin-bottom: 20px;
+        }
+
+        .intro a{
+            color: #fff;
+        }
+
+        .intro a:hover{
+            color: #667EEA;
+        }
+
+        .intro .tags{
+            margin: 0;
+        }
+
+        .intro .post-meta{
+            color: #FFFFFF;
+        }
+
+        .intro .post-meta a{
+            font-size: 14px;
+        }
+
+        .container {
+            max-width: 720px;
+            padding: 0 15px;
+            margin: 0 auto;
+        }
+
+        .tags{
+            list-style-type: none;
+            margin: 0 0 15px 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .tags li a{
+            margin-right: 10px;
+            line-height: 20px;
+            font-size: 12px;
+            color: #A0A8BD;
+            border: 1px solid transparent;
+            background: rgba(160, 168, 189, 0.2);
+            border-radius: 15px;
+            padding: 3px 15px;
+            font-weight: normal;
+            display: block;
+        }
+
+        .tags li a:hover{
+            background: transparent;
+            border: 1px solid #667EEA;
+            color: #667EEA;
+        }
+
+        .post-meta{
+            line-height: 32px;
+            font-size: 14px;
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 30px 0 0 0;
+            font-weight: 500;
+        }
+
+        .post-meta li{
+            margin-right: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .post-meta li i{
+            margin-right: 10px;
+        }
+
+        .post-meta li.share{
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        .intro a{
+            color: #fff;
+        }
+
+        .intro a:hover{
+            color: #667EEA;
+        }
+
+        .intro .tags{
+            margin: 0;
+        }
+
+        .intro .post-meta{
+            color: #FFFFFF;
+        }
+
+        .editor-content .kg-image-card{
+            margin: 50px 0;
+        }
+
+        .editor-content figcaption{
+            padding: 10px 15px;
+            font-size: 14px;
+            border-bottom: 1px solid #cccccc;
+        }
+
+        /* ==========================================================================
+           2. Header
+           ========================================================================== */
+
+        header{
+            position: relative;
+            z-index: 9900;
+            width: 100%;
+            top: 0;
+            left: 0;
+            padding: 10px 0;
+            background: #000;
+            transform: translateY(0);
+            -webkit-transition: all .3s cubic-bezier(0.2,1,0.3,1);
+            -moz-transition: all .3s cubic-bezier(0.2,1,0.3,1);
+            -o-transition: all .3s cubic-bezier(0.2,1,0.3,1);
+            transition: all .3s cubic-bezier(0.2,1,0.3,1);
+        }
+
+        header a {
+            color: #fff;
+            font-weight: bold;
+            font-size: 12px;
+            text-transform: uppercase;
+            line-height: 1.4;
+        }
+
+        /* ==========================================================================
+           3. Footer
+           ========================================================================== */
+
+        footer{
+            color: #fff;
+            background: #212227;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
+            margin-top: 50px;
+        }
+
+        footer .copyright{
+            background: #202226;
+        }
+
+        footer .copyright p{
+            margin: 0;
+            font-size: 14px;
+        }
+
+        footer a{
+            color: #fff;
+        }
+
+        footer a:hover{
+            color: #667EEA;
+        }
+
+        /* ==========================================================================
+           4. Responsive
+           ========================================================================== */
+
+        @media (max-width: 575px){
+            .post-meta {
+                flex-wrap: wrap;
+            }
+            .post-meta li {
+                margin-right: 30px;
+                width: auto;
+            }
+        }
+
+    </style>
+
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+    
+
+</head>
+
+<body class="amp-template">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="blog-logo">
+                        <a href="../../" title="REGENESIS">
+                            <span>REGENESIS</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="intro">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <div class="bg">
+                        <amp-img src="https://images.unsplash.com/photo-1518560503146-4969551ce340?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ&amp;s=074a8ff177552a61ee531914e4dc7c9c" width="1366px" height="768px"></amp-img>
+                    </div>
+                    <div class="inner">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-9">
+                                        <ul class="tags">
+                                            <li>
+                                                <a href="../../tag/synthetic-biology/" title="Synthetic Biology" class="tag tag-5be14c1c96b4716bc3475e2f synthetic-biology">Synthetic Biology</a>
+                                            </li>  
+                                            <li>
+                                                <a href="../../tag/nature-news/" title="Nature News" class="tag tag-5be514fc7e7495112cee6cdc nature-news">Nature News</a>
+                                            </li>  
+                                        </ul>
+                                    <h1 class="post-title">Cell parts to complex processes, from the bottom up</h1>
+                                    <p class="excerpt">Engineering approaches allow biological structures and behaviours to be reconstituted in vitro. A biologist and a physicist discuss the potential and limitations of this bottom-up philosophy in providing insights into complex biological processes. ... <a class="read-more" href="../" title="Cell parts to complex processes, from the bottom up">read more</a></p>
+                                    <ul class="post-meta">
+                                        <li><time class="post-date" datetime="2018-11-09">09 Nov 2018</time></li>
+                                        <li><div class="post-author"><a href="../../author/mengfankang/">Fankang Meng</a></div></li>
+                                        <li><div class="post-reading-time">6 min read</div></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </div>
+            <a href="index.html#" class="go"><i class="fas fa-angle-down"></i></a>
+        </div>
+    </div>
+
+    <main id="content" class="container content-inner" role="main">
+        <article class="post tag-synthetic-biology tag-nature-news featured row">
+            <section class="content-holder col-lg-8 col-sm-10 ml-auto mr-auto">
+
+                <div class="post-content">
+                    <div class="editor-content"><h2 id="the-topic-in-brief"><strong>THE TOPIC IN BRIEF</strong></h2><p>• In bottom-up approaches, cellular structures and behaviours are reconstituted from their constituent parts.</p><p>• This strategy reduces a complex, living system to a more manageable set of component parts, defined by the researcher.</p><p>• Bottom-up experiments have provided insights into processes such as cell division, chromosome packaging and tissue patterning (Fig. 1).</p><p>• Some researchers believe that any cellular behaviour could eventually be modelled from the bottom up.</p><p>• Others, however, argue that this strategy is insufficient for understanding more-complex biological functions that bridge scales of complexity — for example, those in which individual cells act collectively.</p><figure class="kg-card kg-image-card"><figcaption><b>Figure 1 | Increasing levels of complexity modelled from the bottom up.</b><b>a</b>, In <i>in vitro</i> reconstitution, biological parts and processes can be recreated from a minimal set of components. For example, by enclosing individual molecules within specific boundaries, the minimal set of proteins and interactions needed for the emergence of complex phenomena such as cell division can be defined. Likewise, spatial confinement of cells has provided insights into tissue patterning in embryos. <b>b</b>, However, there is debate about whether these bottom-up approaches can provide mechanistic insight into biological processes that bridge scales of complexity — the processes by which thousands of individual molecules interact in cells, for instance, or by which cells act collectively to switch from a fluid-like to a solid-like state.</figcaption></figure><h2 id="matthew-good-understanding-by-building"><strong><strong>MATTHEW GOOD: Understanding by building</strong></strong></h2><p>The complexity of living cells is staggering — their cytoplasm contains tens of thousands of distinct macromolecules and metabolites that must be coordinated to interact in time and space. This intricacy often makes it difficult to interpret results from conventional ‘top-down’ studies, in which individual components are removed or modified. Bottom-up approaches complement investigations of living cells, make it easier to define the rules that govern biological organization, and have provided insights into many previously intractable biological problems.</p><p>Biochemical reconstitution has conventionally been used to identify the minimal set of purified factors needed to recapitulate a given cellular activity <em>in vitro</em>. Today, spurred on by advances in materials and engineering, we can carry out more-ambitious cellular reconstitutions. These experiments combine biochemical reconstitution with defined spatial boundaries that can be generated in a range of ways, including through micropatterning and microfabrication of surfaces, and through microfluidic techniques that create compartments surrounded by membranes made up of lipid bilayers or monolayers. The boundaries can be set to either mimic or perturb the natural organization of a cell.</p><p>Unexpected properties and activities have emerged from the mixing of boundaries and biochemical reactions, leading to new mechanistic insights and extending our ability to model biological processes. For instance, it has been found that encapsulating the motor protein kinesin with filaments called microtubules produces a force-generating network that can propel the movement of cell-size capsules<sup><a href="https://www.nature.com/articles/d41586-018-07246-8#ref-CR1">1</a></sup>. This experiment acts as a proof of concept that simplified systems can generate force, and motivates researchers to look for analogous systems in nature, rather than assuming that the solution to this problem in living organisms must always be complex.</p><p>As another example, changes in the size and shape of encapsulated compartments — manipulations that are easy in microfabricated systems, but not in living cells — have revealed roles for these parameters in controlling the oscillatory behaviour of proteins involved in cell division<sup><a href="https://www.nature.com/articles/d41586-018-07246-8#ref-CR2">2</a></sup> and the sizes of organelles<sup><a href="https://www.nature.com/articles/d41586-018-07246-8#ref-CR3">3</a></sup>. These discoveries act as a potent reminder that experiments carried out in test tubes involve much greater volumes than that of a cell; an absence of boundary conditions might obfuscate underlying biological principles, such as size scaling.</p><p>In some cases, biological insight can be gained only by removing boundaries, to simplify the system or enable it to be expanded — another feat not possible in living cells. For example, cytoplasmic extracts from cells have been used to show that chromosomes can condense in preparation for cell division even in the absence of histone proteins, around which DNA is packaged in cells<sup><a href="https://www.nature.com/articles/d41586-018-07246-8#ref-CR4">4</a></sup>. Because histones are essential to living cells, such experiments could be performed only <em>ex vivo</em>.</p><p>The same cytoplasmic-extract system has also been combined with an elongated chamber (many times longer than a cell) to identify a new class of signalling reaction that spatially coordinates the cell cycle and is based on self-propagating ‘trigger waves’<sup><a href="https://www.nature.com/articles/d41586-018-07246-8#ref-CR5">5</a></sup>. These waves, first postulated by mathematical modelling, could be identified and characterized more easily in a deconstructed system containing defined boundary conditions than by <em>in vivo</em> methods.</p><p>For bottom-up approaches to further complement and one day even surpass top-down approaches, certain challenges must be addressed. One is deciding which elements of a cell can be removed without limiting the biological relevance of the findings. Another is to identify empirical approaches to validate whether rules derived from <em>in vitro</em>experiments are predictive for <em>in vivo</em> situations. A third is that we must continue to improve the precision and reliability of engineered boundaries to better mimic those in cells.</p><p>Bottom-up reconstitution approaches promise to expand our understanding of biology at higher levels. By continuing to increase the number of components that can be patterned together, it might eventually be possible to reconstruct systems that rival the complexity of living cells and tissues. For example, micropatterning techniques and assembly principles are being used to configure cells in geometries that mimic those found in embryonic development<sup><a href="https://www.nature.com/articles/d41586-018-07246-8#ref-CR6">6</a></sup>, and to produce designer tissues<sup><a href="https://www.nature.com/articles/d41586-018-07246-8#ref-CR7">7</a></sup>. In these experiments, complex, controllable 3D tissue shapes can be obtained by defining simple interactions between individual cells, between cells and the structural matrix that surrounds them and between proteins involved in tissue patterning. Given well-characterized building blocks, a preliminary understanding of boundary conditions and a reasonable period of time, it should be realistic to consider reconstituting any complex cell behaviour. From there, a new understanding of the rules that underlie biological processes can emerge.</p><h2 id="xavier-trepat-bottom-does-not-explain-top"><strong><strong>XAVIER TREPAT: Bottom does not explain top</strong></strong></h2><p>Picture yourself as an engineer in the car industry. You know the role of every bolt, joint and circuit in a car. You have great understanding of the hierarchies and redundancies that ensure smooth functioning of all systems. In a nutshell, you know how to build a car from the bottom up. Now imagine that you are asked to solve the problem of traffic jams during rush hour. Traffic jams are a problem of cars, and you know everything about cars — but this detailed knowledge is irrelevant to understanding why they jam. Similarly, an understanding of how complex biological structures or even whole cells are built can provide only a certain level of understanding about how biological systems function at higher levels of organization.</p><p>Much like cars in traffic, cells can jam. At low density, cells grown in culture move and exchange neighbours frequently, like molecules in a fluid. But at higher densities, cellular movements slow down, rearrangements vanish, and the system jams into a solid-like state<sup><a href="https://www.nature.com/articles/d41586-018-07246-8#ref-CR8">8</a></sup>. Other variables can also cause cell jamming — when cultured at the same density, epithelial cells obtained from people with asthma move collectively, like a fluid, whereas their healthy counterparts jam<sup><a href="https://www.nature.com/articles/d41586-018-07246-8#ref-CR9">9</a></sup>. Cell jamming also occurs <em>in vivo</em>, and is key to the normal elongation of zebrafish embryos during development<sup><a href="https://www.nature.com/articles/d41586-018-07246-8#ref-CR10">10</a></sup>.</p><p>Jamming is a prominent example of a mesoscale phenomenon — a process that operates at a longer scale than do the elementary components of a system — in which ‘bottom’ does not explain ‘top’. It is unlikely that being able to reconstitute the differing protein pathways in healthy and asthmatic cells will explain why one jams more easily than the other. In fact, the most predictive variable for cell jamming is the shape index, a geometric quantity defined as the ratio of the cell’s perimeter to the square root of its area<sup><a href="https://www.nature.com/articles/d41586-018-07246-8#ref-CR9">9</a></sup>. Similarly, it is also unlikely that the genetic programs that are turned on and off during development will explain why cells jam as the vertebrate body elongates.</p><p>Another example of a process in which mechanisms at the bottom cannot explain phenomena at the top is collective gradient sensing, whereby a group can sense and respond to an environmental gradient but individual constitutive elements cannot. Collective gradient sensing has been observed in a variety of groups undergoing directed migration, including shoals of fish moving in response to light<sup><a href="https://www.nature.com/articles/d41586-018-07246-8#ref-CR11">11</a></sup>, clusters of leukaemia cells responding to chemical signals<sup><a href="https://www.nature.com/articles/d41586-018-07246-8#ref-CR12">12</a></sup>, and epithelial cells whose migration is guided by a gradient of rigidity<sup><a href="https://www.nature.com/articles/d41586-018-07246-8#ref-CR13">13</a></sup>. The reconstitution of each element of these motile groups, no matter how detailed, will never explain why groups move in the direction of the gradient but individual elements do not.</p><p>This is not to say, of course, that reconstitution of molecular-scale processes is not useful. Indeed, the engineering of genetic circuits responsible for cell communication is sufficient to control 3D tissue shape<sup><a href="https://www.nature.com/articles/d41586-018-07246-8#ref-CR14">14</a></sup>. However, principles at the molecular scale cannot generally explain functions at a higher level of organization.</p><p>Well before its discovery in cells, jamming was proposed to tie together liquid-to-solid transitions in a wide range of inert materials such as foams, emulsions and sand piles<sup><a href="https://www.nature.com/articles/d41586-018-07246-8#ref-CR15">15</a></sup>. The materials differ broadly in composition, but their physical behaviour can be captured by a simple set of physical variables. These variables configure a phase diagram — a graph that plots whether the system is jammed or unjammed as a function of interaction forces, temperature or density. Like jamming in inert<sup><a href="https://www.nature.com/articles/d41586-018-07246-8#ref-CR15">15</a></sup> and living matter<sup><a href="https://www.nature.com/articles/d41586-018-07246-8#ref-CR9">9</a></sup><sup>,</sup><sup><a href="https://www.nature.com/articles/d41586-018-07246-8#ref-CR10">10</a></sup>, other biological functions might be explained in terms of phase diagrams. Given the complexity of cells and tissues, the position of a system in those diagrams will be compatible with many different combinations of molecular states, concentrations and interactions.</p><p>It is questionable whether trying to understand each of these combinations is an efficient path towards a predictive understanding of complex living systems. Rather, we should aim to identify the mesoscale principles and variables that ultimately determine how these systems work. To do so, we need to develop experimental approaches to probe tissues at multiple length scales and timescales through both mechanical and biochemical manipulation.</p><p><em>Nature</em> <strong>563</strong>, 188-189 (2018)</p><p><em>doi: 10.1038/d41586-018-07246-8</em></p></div>                    
+                </div>
+
+            </section>
+        </article>
+    </main>
+
+    <footer class="site-footer clearfix">
+        <div class="container copyright">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="copyright">Copyright © 2018, <a href="../../">REGENESIS</a>. All Right Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>

@@ -1,0 +1,656 @@
+
+<head>
+    <meta charset="utf-8">
+
+    <title>How biologists are creating life-like cells from scratch</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <link rel="shortcut icon" href="../../favicon.png">
+
+    <link rel="shortcut icon" href="../../favicon.png" type="image/png">
+    <link rel="canonical" href="../index.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="REGENESIS">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="How biologists are creating life-like cells from scratch">
+    <meta property="og:description" content="As engineers, we can’t build a perfect synthetic cell. We have to build a self-correcting system that becomes better as it goes">
+    <meta property="og:url" content="http://localhost:2368/how-biologists-are-creating-life-like-cells-from-scratch/">
+    <meta property="og:image" content="http://localhost:2368/content/images/2018/11/d41586-018-07289-x_16251612-1.jpg">
+    <meta property="article:published_time" content="2018-11-09T05:09:13.000Z">
+    <meta property="article:modified_time" content="2018-11-09T05:10:32.000Z">
+    <meta property="article:tag" content="Synthetic Biology">
+    <meta property="article:tag" content="Nature News">
+    
+    <meta property="article:publisher" content="https://www.facebook.com/profile.php?id=100005569278801">
+    <meta property="article:author" content="https://www.facebook.com/profile.php?id=100005569278801">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How biologists are creating life-like cells from scratch">
+    <meta name="twitter:description" content="As engineers, we can’t build a perfect synthetic cell. We have to build a self-correcting system that becomes better as it goes">
+    <meta name="twitter:url" content="http://localhost:2368/how-biologists-are-creating-life-like-cells-from-scratch/">
+    <meta name="twitter:image" content="http://localhost:2368/content/images/2018/11/d41586-018-07289-x_16251612-1.jpg">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Fankang Meng">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Synthetic Biology, Nature News">
+    <meta name="twitter:site" content="@FankangMeng">
+    <meta name="twitter:creator" content="@FankangMeng">
+    <meta property="og:image:width" content="1172">
+    <meta property="og:image:height" content="797">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "REGENESIS",
+        "logo": "http://localhost:2368/content/images/2018/11/avatar-1.png"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Fankang Meng",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://localhost:2368/content/images/2018/11/IMG_1269.JPG",
+            "width": 910,
+            "height": 910
+        },
+        "url": "http://localhost:2368/author/mengfankang/",
+        "sameAs": [
+            "https://www.facebook.com/profile.php?id=100005569278801",
+            "https://twitter.com/FankangMeng"
+        ]
+    },
+    "headline": "How biologists are creating life-like cells from scratch",
+    "url": "http://localhost:2368/how-biologists-are-creating-life-like-cells-from-scratch/",
+    "datePublished": "2018-11-09T05:09:13.000Z",
+    "dateModified": "2018-11-09T05:10:32.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://localhost:2368/content/images/2018/11/d41586-018-07289-x_16251612-1.jpg",
+        "width": 1172,
+        "height": 797
+    },
+    "keywords": "Synthetic Biology, Nature News",
+    "description": "As engineers, we can’t build a perfect synthetic cell. We have to build a self-correcting system that becomes better as it goes",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://localhost:2368/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 2.4">
+    <link rel="alternate" type="application/rss+xml" title="REGENESIS" href="../../rss/index.html">
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+    <style amp-custom>
+
+        /* ==========================================================================
+           1. General
+           ========================================================================== */
+
+        ::selection {
+            background: rgba(0, 0, 0, 0.2);
+        }
+        ::-moz-selection {
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        ::-webkit-input-placeholder {
+          color: rgba(255, 255, 255, 0.5);
+        }
+        ::-moz-placeholder {
+          color: rgba(255, 255, 255, 0.5);
+        }
+        :-ms-input-placeholder {
+          color: rgba(255, 255, 255, 0.5);
+        }
+        :-moz-placeholder {
+          color: rgba(255, 255, 255, 0.5);
+        }
+
+        body{
+            font-family: "sofia-pro", "Ubuntu", sans-serif;
+            font-weight: 300;
+            color: #000000;
+            background: #fff;
+            font-size: 16px;
+        }
+
+        h1, h2, h3, h4, h5, h6{
+            font-weight: bold;
+            line-height: 1.2;
+            margin-bottom: 30px;
+        }
+
+        b, strong{
+            font-weight: bold;
+        }
+
+        a{
+            color: #000000;
+            text-decoration: none;
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+            -webkit-transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+            transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+        }
+
+        a:hover{
+            text-decoration: none;
+            color: #667EEA;
+        }
+
+        p{
+            line-height: 24px;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        code, kbd, pre, samp {
+            font-family: monospace, monospace;
+            font-size: 1em;
+            color: #444;
+        }
+
+        mark{
+            background: rgba(160, 168, 189, 0.2);
+        }
+
+        figure{
+            margin: 30px 0;
+        }
+
+        pre{
+            color: #444;
+            padding: 20px;
+            background: #F0F0F0;
+        }
+
+        label.error{
+            font-size: 12px;
+            margin-top: 5px;
+            color: #ea6666;
+        }
+
+        input, textarea{
+            width: 100%;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #fff;
+            background-color: #000;
+            background-image: none;
+            background: #202226;
+            border: 1px solid #a0a8bd;
+            box-sizing: border-box;
+            border-radius: 3px;
+            height: 40px;
+            display: block;
+        }
+
+        .content-inner ul, .content-inner ol {
+            line-height: 28px;
+            font-size: 18px;
+            padding-left: 20px;
+        }
+
+        .btn{
+            padding: 9px 19px;
+            border-radius: 30px;
+            box-shadow: none;
+            outline: 0;
+            line-height: normal;
+            font-size: 14px;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: bold;
+            position: relative;
+            background: transparent;
+            border: 1px solid #a0a8be;
+            color: #a0a8bd;
+            outline: 0;
+        }
+
+        .btn.focus, .btn:focus{
+            box-shadow: none;
+        }
+        .intro{
+            position: relative;
+            z-index: 110;
+            overflow: hidden;
+            margin: 0 auto 50px auto;
+        }
+        .intro .swiper-slide .bg img{
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+        }
+        .intro .swiper-slide{
+            background: #000;
+            display: flex;
+            position: relative;
+            padding: 50px 0;
+            align-items: center;
+            height: auto;
+        }
+
+        .intro .swiper-slide .post{
+            width: 100%;
+        }
+
+        .intro .swiper-slide .bg{
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            width: 1366px;
+            height: 768px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .intro .swiper-slide .bg:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: linear-gradient(180deg, #000000 0%, rgba(51, 51, 51, 0.1) 75%);
+        }
+
+        .intro .swiper-slide .inner{
+            position: relative;
+            z-index: 2;
+            color: #fff;
+            display: flex;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+        }
+
+        .intro .swiper-slide .inner .post-title{
+            font-weight: bold;
+            font-size: 42px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .intro .swiper-pagination{
+            bottom: auto;
+            left: auto;
+            right: calc((100% - 1140px)/2 + 15px);
+            top: 50%;
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            transform: translateY(-50%);
+        }
+
+        .intro .swiper-pagination .swiper-pagination-bullet{
+            position: relative;
+            display: block;
+            width: 30px;
+            height: 48px;
+            margin: 5px 0;
+            background: transparent;
+            opacity: 1;
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+            -webkit-transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+            transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+        }
+
+        .intro .swiper-pagination .swiper-pagination-bullet i{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            border-radius: 0;
+            overflow: hidden;
+        }
+
+        .intro .swiper-pagination .swiper-pagination-bullet b{
+            color: #fff;
+            position: absolute;
+            top: -3px;
+            right: 0;
+            opacity: .2;
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+            -webkit-transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+            transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+        }
+
+        .intro .swiper-pagination .swiper-pagination-bullet:hover{
+            background: transparent;
+        }
+
+        .intro .swiper-pagination .swiper-pagination-bullet:hover b{
+            opacity: .4;
+        }
+
+        .intro .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+            background: transparent;
+        }
+
+        .intro .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active b{
+            color: #667EEA;
+            opacity: 1;
+        }
+
+        .intro .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active i{
+            opacity: 1;
+        }
+
+        .intro .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active i:before{
+            -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+        }
+
+        .intro .swiper-pagination .swiper-pagination-bullet i:before,
+        .intro .swiper-pagination .swiper-pagination-bullet i:after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #667EEA;
+            -webkit-transform: translate3d(0,100%,0);
+            transform: translate3d(0,100%,0);
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+            -webkit-transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+            transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+        }
+
+        .intro .swiper-pagination .swiper-pagination-bullet i:after{
+            background: #fff;
+            opacity: .2;
+            -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+        }
+
+        .intro .swiper-pagination .swiper-pagination-bullet:hover i:after{
+            opacity: .4;
+        }
+
+        .intro .swiper-pagination .swiper-pagination-bullet.next i:before{
+            -webkit-animation: next 8.2s linear forwards;
+            -moz-animation:    next 8.2s linear infinite;
+            -o-animation:      next 8.2s linear infinite;
+            animation:         next 8.2s linear forwards;
+        }
+
+        .intro .excerpt{
+            margin-bottom: 20px;
+        }
+
+        .intro a{
+            color: #fff;
+        }
+
+        .intro a:hover{
+            color: #667EEA;
+        }
+
+        .intro .tags{
+            margin: 0;
+        }
+
+        .intro .post-meta{
+            color: #FFFFFF;
+        }
+
+        .intro .post-meta a{
+            font-size: 14px;
+        }
+
+        .container {
+            max-width: 720px;
+            padding: 0 15px;
+            margin: 0 auto;
+        }
+
+        .tags{
+            list-style-type: none;
+            margin: 0 0 15px 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .tags li a{
+            margin-right: 10px;
+            line-height: 20px;
+            font-size: 12px;
+            color: #A0A8BD;
+            border: 1px solid transparent;
+            background: rgba(160, 168, 189, 0.2);
+            border-radius: 15px;
+            padding: 3px 15px;
+            font-weight: normal;
+            display: block;
+        }
+
+        .tags li a:hover{
+            background: transparent;
+            border: 1px solid #667EEA;
+            color: #667EEA;
+        }
+
+        .post-meta{
+            line-height: 32px;
+            font-size: 14px;
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 30px 0 0 0;
+            font-weight: 500;
+        }
+
+        .post-meta li{
+            margin-right: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .post-meta li i{
+            margin-right: 10px;
+        }
+
+        .post-meta li.share{
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        .intro a{
+            color: #fff;
+        }
+
+        .intro a:hover{
+            color: #667EEA;
+        }
+
+        .intro .tags{
+            margin: 0;
+        }
+
+        .intro .post-meta{
+            color: #FFFFFF;
+        }
+
+        .editor-content .kg-image-card{
+            margin: 50px 0;
+        }
+
+        .editor-content figcaption{
+            padding: 10px 15px;
+            font-size: 14px;
+            border-bottom: 1px solid #cccccc;
+        }
+
+        /* ==========================================================================
+           2. Header
+           ========================================================================== */
+
+        header{
+            position: relative;
+            z-index: 9900;
+            width: 100%;
+            top: 0;
+            left: 0;
+            padding: 10px 0;
+            background: #000;
+            transform: translateY(0);
+            -webkit-transition: all .3s cubic-bezier(0.2,1,0.3,1);
+            -moz-transition: all .3s cubic-bezier(0.2,1,0.3,1);
+            -o-transition: all .3s cubic-bezier(0.2,1,0.3,1);
+            transition: all .3s cubic-bezier(0.2,1,0.3,1);
+        }
+
+        header a {
+            color: #fff;
+            font-weight: bold;
+            font-size: 12px;
+            text-transform: uppercase;
+            line-height: 1.4;
+        }
+
+        /* ==========================================================================
+           3. Footer
+           ========================================================================== */
+
+        footer{
+            color: #fff;
+            background: #212227;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
+            margin-top: 50px;
+        }
+
+        footer .copyright{
+            background: #202226;
+        }
+
+        footer .copyright p{
+            margin: 0;
+            font-size: 14px;
+        }
+
+        footer a{
+            color: #fff;
+        }
+
+        footer a:hover{
+            color: #667EEA;
+        }
+
+        /* ==========================================================================
+           4. Responsive
+           ========================================================================== */
+
+        @media (max-width: 575px){
+            .post-meta {
+                flex-wrap: wrap;
+            }
+            .post-meta li {
+                margin-right: 30px;
+                width: auto;
+            }
+        }
+
+    </style>
+
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+    <script async custom-element="amp-anim" src="https://cdn.ampproject.org/v0/amp-anim-0.1.js"></script>
+
+</head>
+
+<body class="amp-template">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="blog-logo">
+                        <a href="../../" title="REGENESIS">
+                            <span>REGENESIS</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="intro">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <div class="bg">
+                        <amp-img src="http://localhost:2368/content/images/2018/11/d41586-018-07289-x_16251612-1.jpg" width="1366px" height="768px"></amp-img>
+                    </div>
+                    <div class="inner">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-9">
+                                        <ul class="tags">
+                                            <li>
+                                                <a href="../../tag/synthetic-biology/" title="Synthetic Biology" class="tag tag-5be14c1c96b4716bc3475e2f synthetic-biology">Synthetic Biology</a>
+                                            </li>  
+                                            <li>
+                                                <a href="../../tag/nature-news/" title="Nature News" class="tag tag-5be514fc7e7495112cee6cdc nature-news">Nature News</a>
+                                            </li>  
+                                        </ul>
+                                    <h1 class="post-title">How biologists are creating life-like cells from scratch</h1>
+                                    <p class="excerpt">As engineers, we can’t build a perfect synthetic cell. We have to build a self-correcting system that becomes better as it goes ... <a class="read-more" href="../" title="How biologists are creating life-like cells from scratch">read more</a></p>
+                                    <ul class="post-meta">
+                                        <li><time class="post-date" datetime="2018-11-09">09 Nov 2018</time></li>
+                                        <li><div class="post-author"><a href="../../author/mengfankang/">Fankang Meng</a></div></li>
+                                        <li><div class="post-reading-time">11 min read</div></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </div>
+            <a href="index.html#" class="go"><i class="fas fa-angle-down"></i></a>
+        </div>
+    </div>
+
+    <main id="content" class="container content-inner" role="main">
+        <article class="post tag-synthetic-biology tag-nature-news featured row">
+            <section class="content-holder col-lg-8 col-sm-10 ml-auto mr-auto">
+
+                <div class="post-content">
+                    <div class="editor-content"><figure class="kg-card kg-image-card"></figure><p>There were just eight ingredients: two proteins, three buffering agents, two types of fat molecule and some chemical energy. But that was enough to create a flotilla of bouncing, pulsating blobs — rudimentary cell-like structures with some of the machinery necessary to divide on their own.</p><p>To biophysicist Petra Schwille, the dancing creations in her lab represent an important step towards building a synthetic cell from the bottom up, something she has been working towards for the past ten years, most recently at the Max Planck Institute of Biochemistry in Martinsried, Germany.</p><p>“I have always been fascinated by this question, ‘What distinguishes life from non-living matter?’” she says. The challenge, according to Schwille, is to determine which components are needed to make a living system. In her perfect synthetic cell, she’d know every single factor that makes it tick.</p><p>Researchers have been trying to create artificial cells for more than 20 years — piecing together biomolecules in just the right context to approximate different aspects of life. Although there are many such aspects, they generally fall into three categories: compartmentalization, or the separation of biomolecules in space; metabolism, the biochemistry that sustains life; and informational control, the storage and management of cellular instructions.</p><p>The pace of work has been accelerating, thanks in part to recent advances in microfluidic technologies, which allow scientists to coordinate the movements of minuscule cellular components. Research groups have already determined ways of sculpting cell-like blobs into desired shapes; of creating rudimentary versions of cellular metabolism; and of transplanting hand-crafted genomes into living cells. But bringing all these elements together remains a challenge.</p><p>“It’s much easier to take things apart than put them back together.” Dan Fletcher tells us about the challenges of building a synthetic cell. </p><p>The field is, nevertheless, imbued with a new sense of optimism about the quest. In September 2017, researchers from 17 laboratories in the Netherlands formed the group Building a Synthetic Cell (BaSyC), which aims to construct a “cell-like, growing and dividing system” within ten years, according to biophysicist Marileen Dogterom, who directs BaSyC and a laboratory at Delft University of Technology. The project is powered by an €18.8-million (US$21.3-million) Dutch Gravitation grant.</p><p>In September, the US National Science Foundation (NSF) announced its first programme on synthetic cells, funded to the tune of $10 million. And several European investigators, including Schwille, have proposed building a synthetic cell as one of the European Commission’s Future and Emerging Technologies Flagship schemes, which receive funding of €1 billion.</p><p>Bottom-up synthetic biologists predict that the first fully artificial cells could spark to life in little more than a decade. “I’m pretty sure we’ll get there,” says Schwille.</p><p><strong>All in the packaging</strong></p><p>Research groups have made big strides recreating several aspects of cell-like life, especially in mimicking the membranes that surround cells and compartmentalize internal components. That’s because organizing molecules is key to getting them to work together at the right time and place. Although you can open up a billion bacteria and pour the contents into a test tube, for example, the biological processes would not continue for long. Some components need to be kept apart, and others brought together.</p><p>“To me, it’s about the sociology of molecules,” says Cees Dekker, a biophysicist also at Delft University of Technology.</p><p>For the most part, this means organizing biomolecules on or within lipid membranes. Schwille and her team are expert membrane-wranglers. Starting about a decade ago, the team started adding Min proteins, which direct a bacterial cell’s division machinery, to sheets of artificial membrane made of lipids. The Mins, the researchers found, would pop on and off the membranes and make them wave and swirl<a href="https://www.nature.com/articles/d41586-018-07289-x#ref-CR1">1</a>. But when they added the Mins to 3D spheres of lipids, the structures burst like soap bubbles, says Schwille. Her group and others have overcome this problem using microfluidic techniques to construct cell-sized membrane containers, or liposomes, that can tolerate multiple insertions of proteins — either into the membranes themselves or into the interior.</p><figure class="kg-card kg-image-card"></figure><p>Schwille’s graduate student, Thomas Litschel, and his collaborators dissolved the Min proteins in water and released droplets of the mixture into a rapidly spinning test tube. Centrifugal force pulls the droplets through layers of dense lipids that encapsulate them along the way. They come out at the other end as liposomes measuring 10–20 micrometres across — about the size of an average plant or animal cell. These liposomes, known as giant unilamellar vesicles (GUVs), can be made in different ways, but in Litschel’s hands, the Min proteins caused the GUVs to pulsate, dance around and contract in the middle<sup><a href="https://www.nature.com/articles/d41586-018-07289-x#ref-CR2">2</a></sup>.</p><p>Schwille’s group wants to capitalize on its knowledge of these proteins, which can produce membrane patterns and self-organize. “We understand these molecules really well,” she says. “We’d like to see how far we can get with relatively simple elements like the Mins.” Perhaps, as Litschel’s work hints, the team could use the proteins to mould membranes for division or to gather components at one end of a synthetic cell. Just as some physicists might use duct tape and tinfoil to fine-tune their experiments, Schwille says she hopes that these handy biological molecules will give her the ability to tinker with cell-like structures: “I’m an experimentalist to the bone.”</p><p>Dekker’s team members have also filled liposomes with their favourite proteins using a microfluidic chip (see ‘The bubble machines’). On the chip, two channels containing lipid molecules converge on a water-filled channel and spit out cell-sized liposomes that can hold various biological molecules, either stuck through the membrane or free-floating inside the container<sup><a href="https://www.nature.com/articles/d41586-018-07289-x#ref-CR3">3</a></sup>.</p><figure class="kg-card kg-image-card"></figure><p>His group has experimented with pressurizing, deforming and reshaping the liposomes to take on non-spherical shapes that mimic cells better. Microfluidic devices give researchers more control to move, sort and manipulate liposomes using micro-channels that operate almost like circuits. This year, the Dekker lab designed a chip that could mechanically split a liposome in two by pushing it up against a sharp point<sup><a href="https://www.nature.com/articles/d41586-018-07289-x#ref-CR4">4</a></sup>.</p><p>“This, of course, is not what we are after — we want to demonstrate division from the inside, but it still tells us interesting information,” says Dekker. Examples include the force it takes to divide a cell, and what types of physical manipulation the liposomes can tolerate. Along the same lines, his team has also played around with the shape of living <em>Escherichia coli </em>cells — making them wider or square by growing them in nanofabricated silicone chambers. In this way, team members can see how cell shape affects the division machinery, and assess how the Min proteins work in cells of different size and shape<sup><a href="https://www.nature.com/articles/d41586-018-07289-x#ref-CR5">5</a></sup>.</p><p>“We play with nanofabrication techniques and do things a normal cell biologist would never do,” he says. “But a strange biophysicist like me can do this.”</p><p><strong>Adding energy to the system</strong></p><p>Now that it’s possible to add components to the liposome bubbles without popping them, groups can plan how to make molecules work together. Almost anything life-like requires cellular energy, usually in the form of ATP. And although this can be added from the outside to feed a synthetic system, many biologists working on bottom-up approaches argue that a true synthetic cell should have its own power plant, something similar to an animal cell’s mitochondrion or a plant’s chloroplast, both of which make ATP.</p><p>Joachim Spatz’s group at the Max Planck Institute for Medical Research in Heidelberg, Germany, has built a rudimentary mitochondrion that can create ATP inside a vesicle.</p><p>To do this, his team took advantage of new microfluidic techniques. First, they stabilized GUVs by placing them inside water-in-oil droplets surrounded by a viscous shell of polymers. Then, as these droplet-stabilized GUVs flowed down a microchannel, the team injected big proteins into them, either inside the vesicle or embedded in the membrane’s surface (see ‘The assembly lines’).</p><figure class="kg-card kg-image-card"></figure><p>They loaded these membranes with an enzyme called ATP synthase, which acts as a kind of molecular waterwheel, creating ATP energy from precursor molecules as protons flow through the membrane. By adding acid to boost protons outside the GUVs, the team drove ATP’s production on the inside<sup><a href="https://www.nature.com/articles/d41586-018-07289-x#ref-CR6">6</a></sup>.</p><p>Spatz explains that researchers could cycle the GUVs around the microchannel again for another protein injection, to sequentially add components. For instance, the next step could be to add a component that will automatically set up the proton gradient for the system.</p><p>“That’s an important module, like you have in real life,” says Spatz.</p><p>Another Max Planck synthetic-biology group led by biochemist Tobias Erb has been chipping away at other approaches to constructing cellular metabolic pathways. He’s particularly interested in pathways that allow photosynthetic microbes to pull carbon dioxide from the environment and make sugars and other cellular building blocks.</p><p>Erb, a group leader at the Max Planck Institute for Terrestrial Microbiology in Marburg, Germany, takes a blank-slate approach to synthesizing cellular metabolic pathways. “From an engineering point of view, we think about how to design,” he says, “and then we build it in the lab”.</p><p>His group sketched out a system design that could convert CO<sub>2</sub> into malate, a key metabolite produced during photosynthesis. The team predicted that the pathway would be even more efficient than photosynthesis. Next, Erb and his team searched databases for enzymes that might perform each of the reactions. For a few, they needed to tweak existing enzymes into designer ones.</p><p>In the end, they found 17 enzymes from 9 different organisms, including <em>E. coli</em>, an archaeon, the plant <em>Arabidopsis</em> and humans. The reaction, perhaps unsurprisingly, was inefficient and slow<sup><a href="https://www.nature.com/articles/d41586-018-07289-x#ref-CR7">7</a></sup>.“</p><p>We put a team of enzymes together that did not play well together,” says Erb. After some further enzyme engineering, however, the team has a “version 5.4” that Erb says operates 20% more efficiently than photosynthesis.</p><p>Expanding this work, Erb’s group has begun constructing a crude version of a synthetic chloroplast. By grinding up spinach in a blender, and adding its photosynthesis machinery to their enzyme system in the test tube, the biologists can drive the production of ATP and the conversion of CO<sub>2</sub> to malate — solely by shining ultraviolet light on it.</p><p>Although everything can work for a brief time in a test tube, says Erb, “at the end, we would like it compartmentalized, like a chloroplast”. He’s excited to collaborate with synthetic biologists such as Kate Adamala, who can build and control complex compartments.</p><p>Adamala’s group at the University of Minnesota in Minneapolis is working on ways to build programmable bioreactors, by introducing simple genetic circuits into liposomes and fusing them together to create more-complex bioreactors. She calls them “soap bubbles that make proteins”.</p><p>Her group builds these bioreactors using a spinning tube system similar to Schwille’s, but which produces smaller liposomes. The researchers add circles of DNA called plasmids that they have designed to perform a particular function, along with all the machinery needed to make proteins from DNA.</p><p>For instance, her group has made liposome bioreactors that can sense an antibiotic in their environment through membrane pores and can generate a bioluminescent signal in response<sup><a href="https://www.nature.com/articles/d41586-018-07289-x#ref-CR8">8</a></sup>.</p><p>By fusing simple bioreactors together sequentially, the team can construct more-complex genetic circuits. But the systems start to break down as they expand to include ten or so components. This is a major challenge for the field, Adamala says. In a real cell, proteins that might interfere with each other’s actions are kept apart by a variety of mechanisms. For much simpler synthetic cells, biologists must find other ways to impose that control. This could be through external gatekeeping, in which the experimenter decides which liposomes get mixed together and when. It might also be accomplished through chemical tags that regulate which liposomes can fuse together, or through a time-release system.</p><p><strong>Informational injections</strong></p><p>Another key to making a cell is getting the software right. Enabling a synthetic cell to follow scientists’ instructions and to replicate itself will require some way of storing and retrieving information. For living systems, this is done by genes — from hundreds for some microbes, to tens of thousands for humans.</p><p>How many genes a synthetic cell will need to run itself is a matter of healthy debate. Schwille and others would like to keep it in the neighbourhood of a few dozen. Others, such as Adamala, think that synthetic cells need 200–300 genes.</p><p>Some have chosen to start with something living. Synthetic biologist John Glass and his colleagues at the J. Craig Venter Institute (JCVI) in La Jolla, California, took one of the smallest-known microbial genomes on the planet, that of the bacterium <em>Mycoplasma mycoides</em>, and systematically disrupted its genes to identify the essential ones. Once they had that information, they chemically stitched together a minimal genome in the laboratory.</p><p>This synthesized genome contained 473 genes — about half of what was in the original organism — and it was transplanted into a related bacterial species, <em>Mycoplasma capricolum</em><sup><a href="https://www.nature.com/articles/d41586-018-07289-x#ref-CR9">9</a></sup>. In 2016, the team showed that this minimal synthetic genome could ‘boot up’ a free-living, although slow-growing organism<sup><a href="https://www.nature.com/articles/d41586-018-07289-x#ref-CR10">10</a></sup>. Glass thinks that it will be hard to decrease that number much more: take any gene away, and it either kills the cells or slows their growth to near zero, he says.</p><p>He and his JCVI colleagues are compiling a list of ‘cellular tasks’ based on the latest version of their creation, JCVI-syn3.0a, which could act as a blueprint of a cell’s minimal to-do list. But for about 100 of these genes, they can’t identify what they do that makes them essential.</p><p>As a next step, and supported by an NSF grant of nearly $1 million, Glass and Adamala will attempt to install the JCVI-syn3.0a genome into a synthetic liposome containing the machinery needed to convert DNA into protein, to see whether it can survive. In that case, both the software and the hardware of the cell would be synthetic from the start.</p><p>If it could grow and divide, that would be a tremendous step. But many argue that to truly represent a living system, it would also have to evolve and adapt to its environment. This is the goal with the most unpredictable results and also the biggest challenges, says Schwille. “A thing that just makes itself all the time is not life — although I would be happy with that!” she says. “For a cell to be living, it needs to develop new functionality.”</p><p>Glass’s team at the JCVI has been doing adaptive laboratory evolution experiments with JCVI-syn3.0a, selecting for organisms that grow faster in a nutrient-rich broth. So far, after about 400 divisions, he and his team have obtained cells that grow about 15% faster than the original organism. And they have seen a handful of gene-sequence changes popping up. But there’s no evidence yet of the microbe developing new cellular functions or increasing its fitness by leaps and bounds.</p><p>Erb says that working out how to add evolution to synthetic cells is the only way to make them interesting. That little bit of messiness in biological systems is what allows them to improve their performance. “As engineers, we can’t build a perfect synthetic cell. We have to build a self-correcting system that becomes better as it goes,” he says.</p><p>Synthetic cells could lead to insights about how life might look on other planets. And synthetic bioreactors under a researcher’s complete control might offer new solutions to treating cancer, tackling antibiotic resistance or cleaning up toxic sites. Releasing such an organism into the human body or the environment would be risky, but a top-down engineered organism with unknown and unpredictable behaviors might be even riskier.</p><p>Dogterom says that synthetic living cells also bring other philosophical and ethical questions: “Will this be a life? Will it be autonomous? Will we control it?” These conversations should take place between scientists and the public, she says. As for concerns that synthetic cells will run amok, Dogterom is less worried. “I’m convinced our first synthetic cell will be a lousy mimic of what already exists.” And as the engineers of synthetic life, she and her colleagues can easily incorporate controls or a kill switch that renders the cells harmless.</p><p>She and other synthetic biologists will keep pushing ahead exploring the frontiers of life. “The timing is right,” says Dogterom. “We have the genomes, the parts list. The minimal cell needs only a few hundred genes to have something that looks sort of alive. Hundreds of parts is a tremendous challenge, but it’s not thousands — that’s very exciting.”</p><p><em>Nature</em> <strong>563</strong>, 172-175 (2018)</p><p><em>doi: 10.1038/d41586-018-07289-x</em></p></div>                    
+                </div>
+
+            </section>
+        </article>
+    </main>
+
+    <footer class="site-footer clearfix">
+        <div class="container copyright">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="copyright">Copyright © 2018, <a href="../../">REGENESIS</a>. All Right Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
